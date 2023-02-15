@@ -1,0 +1,647 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  4 FEB 2023 13:39
+entering extended mode
+**./EEC3150_HW03_Ch04and06.tex
+(EEC3150_HW03_Ch04and06.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo"
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfont
+s.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhd
+r.sty"
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.
+sty"
+\CommentStream=\write3
+ Excluding comment 'comment')
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.
+sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.s
+ty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.st
+y"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count175
+\Gm@cntv=\count176
+\c@Gm@tempcnt=\count177
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks17
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.cfg"))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+"
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.
+sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.
+sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.s
+ty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen143
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.s
+ty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.s
+ty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks19
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks20
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks21
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/changepage\chang
+epage.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count190
+\cp@tempcnt=\count191
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb
+.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+x.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+s.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.st
+y"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gra
+phics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdf
+tex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+\c@theorem=\count192
+\c@axiom=\count193
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
+s.sty"
+\lst@mode=\count194
+\lst@gtempboxa=\box47
+\lst@token=\toks23
+\lst@length=\count195
+\lst@currlwidth=\dimen154
+\lst@column=\count196
+\lst@pos=\count197
+\lst@lostspace=\dimen155
+\lst@width=\dimen156
+\lst@newlines=\count198
+\lst@lineno=\count199
+\lst@maxwidth=\dimen157
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc
+.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count266
+\lst@skipnumbers=\count267
+\lst@framebox=\box48
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
+s.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.s
+ty"
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.st
+y"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframe
+d.sty"
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvopti
+ons.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmd
+s.sty"
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvse
+tkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xpars
+e\xparse.sty"
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.s
+ty"
+Package: expl3 2020-06-18 L3 programming layer (loader) 
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
+end-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count268
+\l__pdf_internal_box=\box49
+))
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xpars
+e\xparse-generic.tex"
+\l__xparse_current_arg_int=\count269
+\g__xparse_grabber_int=\count270
+\l__xparse_m_args_int=\count271
+\l__xparse_v_nesting_int=\count272
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbo
+x.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count273
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspag
+e.sty"
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.s
+ty"
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infw
+arerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\k
+vdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdf
+texcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexc
+mds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.
+sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbeg
+shi.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\c@abspage=\count274
+Package zref Info: New property: abspage on input line 66.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needsp
+ace.sty"
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip61
+\c@mdf@globalstyle@cnt=\count275
+\mdf@skipabove@length=\skip62
+\mdf@skipbelow@length=\skip63
+\mdf@leftmargin@length=\skip64
+\mdf@rightmargin@length=\skip65
+\mdf@innerleftmargin@length=\skip66
+\mdf@innerrightmargin@length=\skip67
+\mdf@innertopmargin@length=\skip68
+\mdf@innerbottommargin@length=\skip69
+\mdf@splittopskip@length=\skip70
+\mdf@splitbottomskip@length=\skip71
+\mdf@outermargin@length=\skip72
+\mdf@innermargin@length=\skip73
+\mdf@linewidth@length=\skip74
+\mdf@innerlinewidth@length=\skip75
+\mdf@middlelinewidth@length=\skip76
+\mdf@outerlinewidth@length=\skip77
+\mdf@roundcorner@length=\skip78
+\mdf@footenotedistance@length=\skip79
+\mdf@userdefinedwidth@length=\skip80
+\mdf@needspace@length=\skip81
+\mdf@frametitleaboveskip@length=\skip82
+\mdf@frametitlebelowskip@length=\skip83
+\mdf@frametitlerulewidth@length=\skip84
+\mdf@frametitleleftmargin@length=\skip85
+\mdf@frametitlerightmargin@length=\skip86
+\mdf@shadowsize@length=\skip87
+\mdf@extratopheight@length=\skip88
+\mdf@subtitleabovelinewidth@length=\skip89
+\mdf@subtitlebelowlinewidth@length=\skip90
+\mdf@subtitleaboveskip@length=\skip91
+\mdf@subtitlebelowskip@length=\skip92
+\mdf@subtitleinneraboveskip@length=\skip93
+\mdf@subtitleinnerbelowskip@length=\skip94
+\mdf@subsubtitleabovelinewidth@length=\skip95
+\mdf@subsubtitlebelowlinewidth@length=\skip96
+\mdf@subsubtitleaboveskip@length=\skip97
+\mdf@subsubtitlebelowskip@length=\skip98
+\mdf@subsubtitleinneraboveskip@length=\skip99
+\mdf@subsubtitleinnerbelowskip@length=\skip100
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-fram
+e-0.mdf"
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box50
+\mdf@footnotebox=\box51
+\mdf@splitbox@one=\box52
+\mdf@splitbox@two=\box53
+\mdf@splitbox@save=\box54
+\mdfsplitboxwidth=\skip101
+\mdfsplitboxtotalwidth=\skip102
+\mdfsplitboxheight=\skip103
+\mdfsplitboxdepth=\skip104
+\mdfsplitboxtotalheight=\skip105
+\mdfframetitleboxwidth=\skip106
+\mdfframetitleboxtotalwidth=\skip107
+\mdfframetitleboxheight=\skip108
+\mdfframetitleboxdepth=\skip109
+\mdfframetitleboxtotalheight=\skip110
+\mdffootnoteboxwidth=\skip111
+\mdffootnoteboxtotalwidth=\skip112
+\mdffootnoteboxheight=\skip113
+\mdffootnoteboxdepth=\skip114
+\mdffootnoteboxtotalheight=\skip115
+\mdftotallinewidth=\skip116
+\mdfboundingboxwidth=\skip117
+\mdfboundingboxtotalwidth=\skip118
+\mdfboundingboxheight=\skip119
+\mdfboundingboxdepth=\skip120
+\mdfboundingboxtotalheight=\skip121
+\mdf@freevspace@length=\skip122
+\mdf@horizontalwidthofbox@length=\skip123
+\mdf@verticalmarginwhole@length=\skip124
+\mdf@horizontalspaceofbox=\skip125
+\mdfsubtitleheight=\skip126
+\mdfsubsubtitleheight=\skip127
+\c@mdfcountframes=\count276
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count277
+\c@mdf@env@i=\count278
+\c@mdf@env@ii=\count279
+\c@mdf@zref@counter=\count280
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
+1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/outlines\outline
+s.sty"
+Package: outlines 2012/1/23 1.1 Ch. Pecheur
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumite
+m.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip128
+\enit@outerparindent=\dimen158
+\enit@toks=\toks24
+\enit@inbox=\box55
+\enit@count@id=\count281
+\enitdp@description=\count282
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlese
+c.sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box56
+\beforetitleunit=\skip129
+\aftertitleunit=\skip130
+\ttl@plus=\dimen159
+\ttl@minus=\dimen160
+\ttl@toksa=\toks25
+\titlewidth=\dimen161
+\titlewidthlast=\dimen162
+\titlewidthfirst=\dimen163
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/exercise\exercis
+e.sty"
+Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
+\ExerciseSkipBefore=\skip131
+\ExerciseSkipAfter=\skip132
+\AnswerSkipBefore=\skip133
+\AnswerSkipAfter=\skip134
+\Exesep=\skip135
+\Exetopsep=\skip136
+\Exeparsep=\skip137
+\Exepartopsep=\skip138
+\Exeleftmargin=\skip139
+\Exerightmargin=\skip140
+\Exelabelwidth=\skip141
+\Exelabelsep=\skip142
+\ExerciseBefore=\skip143
+\QuestionBefore=\skip144
+\subQuestionBefore=\skip145
+\subsubQuestionBefore=\skip146
+\QuestionIndent=\skip147
+\subQuestionIndent=\skip148
+\subsubQuestionIndent=\skip149
+\c@Exercise=\count283
+\c@Answer=\count284
+\c@ExePart=\count285
+\c@Question=\count286
+\c@subQuestion=\count287
+\c@subsubQuestion=\count288
+\c@savedQuestion=\count289
+\c@savedsubQuestion=\count290
+\c@savedsubsubQuestion=\count291
+\@QuestionLevel=\count292
+\@Exercisebox=\box57
+\all@Exercisebox=\box58
+\temp@Exercisebox=\box59
+\all@Answerbox=\box60
+\temp@Answerbox=\box61
+\ExerciseDifficulty=\count293
+\QuestionDifficulty=\count294
+\subQuestionDifficulty=\count295
+\subsubQuestionDifficulty=\count296
+\ExePartDifficulty=\count297
+\@Answerbox=\box62
+\colonnesLevel=\count298
+\tempskipa=\skip150
+\tempskipb=\skip151
+\@savedmathindent=\skip152
+) (EEC3150_HW03_Ch04and06.aux)
+\openout1 = `EEC3150_HW03_Ch04and06.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+01.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(62.59596pt, 472.31595pt, 62.59596pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=472.31595pt
+* \textheight=702.78308pt
+* \oddsidemargin=-9.67403pt
+* \evensidemargin=-9.67403pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
+-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count299
+\scratchdimen=\dimen164
+\scratchbox=\box63
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen165
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks27
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
+topdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\c@lstlisting=\count305
+\AtBeginShipoutBox=\box64
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108
+.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108
+.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+28.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (54.91327pt too wide) in paragraph at lines 180--181
+[]\OT1/ptm/m/n/12 Write a pro-gram with two functions---one non-recursive (\OT1
+/pcr/m/n/12 HarmNon(n)\OT1/ptm/m/n/12 ) and one re-cur-sive (\OT1/pcr/m/n/12 Ha
+rmRec(n)\OT1/ptm/m/n/12 )---
+ []
+
+[2] (EEC3150_HW03_Ch04and06.aux) ) 
+Here is how much of TeX's memory you used:
+ 8149 strings out of 480790
+ 127387 string characters out of 2894452
+ 569594 words of memory out of 3000000
+ 24012 multiletter control sequences out of 15000+200000
+ 548681 words of font info for 66 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,17n,45p,827b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Graham West/AppData/Local/Programs/
+MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Graham West/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Grah
+am West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/P
+rograms/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Graham West/AppData
+/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Graham West/A
+ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Graham 
+West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on EEC3150_HW03_Ch04and06.pdf (2 pages, 102426 bytes).
+PDF statistics:
+ 50 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

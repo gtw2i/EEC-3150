@@ -1,0 +1,352 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{comment}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{EEC 3150-01: Engineering Programming II }
+\author{Dr. Graham West}
+\date{Spring 2023}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rhead{\footnotesize EEC 3150-01: Engineering Programming II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\setlength\parindent{0pt}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.0}
+
+\begin{document}
+
+\maketitle
+
+\blankline
+
+\begin{tabular*}{.93\textwidth}{l}
+	Classroom: GS 404 \\
+	Class Hours: T/Th 1:35-2:50pm \\
+	E-mail: \texttt{gtwest@trevecca.edu} \\
+	Phone: 615-478-4033 \\
+	Office Hours: Zoom, by appointment \\
+	%\hline
+\end{tabular*}
+
+%\tableofcontents
+
+%\pagebreak
+
+\section{Course Description}
+
+Engineering Programming II is a course designed to introduce students to the Python programming language and use it for scientific applications. The course will begin by covering all of the core features of Python and giving students experience in the language through various coding exercises. This will be done via the Spyder IDE available in Anaconda 3. Once the students have a good grasp on the fundamentals of the language, we will examine several popular libraries used in scientific applications. Using all of these tools, we will then implement numerical methods for various mathematical problems which arise in scientific applications.
+
+
+\section{Course Materials}
+
+Required software (students must download an install this on the first day of class):
+\begin{itemize}
+	\item Anaconda 3: \href{https://www.anaconda.com/}{https://www.anaconda.com/}
+\end{itemize}
+
+Required textbook:
+\begin{itemize}
+	\item Introduction to Computation and Programming Using Python, 3e, Guttag
+\end{itemize}
+
+Additional Resources (see Blackboard for PDFs):
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Scientific Computing: an Introductory Survey, Heath
+	\item Numerical Analysis, Burden
+	\item Mathematical Methods in the Physcal Sciences, Boas
+\end{itemize}
+
+
+\section{Prerequisites}
+\begin{itemize}
+	\item EEC 2150: Engineering Programming I (or permission of department)
+	\item Knowledge of various mathematical concepts such as statistics, calculus, linear algebra, and differential equations
+\end{itemize}
+
+
+\section{Student Learning Outcomes}
+Throughout the course, students will...
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Learn the fundamentals of the Python programming language
+	\item Learn to use the Spyder IDE
+	\item Learn the features of several popular scientific libraries for Python, such as NumPy and Matplotlib
+	\item Learn to analyze the complexity of algorithms
+	\item Learn to implement numerical methods for solving scientific and engineering problems
+\end{itemize}
+
+
+\section{Course Structure}
+
+\subsection*{Class Meetings}
+Classes will meet \textbf{online on Tuesday's} and \textbf{in-person on Thursday's} (unless otherwise stated by instructor). Since this is a programming class, students will need access to their computers and the internet. However, it is expected that students will not abuse this aspect of the course.
+
+\subsection*{Homework}
+There will be frequent homework assignments. They will be at 11:59pm one week after they were assigned. If any assistance is needed, speak with me before/after class or email me with your questions. As far as content, the homeworks may consist of any combination of:
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Python exercises
+	\item Mathematics exercises
+	\item Pseudocode for an algorithm
+	\item Short answer discussion of a programming/algorithm topic
+\end{itemize}
+
+\subsection*{Tests}
+There will be several in-class tests. These are meant to test the students knowledge of course concepts in an environment where they have less access to online aids. As far as content, test questions may cover all of the same formats as the homework. \\
+
+Since programming exercises can often take more time than math/science exercises, this will be taken into account for the tests so that they can be completed in the alotted time. This will take the form of either simpler or fewer programming problems on tests than homework assignments.
+
+\subsection*{Final Project and Presentation}
+Instead of a final exam, the course will have a final project. For thie project, students should use Python to implement one or more numerical methods of their choice to solve a applied problem in a scientific field. Towards the end of the semester, students will need to choose a topic for the project. I will offer several example topics which can be used, but students are welcome to submit their own ideas for approval. Students must also give a presentation about their project. Further details and expectations will be provided closer to the time of the project.
+
+\subsection*{List of topics}
+The following is a tentative list of topics to be covered in the course. The first set is devoted specifically to Python and other programming-related topics. The second will be numerical/scientific applications which utiliz Python. \\
+
+\textbf{Python:} \\
+
+\begin{tabular}{ | p{3.5cm} p{8.5cm} | }
+	\hline
+	Section & Topic \\
+	\hline
+	Guttag 2.2, 2.4 & Install Anaconda3, intro to Spyder IDE, Python data types and variables \\
+	Guttag 2.3, 2.5, 2.6 & Loops, and conditionals \\
+	Guttag 3.1-3.4 & Simple numerical programs: bisection search, Newton-Raphson \\
+	Guttag 4 & Functions \\
+	Guttag 5 & Structured types (lists, dictionaries, tuples) \\
+	Guttag 7 & Importing modules and file I/O \\
+	Guttag 9 & Handling exceptions (errors) \\
+	Guttag 10 & Classes, objects, and methods \\
+	Guttag 11 & Complexity of algorithms \\
+	Guttag 13 & Numpy and Matplotlib (modules) \\
+	Heath 1.2, 1.3 & Computer arithmetic \\
+	\hline
+\end{tabular}
+
+\vspace{10pt}
+
+\textbf{Applications:} \\
+
+\begin{tabular}{ | p{13.0cm} | }
+	\hline
+	Topic \\
+	\hline
+	Monte Carlo sampling \\
+	Least squares regression \\
+	Optimization \\
+	Differential equations \\
+	Agent-based modeling \\
+	Classification \\
+	\hline
+\end{tabular}
+
+\subsection*{Grading Policy}
+
+\textbf{Assignment weights:} \\
+
+\begin{tabular}{ | p{3cm} p{1cm} | }
+	\hline
+	Homework	& 50\% \\
+	Tests 			& 30\% \\
+	Final project	& 20\% \\
+	\hline
+\end{tabular}
+
+%\vspace{15pt}
+\pagebreak
+
+\textbf{Grading scale:} \\
+
+\begin{tabular}{ | p{2cm} p{2cm} | }
+	\hline
+	A+		& 97-100\% \\
+	A		& 93-97\% \\
+	A-		& 90-93\% \\
+	B+		& 87-90\% \\
+	B		& 83-87\% \\
+	B-		& 80-83\% \\
+	C+		& 77-80\% \\
+	C		& 73-77\% \\
+	C-		& 70-73\% \\
+	D		& 65-70\% \\
+	F		& $<$65\% \\
+	\hline
+\end{tabular}
+
+
+
+\begin{comment}
+
+\pagebreak
+
+\section{Tentative Course Schedule}
+Below is a tentative course schedule for the entire semester and is subject to change (particularly the back half of the semester). The first month or so is devoted to the fundamentals of Python followed by the first test. Next, there are several weeks covering a diverse range of topics, again followed by another test. For the remainder of the course, we will dive into a range of numerical methods. \\
+
+\begin{tabular}{ | p{1cm} p{0.25cm} p{2cm} p{7.5cm} | }
+	\hline
+	Day & Date & Section & Notes \\
+	\hline
+	Thursday & 01/12 & 2.2, 2.4 & Install Anaconda3, intro to Spyder IDE, Python data types and variables \\
+	Tuesday  & 01/17 & 2.3, 2.5, 2.6 & Loops, and conditionals \\
+	Thursday & 01/19 & 3.1-3.4 & Some simple numerical programs \\
+	Tuesday  & 01/24 &  &  \\
+	Thursday & 01/26 &  &  \\
+	Tuesday  & 01/31 &  & Importing packages, file I/O, and strings \\
+	Thursday & 02/02 &  &  \\
+	Tuesday  & 02/07 &  & Error handling and REVIEW \\
+	Thursday & 02/09 &  & \textbf{Test 1} \\
+	Tuesday  & 02/14 &  & Matplotlib and Numpy \\
+	Thursday & 02/16 &  &  \\
+	Tuesday  & 02/21 &  & Complexity of algorithms \\
+	Thursday & 02/23 &  &  \\
+	Tuesday  & 02/28 &  & Computer arithmetic \\
+	Thursday & 03/02 &  &  \\
+	Tuesday  & 03/07 &  & \textbf{SPRING BREAK} \\
+	Thursday & 03/09 &  & \textbf{SPRING BREAK} \\
+	Tuesday  & 03/14 &  & REVIEW \\
+	Thursday & 03/16 &  & \textbf{Test 2} \\
+	Tuesday  & 03/21 &  & Monte Carlo sampling \\
+	Thursday & 03/23 &  &  \\
+	Tuesday  & 03/28 &  & Optimization \\
+	Thursday & 03/30 &  &  \\
+	Tuesday  & 04/04 &  & Differential equations \\
+	Thursday & 04/06 &  &  \\
+	Tuesday  & 04/11 &  &  Agent-based modeling \\
+	Thursday & 04/13 &  & \\
+	Tuesday  & 04/18 &  & \\
+	Thursday & 04/20 &  &  \\
+	Tuesday  & 04/25 &  &  \\
+	Thursday & 04/27 &  & Final presentations \\
+	Tuesday  & 05/02 &  & Final presentations \\
+	\hline
+\end{tabular}
+
+\end{comment}
+
+
+
+
+\section{Course Policies}
+
+\subsection*{Academic Honesty}
+Academic honesty is expected of all students at Trevecca Nazarene University. It is an integral part of the educational process where learning takes place in an atmosphere of mutual trust and respect. Each student is responsible to maintain high standards of academic ethics, personal honesty, and moral integrity. Dishonest academic behavior as described in the following list will be dealt with fairly and firmly.
+\begin{itemize}
+	\item Plagiarism, using another's statements or thoughts without giving the source appropriate credit; this includes patchwork plagiarism; no more than 20\% of any paper should be direct quotes (unless otherwise specified by instructor)
+	\item Cheating on an exam; this not only encompasses copying from another student but includes receiving help in completing an exam from any unauthorized source or in any unauthorized manner
+	\item Resubmitting graded assignments; self-plagiarism
+	\item Submitting for credit a borrowed or purchased paper (e.g. life learning paper, prior-learning documentation worksheet, summary paper, etc.)
+	\item Defacing or unauthorized removal of course materials either from the classroom or library
+	\item Falsifying documentation in regard to the reporting of course reading
+	\item Falsifying attendance for class or other academic event
+	\item Falsifying other documentation
+	\item Submitting and using instructional materials, instructor resources, and faculty guides as your own work
+	\item Identity Fraud
+\end{itemize}
+Additionally, any student that gives current or prior assignments to another student for the purpose academic dishonesty (examples included above) is subject to disciplinary action through the Office of Student Development. Student
+
+\subsection*{Disabilities Services}
+At Trevecca Nazarene University, we strive to make learning experiences as accessible as possible. If you anticipate or experience barriers based on disability, please contact Disability Services at 615-248-1463 or email disabilityservices@trevecca.edu to establish reasonable accommodations. Disability Services is located in the Bud Robinson Building, lower level. Trevecca Nazarene University complies with Section 504 of the Rehabilitation Act of 1973 and the Americans with Disabilities Act of 1990, as amended by the ADA Amendments Act of 2008.
+
+\subsection*{Attendance Policy}
+Attendance is an important aspect of this course. While the full attendance policy can be found in the university catalog, the following is a general policy description for Spring 2023 courses:\\
+
+Trevecca Nazarene University is committed to the idea that regular class attendance is necessary for student success; consequently, students are expected to attend all class sessions of courses for which they are registered. When absent, the student is personally responsible for all class work assigned in a course, even during the absence, and should take the initiative to contact the instructor and discuss an appropriate course of action. Attendance counts from the first day of a course whether students are registered or not.\\
+
+The total number of excused and unexcused absences for a student should not exceed 20\% of the total class time, and students who exceed this threshold will automatically fail the course unless they officially withdraw from the course or an appeal, initiated by the student, is approved. Discretion is granted to faculty to make exceptions, within reason, for students whose excused absences cause them to exceed the 20\% threshold above, especially when a student has a significant number of university-related excused absences (e.g., intercollegiate athletics, field trips, official university travel). Exceptions granted by faculty, however, are generally reserved for students who otherwise regularly attend class and are actively engaged in the course (e.g., prepared for class, attentive and participatory in class discussions, consistent in communication with instructor, submits quality work, and meets assignment deadlines).\\
+
+Excused absences for traditional students are determined by the instructor and generally limited to an illness verified by a licensed medical professional or for participation in an approved university-related event. University-related events for which these students may be excused include, but are not limited to, prearranged class-related field trips, official assignments by the University, and participation in scheduled intercollegiate athletic events. Absences for any other reason may be excused only upon approval by both the course instructor and her/his immediate supervisor. Faculty are not required to allow students to complete make up work for absences that are unexcused.\\
+
+The Office of Academic Affairs sends out notification to the faculty for university-related events, and the Center for Student Development and/or Clinic will provide notification to faculty only if a student has an extended illness requiring multiple absences. The Clinic will provide a receipt of service to students who request one as documentation of an excused absence, but these will not be automatically provided to the student or faculty member.\\
+
+Students with chronic illnesses that may impact class attendance should communicate with the Coordinator of Disability Services at the beginning of the semester. In all cases, it is the student’s responsibility to communicate every absence due to illness to the instructor and provide appropriate documentation. It is also the student’s responsibility to contact professors to make up work, even in the case of a university-related excused absence.
+
+
+\subsection*{Online Attendance Policy}
+Trevecca Nazarene University is committed to the idea that regular class attendance is necessary for student success; consequently, students are expected to attend all class sessions of courses for which they are registered. When absent, the student is personally responsible for all class work assigned in a course, even during the absence, and should take the initiative to contact the instructor and discuss an appropriate course of action. Attendance counts from the first day of a course whether students are registered or not. Students enrolled in online courses are allowed one absence in courses that are five class sessions or more in length and no absences in a course that has four class sessions or fewer. There are no excused absences in these courses.\\
+
+In an online course, a student is reported absent for a week if there is no participation during that week in an academically-related activity specific to the course, such as attending a synchronous course activity, submitting an academic assignment, taking an assessment or exam, participating in an interactive tutorial, webinar, or computer-assisted instruction, participating in a study group or group project, participating in an online discussion assigned by the instructor, or interacting with the instructor about academic matters.
+
+
+\subsection*{Withdrawal from Courses and Withdrawal from the University}
+A student withdrawing from a course will receive a grade of W in a class any time between the last day to drop a class up to the last day to withdraw with a W based on the published calendar for that term. The last date to withdraw for this course with a “W” on a student’s transcript is…
+\begin{itemize}
+	\item Friday, March 24 for spring full semester courses
+	\item Monday, January 30 for spring first half online courses
+	\item Monday, March 27 for spring second half online courses
+\end{itemize}
+After this date, students who withdraw will receive a grade of F unless they appeal to the school dean who schedules the course, who may approve a W for extenuating circumstances. If the student withdraws from any course without following the proper procedure with the Office of Academic Records and Office of Student Accounts, the grade in the course will be recorded as F or U.\\
+
+Withdrawals, especially if student status drops to part-time, may affect financial aid, athletic eligibility, veteran education benefits, insurance benefits, and graduation plans. Students should consult appropriate advisors prior to withdrawing from a course. The Center for Student Development processes all withdrawals and the Office of Academic Records is responsible for recording the student’s last date of attendance.\\
+
+If a student has missed more than the allowed number of absences in a course prior to the last day to withdraw for the semester for any reason, the student is automatically withdrawn from the course unless exceptions have been granted (see below). If a student has missed more than the allowed number of absences in a course after the last day to withdraw from the semester for any reason, the student automatically fails the course unless exceptions have been granted (see below). Discretion is granted to faculty to make exceptions, within reason, for students whose excused absences cause them to exceed the 20\% threshold, especially when a student has a significant number of university-related excused absences (e.g., intercollegiate athletics, field trips, official university travel). Exceptions granted by faculty, however, are generally reserved for students who otherwise regularly attend class and are actively engaged in the course (e.g., prepared for class, attentive and participatory in class discussions, consistent in communication with instructor, submits quality work, and meets assignment deadlines).\\
+
+A student who chooses to officially withdraw from all courses for which they are registered in a term must complete the appropriate form with the Center for Student Development.
+
+
+\subsection*{Classroom Recordings Policy}
+Faculty members are permitted to video and/or audio record class sessions provided that recordings are posted in a secure environment and are only available to students registered for the course. Students who have a qualifying disability are also allowed to record class sessions for their personal study only. Information contained in the recorded lecture is protected under federal copyright laws and may not be published without the consent of the instructor. As video and/or audio of students may be captured as a part of the recording, it is also a Family Educational Rights and Privacy Act (FERPA) violation to share classroom recordings. Lectures/class sessions recorded for any reason may not be shared with anyone who is not a registered participant of the course without the consent of the instructor.
+
+
+\subsection*{Title IX Policy}
+Trevecca Nazarene University is committed to providing an environment free from all forms of sex discrimination. As an instructor, one of my responsibilities is to help foster a safe learning environment on our campus. This means that I have a reporting responsibility related to my role. It is my goal that you feel able to share information related to your life experiences in classroom discussions, in your written work, and in any one-on-one meetings. I will seek to keep information you share private to the greatest extent possible. However, I am required to share information regarding sexual harassment and other sexual misconduct with the Title IX Office. Students may speak to someone confidentially by contacting the Counseling Center at 615-248-1346.
+
+
+\end{document}
+

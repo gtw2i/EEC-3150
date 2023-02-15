@@ -1,0 +1,220 @@
+\documentclass[12pt]{article}%
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%%%%
+% ME %
+%%%%
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%frame=tb,
+language=Matlab,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+\usepackage{outlines}
+\usepackage{enumitem}
+%\setenumerate[1]{label=\Roman*.}
+%\setenumerate[2]{label=\Alph*.}
+%\setenumerate[3]{label=\roman*.}
+%\setenumerate[4]{label=\alph*.}
+
+\usepackage{titlesec} 
+
+\titleformat{\subsection}[runin]
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% for enumerate spacing
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph*.]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+\usepackage{exercise}
+
+\setlength\parindent{0pt}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{45pt}}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0.6cm}
+
+\begin{document}
+
+\title{Homework 04: Chapter 05}
+
+\author{EEC 3150}
+\date{}
+
+\maketitle
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+For each Python exercise, write a separate Python script. Submit all scripts on Blackboard under the appropriate assignment. Name your script files with the following format: \\
+\vspace{10pt}
+HW$<$assignment number$>$\_Ex$<$exercise number$>$\_$<$FirstInitial$><$LastName$>$.py \\
+\vspace{10pt}
+Example: HW01\_Ex01\_GWest.py \\
+\vspace{10pt}
+For short answer or math exercises, either do your work on a sheet of paper and upload a picture of it to Blackboard or submit some kind of text file or Word document to Blackboard. You can place all such exercises in a single document as long as you clearly label each exercise. These files should follow a similar naming convention as the Python scripts.
+}}}
+\end{center}
+
+
+\pagebreak
+
+
+\begin{multicols*}{2}
+
+\begin{Exercise}[origin={10 points, Python}]
+
+Write a function \code{Apply(x,f)} which accepts a list of floats \code{x} and a function \code{f} and will return a new list whose elements are \code{f(x)}. You can choose what the function \code{f} should be. \textbf{DO NOT} use the \code{map} function. Demonstrate your function by calling it.
+
+\end{Exercise}
+
+\begin{Exercise}[origin={10 points, Python}]
+
+Write a function \code{Median(x)} which accepts a list of floats \code{x} and return the median of the list. For a list with an odd number of elements, the median is the middle element of the sort list. For an even number of elements, the median is the mean of the two middle elements. Demonstrate your function by calling it on two lists: one even and one odd.
+
+\end{Exercise}
+
+\begin{Exercise}[origin={10 points, Python}]
+
+Write a function \code{MatMul(A,B)} that will multiply two $n\times n$ matrices $A,B$ and return the result. For reference, here is the definition of matrix multiplication:
+\begin{equation*}
+	C_{ij} = \sum_{k=0}^{n-1} A_{ik}B_{kj}
+\end{equation*}
+Demonstrate your function by calling it on the following matrices (evaluate $AB$ and $BA$):
+\begin{equation*}
+A = 
+\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}
+, \quad
+B = 
+\begin{pmatrix}
+1 & -1 \\
+1 & 1
+\end{pmatrix}
+\end{equation*}
+
+\end{Exercise}
+
+\begin{Exercise}[origin={10 points, Python}]
+
+Write a function \code{InvertDict(d)} that will invert a dictionary's keys and values, i.e., return a new dictionary whose keys are the values of the original and whose values are the keys of the original. For example:
+
+\code{\shp x = \{ 1:'a', 2:'b' \} \\
+\shp InvertDict(x) \\
+\{ `a':1, `b':2 \}
+}
+
+\end{Exercise}
+
+\vfill\null
+
+\begin{Exercise}[origin={15 points, Python}]
+
+Write a program that will translate a string into pig Latin (move all leading consonants to the end of the word and add ``ay'').
+\begin{enumerate}
+	\item Write a function \code{PL(w)}which will translate an individual word \code{w} into pig Latin. \\
+	\code{ \shp PL(`tears') \\
+	`earstay'
+	}
+	\item Write a function \code{PigLatin(s)} which will translate an entire sentence \code{s} into pig Latin (call the above function in this one). \\
+	\code{ \shp PigLatin(`tears in rain') \\
+	`earstay inay ainray'
+	}
+\end{enumerate}
+
+\end{Exercise}
+
+\begin{Exercise}[origin={20 points, Python}]
+
+Write a program that will compute the prime factorization of a number.
+\begin{enumerate}
+	\item Write a function \code{PrimeFactors(n)} which accepts an integer $n$ and output a dictionary of the prime factors and their respective powers. Calling the function should produce output that look like the following ($20 = 2^2 5^1$): \\
+	\code{ \shp PrimeFactors(20) \\
+	\{ 2:2, 5:1 \}
+	} \\
+	Do not have any primes in your dictionary with a power of 0.
+	\item Write another function \code{MultiplyPrimes(d)} which will accept a prime factor dictionary \code{d} and reconstruct the original number via multiplication.
+\end{enumerate}
+
+\end{Exercise}
+
+\end{multicols*}
+
+
+
+
+\end{document}
+
+
+
+
+
+

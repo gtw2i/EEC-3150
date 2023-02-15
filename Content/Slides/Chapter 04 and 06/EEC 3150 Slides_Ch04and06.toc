@@ -1,0 +1,7 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Functions}{3}{0}{1}
+\beamer@sectionintoc {2}{Scoping}{16}{0}{2}
+\beamer@sectionintoc {3}{Functions as Objects and Higher-Order Programming}{26}{0}{3}
+\beamer@sectionintoc {4}{Recursion}{28}{0}{4}
+\beamer@sectionintoc {5}{Using Functions to Modularize Code}{34}{0}{5}
+\beamer@sectionintoc {6}{Specifications}{36}{0}{6}

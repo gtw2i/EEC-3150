@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Programming in General}{3}{0}{1}
+\beamer@sectionintoc {2}{About Python}{9}{0}{2}
+\beamer@sectionintoc {3}{Objects and Operators}{16}{0}{3}
+\beamer@sectionintoc {4}{Control Structures: Conditionals and Loops}{28}{0}{4}

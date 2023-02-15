@@ -1,0 +1,287 @@
+\documentclass{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{algorithmic}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{varwidth}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{multicol}
+\usepackage{palatino}
+
+% For displaying code
+\usepackage{listings}
+
+\usepackage{enumitem}
+% Change format of top-level list items
+\setlist[enumerate,1]{label*=\arabic*,font=\bfseries,before=\bfseries}
+% Reset formatting for subsequent levels; label type makes 1.1, legal-style labels
+\setlist[enumerate,2]{label*=.\arabic*,font=\normalfont,before=\normalfont}
+
+% Theorem
+\newtheorem{theorem}{Theorem}
+
+% lists
+\usepackage{outlines}
+\usepackage{enumitem}
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph*.]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+% \subsubsubsection{}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\newcommand\simpleparagraph[1]{%
+  \stepcounter{paragraph}\paragraph*{\theparagraph\quad{}#1}}
+
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+% \usepackage{courier}
+\lstset{%frame=tb,
+language=C++,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+%% Used tt when referring to function
+
+\begin{document}
+
+\title{Engineerging Programming II: \\ Possible Topics}
+\author{Graham West}
+\date{}
+
+\maketitle
+
+\large
+
+%\tableofcontents
+
+\begin{multicols}{2}
+
+%%%%%%%%%%%%%
+%%% NEW SECTION %%%
+%%%%%%%%%%%%%
+
+%\section{Programming Languages, Libraries, and IDE's}
+
+%Languages and Libraries:
+\begin{enumerate}
+	\item Intro
+	\begin{enumerate}
+		\item IDEs
+		\begin{enumerate}
+			\item Anaconda3
+			\item Spyder IDE
+		\end{enumerate}
+	\end{enumerate}
+	\item Language and syntax
+	\begin{enumerate}
+		\item Objects
+		\begin{enumerate}
+			\item Data types: int, float, bool, str
+			\item Variables and literals
+			\item type()
+			\item Casting
+			\end{enumerate}
+		\item Operators
+		\begin{enumerate}
+			\item Numeric
+			\item Boolean
+			\item String
+		\end{enumerate}
+		\item Lists and dictionaries
+		\begin{enumerate}
+			\item Slicing, appending
+			\item Multi-dimensional lists
+		\end{enumerate}
+		\item Loops
+		\begin{enumerate}
+			\item For
+			\item While
+		\end{enumerate}
+		\item Conditionals
+		\begin{enumerate}
+			\item If-else
+			\item if-elif-else
+		\end{enumerate}
+		\item User-defined functions
+		\begin{enumerate}
+			\item def, return
+			\item Positional/keyword arguments
+		\end{enumerate}
+		\begin{enumerate}
+			\item join, split, strip, upper, lower, 
+		\end{enumerate}
+		\item More strings
+		\item Importing packages
+			\begin{enumerate}
+			\item import, as
+			\item math, random, os (getcwd, listdir), time (sleep, time)
+		\end{enumerate}
+		\item File I/O
+		\item Error handling
+	\end{enumerate}
+	\item Scientific packages
+	\begin{enumerate}
+		\item NumPy
+		\begin{enumerate}
+			\item math
+			\item arrays: sorting, argmax, where, argwhere, ones, zeros, eye, rand, randn, identity, cumsum, all, any, isinf, isnan, 
+			\item histogram, bincount
+			\item stats: mean, mediand, std, 
+			\item random
+			\item linalg
+			\item fft
+		\end{enumerate}
+		\item MatPlotLib
+		\begin{enumerate}
+			\item plot, hist, imshow, scatter
+			\item fig plt ax
+			\item subplots
+		\end{enumerate}
+		\item SciPy
+		\begin{enumerate}
+			\item odes
+			\item optimization
+		\end{enumerate}
+	\end{enumerate}
+	\item Computer arithmetic
+	\begin{enumerate}
+		\item Data types
+		\item Floating point representation
+		\item Integer division
+		\item Error
+	\end{enumerate}
+	\item Random variables, RNG, and Statistics
+	\begin{enumerate}
+		\item Probability distributions
+		\item Law of Large Numbers (std of mean, integral of f over p)
+		\item Random number generation
+		\item numpy.random
+		\item Random walk
+		\item Drawing from a custom distribution (linear interpolation/binning)
+	\end{enumerate}
+	\item Monte Carlo simulation
+	\begin{enumerate}
+		\item Calculating $\pi$
+		\item Calculating integrals
+		\item Functions of distributions
+	\end{enumerate}
+	\item Linear Algebra (solving linear systems)
+	\begin{enumerate}
+		\item numpy.linalg
+		\item Condition number
+	\end{enumerate}
+	\item Root-finding (solving nonlinear systems)
+	\begin{enumerate}
+		\item Newton's method
+	\end{enumerate}
+	\item Regression
+	\begin{enumerate}
+		\item Pearson correlation coefficient
+		\item Linear Least squares
+	\end{enumerate}
+	\item Optimization
+	\begin{enumerate}
+		\item Calculus review: $df/dx=0$
+		\item Gradient descent
+		\item Simulated annealing
+		\item Stochastic gradient descent
+		\item Genetic algorithms
+	\end{enumerate}
+	\item Fourier Analysis
+	\item ODEs (IVPs)
+	\begin{enumerate}
+		\item Discretization
+		\item Methods
+		\begin{enumerate}
+			\item Euler's method (1st order)
+			\item Heun's method (2nd order)
+			\item Runga-Kutta (4th order)
+			\item SciPy ODE solvers
+		\end{enumerate}
+		\item Examples
+		\begin{enumerate}
+			\item Exponential growth
+			\item Projectile motion
+			\item Lotka-Volterra predator-prey
+			\item Simple pendulum
+			\item $n$-body problem
+		\end{enumerate}
+	\end{enumerate}
+	\item PDEs (time-dependent)
+	\begin{enumerate}
+		\item Discretization
+		\item Methods
+		\begin{enumerate}
+			\item Forward difference
+			\item Backward difference
+			\item Crank-Nicholson
+			\item Spectral
+		\end{enumerate}
+		\item Examples
+		\begin{enumerate}
+			\item Advection
+			\item Wave equation
+			\item Schrodinger equation
+		\end{enumerate}
+	\end{enumerate}
+	\item Agent-based modeling
+	\begin{enumerate}
+		\item Cellular automata
+		\item Conway's game of life
+		\item SIR pandemic modeling
+	\end{enumerate}
+	\item Markov chains
+	\begin{enumerate}
+		\item Simple example
+		\item Definition
+		\item NLP $n$-grams
+		\item Markov chain Monte Carlo methods
+	\end{enumerate}
+\end{enumerate}
+
+\end{multicols}
+
+
+
+
+
+
+
+\end{document}

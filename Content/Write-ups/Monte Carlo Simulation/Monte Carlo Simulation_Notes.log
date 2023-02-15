@@ -1,0 +1,965 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  4 NOV 2022 15:41
+entering extended mode
+**"./Monte Carlo Simulation_Notes.tex"
+("Monte Carlo Simulation_Notes.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo"
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.
+sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.s
+ty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.st
+y"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count175
+\Gm@cntv=\count176
+\c@Gm@tempcnt=\count177
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.cfg"))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperre
+f.sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmd
+s.sty"
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdf
+texcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infw
+arerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvse
+tkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\k
+vdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfe
+scape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.
+sty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letl
+txmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.
+sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvopti
+ons.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen143
+\Hy@linkcounter=\count178
+\Hy@pagecounter=\count179
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.
+def"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcal
+c.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexc
+mds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count180
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count181
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen144
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.
+sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\big
+intcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count182
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbeg
+shi.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count183
+\c@Item=\count184
+\c@Hfootnote=\count185
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex
+.def"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atvery
+end.sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count186
+\c@bookmark@seq@number=\count187
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\r
+erunfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\
+uniquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.st
+y"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.st
+y"
+Package: babel 2020/06/10 3.45 The Babel package
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.de
+f"
+File: babel.def 2020/06/10 3.45 Babel common definitions
+\babel@savecnt=\count188
+\U@D=\dimen147
+\l@babelnohyphens=\language79
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel
+.def")
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count189
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cf
+g"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\en
+glish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 108.
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.
+sty"
+Package: textpos 2020/09/26 v1.10
+
+Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
+Package textpos Info: choosing support for LaTeX2e on input line 61.
+\TP@textbox=\box45
+\TPHorizModule=\dimen148
+\TPVertModule=\dimen149
+\TP@margin=\dimen150
+\TP@absmargin=\dimen151
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen152
+\TP@tbargs=\toks19
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.st
+y"
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.
+sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.
+sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.s
+ty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen153
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.s
+ty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen154
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.s
+ty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box46
+\strutbox@=\box47
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip17
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks21
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks22
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb
+.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfont
+s.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+x.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+s.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.st
+y"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gra
+phics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdf
+tex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
+topdf.sty"
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.st
+y"
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
+topdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algor
+ithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count268
+\c@ALC@line=\count269
+\c@ALC@rem=\count270
+\c@ALC@depth=\count271
+\ALC@tlm=\skip53
+\algorithmicindent=\skip54
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.s
+ty"
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks25
+\verbatim@line=\toks26
+\verbatim@in@stream=\read3
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidt
+h.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box48
+\sift@deathcycles=\count272
+\@vwid@loff=\dimen164
+\@vwid@roff=\dimen165
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algo
+rithm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count273
+\algocf@hangindent=\skip55
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddp
+age.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count274
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.
+sty"
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip56
+\skiplinenumber=\skip57
+\skiprule=\skip58
+\skiphlne=\skip59
+\skiptext=\skip60
+\skiplength=\skip61
+\algomargin=\skip62
+\skipalgocfslide=\skip63
+\algowidth=\dimen166
+\inoutsize=\dimen167
+\inoutindent=\dimen168
+\interspacetitleruled=\dimen169
+\interspacealgoruled=\dimen170
+\interspacetitleboxruled=\dimen171
+\algocf@ruledwidth=\skip64
+\algocf@inoutbox=\box49
+\algocf@inputbox=\box50
+\AlCapSkip=\skip65
+\AlCapHSkip=\skip66
+\algoskipindent=\skip67
+\algocf@nlbox=\box51
+\algocf@hangingbox=\box52
+\algocf@untilbox=\box53
+\algocf@skipuntil=\skip68
+\algocf@capbox=\box54
+\algocf@lcaptionbox=\skip69
+\algoheightruledefault=\skip70
+\algoheightrule=\skip71
+\algotitleheightruledefault=\skip72
+\algotitleheightrule=\skip73
+\c@algocfline=\count275
+\c@algocfproc=\count276
+\c@algocf=\count277
+\algocf@algoframe=\box55
+\algocf@algobox=\box56
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.s
+ty"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count278
+\mult@box=\box57
+\multicol@leftmargin=\dimen172
+\c@unbalance=\count279
+\c@collectmore=\count280
+\doublecol@number=\count281
+\multicoltolerance=\count282
+\multicolpretolerance=\count283
+\full@width=\dimen173
+\page@free=\dimen174
+\premulticols=\dimen175
+\postmulticols=\dimen176
+\multicolsep=\skip74
+\multicolbaselineskip=\skip75
+\partial@page=\box58
+\last@line=\box59
+\maxbalancingoverflow=\dimen177
+\mult@rightbox=\box60
+\mult@grightbox=\box61
+\mult@gfirstbox=\box62
+\mult@firstbox=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\c@minrows=\count284
+\c@columnbadness=\count285
+\c@finalcolumnbadness=\count286
+\last@try=\dimen178
+\multicolovershoot=\dimen179
+\multicolundershoot=\dimen180
+\mult@nat@firstbox=\box101
+\colbreak@box=\box102
+\mc@col@check@num=\count287
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\palatino.
+sty"
+Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
+s.sty"
+\lst@mode=\count288
+\lst@gtempboxa=\box103
+\lst@token=\toks27
+\lst@length=\count289
+\lst@currlwidth=\dimen181
+\lst@column=\count290
+\lst@pos=\count291
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
+\lst@newlines=\count292
+\lst@lineno=\count293
+\lst@maxwidth=\dimen184
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc
+.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count294
+\lst@skipnumbers=\count295
+\lst@framebox=\box104
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
+s.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumite
+m.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip76
+\enit@outerparindent=\dimen185
+\enit@toks=\toks28
+\enit@inbox=\box105
+\enit@count@id=\count296
+\enitdp@description=\count297
+)
+\c@theorem=\count298
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/outlines\outline
+s.sty"
+Package: outlines 2012/1/23 1.1 Ch. Pecheur
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.s
+ty"
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.st
+y"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframe
+d.sty"
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xpars
+e\xparse.sty"
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.s
+ty"
+Package: expl3 2020-06-18 L3 programming layer (loader) 
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
+end-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count299
+\l__pdf_internal_box=\box106
+))
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xpars
+e\xparse-generic.tex"
+\l__xparse_current_arg_int=\count300
+\g__xparse_grabber_int=\count301
+\l__xparse_m_args_int=\count302
+\l__xparse_v_nesting_int=\count303
+))
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbo
+x.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count304
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspag
+e.sty"
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.s
+ty"
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count305
+Package zref Info: New property: abspage on input line 66.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needsp
+ace.sty"
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip77
+\c@mdf@globalstyle@cnt=\count306
+\mdf@skipabove@length=\skip78
+\mdf@skipbelow@length=\skip79
+\mdf@leftmargin@length=\skip80
+\mdf@rightmargin@length=\skip81
+\mdf@innerleftmargin@length=\skip82
+\mdf@innerrightmargin@length=\skip83
+\mdf@innertopmargin@length=\skip84
+\mdf@innerbottommargin@length=\skip85
+\mdf@splittopskip@length=\skip86
+\mdf@splitbottomskip@length=\skip87
+\mdf@outermargin@length=\skip88
+\mdf@innermargin@length=\skip89
+\mdf@linewidth@length=\skip90
+\mdf@innerlinewidth@length=\skip91
+\mdf@middlelinewidth@length=\skip92
+\mdf@outerlinewidth@length=\skip93
+\mdf@roundcorner@length=\skip94
+\mdf@footenotedistance@length=\skip95
+\mdf@userdefinedwidth@length=\skip96
+\mdf@needspace@length=\skip97
+\mdf@frametitleaboveskip@length=\skip98
+\mdf@frametitlebelowskip@length=\skip99
+\mdf@frametitlerulewidth@length=\skip100
+\mdf@frametitleleftmargin@length=\skip101
+\mdf@frametitlerightmargin@length=\skip102
+\mdf@shadowsize@length=\skip103
+\mdf@extratopheight@length=\skip104
+\mdf@subtitleabovelinewidth@length=\skip105
+\mdf@subtitlebelowlinewidth@length=\skip106
+\mdf@subtitleaboveskip@length=\skip107
+\mdf@subtitlebelowskip@length=\skip108
+\mdf@subtitleinneraboveskip@length=\skip109
+\mdf@subtitleinnerbelowskip@length=\skip110
+\mdf@subsubtitleabovelinewidth@length=\skip111
+\mdf@subsubtitlebelowlinewidth@length=\skip112
+\mdf@subsubtitleaboveskip@length=\skip113
+\mdf@subsubtitlebelowskip@length=\skip114
+\mdf@subsubtitleinneraboveskip@length=\skip115
+\mdf@subsubtitleinnerbelowskip@length=\skip116
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-fram
+e-0.mdf"
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box107
+\mdf@footnotebox=\box108
+\mdf@splitbox@one=\box109
+\mdf@splitbox@two=\box110
+\mdf@splitbox@save=\box111
+\mdfsplitboxwidth=\skip117
+\mdfsplitboxtotalwidth=\skip118
+\mdfsplitboxheight=\skip119
+\mdfsplitboxdepth=\skip120
+\mdfsplitboxtotalheight=\skip121
+\mdfframetitleboxwidth=\skip122
+\mdfframetitleboxtotalwidth=\skip123
+\mdfframetitleboxheight=\skip124
+\mdfframetitleboxdepth=\skip125
+\mdfframetitleboxtotalheight=\skip126
+\mdffootnoteboxwidth=\skip127
+\mdffootnoteboxtotalwidth=\skip128
+\mdffootnoteboxheight=\skip129
+\mdffootnoteboxdepth=\skip130
+\mdffootnoteboxtotalheight=\skip131
+\mdftotallinewidth=\skip132
+\mdfboundingboxwidth=\skip133
+\mdfboundingboxtotalwidth=\skip134
+\mdfboundingboxheight=\skip135
+\mdfboundingboxdepth=\skip136
+\mdfboundingboxtotalheight=\skip137
+\mdf@freevspace@length=\skip138
+\mdf@horizontalwidthofbox@length=\skip139
+\mdf@verticalmarginwhole@length=\skip140
+\mdf@horizontalspaceofbox=\skip141
+\mdfsubtitleheight=\skip142
+\mdfsubsubtitleheight=\skip143
+\c@mdfcountframes=\count307
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count308
+\c@mdf@env@i=\count309
+\c@mdf@env@ii=\count310
+\c@mdf@zref@counter=\count311
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
+1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
+1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc
+.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+) ("Monte Carlo Simulation_Notes.aux")
+\openout1 = `"Monte Carlo Simulation_Notes.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 8
+2.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box112
+Package hyperref Info: Link coloring OFF on input line 82.
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref
+.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcoun
+t.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring
+\gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count312
+)
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
+ ("Monte Carlo Simulation_Notes.out")
+("Monte Carlo Simulation_Notes.out")
+\@outlinefile=\write3
+\openout3 = `"Monte Carlo Simulation_Notes.out"'.
+
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
+-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count313
+\scratchdimen=\dimen186
+\scratchbox=\box113
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen187
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks30
+)
+\c@lstlisting=\count319
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+
+
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) ("Monte Carlo Simulation_Notes.toc")
+\tf@toc=\write4
+\openout4 = `"Monte Carlo Simulation_Notes.toc"'.
+
+ [1
+
+{C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pi' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 134.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pi' on input line 134.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 134.
+
+<CircleSquare_Points.png, id=61, 344.487pt x 340.8735pt>
+File: CircleSquare_Points.png Graphic file (type png)
+<use CircleSquare_Points.png>
+Package pdftex.def Info: CircleSquare_Points.png  used on input line 143.
+(pdftex.def)             Requested size: 226.48395pt x 224.10857pt.
+[2 <./CircleSquare_Points.png>]
+<Integral_Points.png, id=73, 383.031pt x 373.395pt>
+File: Integral_Points.png Graphic file (type png)
+<use Integral_Points.png>
+Package pdftex.def Info: Integral_Points.png  used on input line 162.
+(pdftex.def)             Requested size: 226.48395pt x 220.79112pt.
+ [3 <./Integral_Points.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 183.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+ ("Monte Carlo Simulation_Notes.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+Package rerunfilecheck Info: File `"Monte Carlo Simulation_Notes".out' has not 
+changed.
+(rerunfilecheck)             Checksum: 483802C4F9E1FCB69D1FF9AD8A09D9C1;477.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
+ ) 
+Here is how much of TeX's memory you used:
+ 12663 strings out of 480790
+ 201193 string characters out of 2894452
+ 709299 words of memory out of 3000000
+ 28387 multiletter control sequences out of 15000+200000
+ 547212 words of font info for 68 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,7n,60p,951b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
+nc}<C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Graham West/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Graham West/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Graham W
+est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
+sers/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr8.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Graham West/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Graham West/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Graham West/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on "Monte Carlo Simulation_Notes.pdf" (4 pages, 354295 bytes).
+PDF statistics:
+ 131 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+

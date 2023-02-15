@@ -1,0 +1,11 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Random variables}{1}{section.1}%
+\contentsline {section}{\numberline {2}Drawing from distributions in Python}{1}{section.2}%
+\contentsline {section}{\numberline {3}Uniform distributions over specific domains}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Rectangle}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Circle}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Homework}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Random walk on plane}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Uniform distribution on a cylinder}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Uniform distribution on a sphere}{3}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Random walk on sphere}{3}{subsection.4.4}%

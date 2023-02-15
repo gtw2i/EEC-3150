@@ -1,0 +1,10 @@
+x=1000
+epsilon=0.01
+numGuesses=0
+ans=x/2.0
+while abs(ans**2-x) >= epsilon:
+    #print('ans=',ans)
+    numGuesses+=1
+    ans = ans - (((ans**2) - x)/(2*ans))
+print('numGuesses=',numGuesses)
+print('Answer=',ans)

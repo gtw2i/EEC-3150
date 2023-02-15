@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}%
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%%%%
+% ME %
+%%%%
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%frame=tb,
+language=Matlab,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+\usepackage{outlines}
+\usepackage{enumitem}
+\setenumerate[1]{label=\Roman*.}
+\setenumerate[2]{label=\Alph*.}
+\setenumerate[3]{label=\roman*.}
+\setenumerate[4]{label=\alph*.}
+
+\usepackage{titlesec} 
+
+\titleformat{\subsection}[runin]
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% for enumerate spacing
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph*.]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+\usepackage{exercise}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\begin{document}
+
+\title{Homework 01: Chapter 02}
+
+\author{EEC 3150}
+\date{\textbf{Due:} ???}
+
+\maketitle
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+For each exercise, write a separate Python script. Submit all scripts on Blackboard under the appropriate assignment. Name your script files with the following format: \\
+\vspace{10pt}
+HW$<$assignment number$>$\_Ex$<$exercise number$>$\_$<$FirstInitial$><$LastName$>$.py \\
+\vspace{10pt}
+Example: HW01\_Ex01\_Gwest.py
+}}}
+\end{center}
+
+
+\begin{Exercise}[origin={10 points}]
+
+Write a program that will convert degrees Celsius to Fahrenheit. You should have a variable for each unit. Print both values.
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={10 points}]
+
+Write a program to calculate the force of gravity between the Sun and Earth using the formula $F = G \dfrac{m_{sun}m_{earth}}{r^2}$ and accurate values for $G, M, m$, and $r$ (Python's scientific notation should help you input these large values: 1e9 = 1,000,000,000). You should define variables for each of these quantities, not merely say $F =$ an expression of all literals. Print the values of all variables (not just $F$)
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={10 points}]
+
+Print the string ``aabbbaabbb'' using only the variables a = `a', b = `b', and the string concatenation (+) and repetition (*) operators. Your answer should look like a formula with variables a and b that only uses them each one time.
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={10 points}]
+
+In English, ordinal integers are often written with suffices: 1st, 2nd, 3rd, 4th, etc. Write a program which will take an ordinal integer and appends the appropriate suffix to it. Your code should work with any number less than 100 (this way you don't have to worry about, for instance, the 0 in 103rd). (HINT: since the result of this program is a string, you should think carefully how to handle your ordinal integer input; there are multiple ways to do this).
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={15 points}]
+
+Write a program which uses a loop to add the first 500 perfect squares (i.e., $1+4+9+\cdots$). Print the total.
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={15 points}]
+
+Write a program to calculate the partial sums of the series $\sum_{i=0}^{n} \dfrac{1}{2^n}$. Pick a value for $n$ and print the total.
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={15 points}]
+
+Write a program that will print all of the factors of a given number. (HINT: you can round floats down by casting them to integers). Try to be as efficient as possible by checking the fewest numbers necessary.
+
+\end{Exercise}
+
+
+\begin{Exercise}[origin={15 points}]
+
+Write a program to check if a given number that was input through the console is prime. (HINT: use the input() function, but be aware of what data type it returns).
+
+\end{Exercise}
+
+
+
+\end{document}
+
+

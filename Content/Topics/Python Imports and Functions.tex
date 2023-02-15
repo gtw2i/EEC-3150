@@ -1,0 +1,160 @@
+\documentclass{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{algorithmic}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{varwidth}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{multicol}
+\usepackage{palatino}
+
+% For displaying code
+\usepackage{listings}
+
+\usepackage{enumitem}
+% Change format of top-level list items
+\setlist[enumerate,1]{label*=\arabic*,font=\bfseries,before=\bfseries}
+% Reset formatting for subsequent levels; label type makes 1.1, legal-style labels
+\setlist[enumerate,2]{label*=.\arabic*,font=\normalfont,before=\normalfont}
+
+% Theorem
+\newtheorem{theorem}{Theorem}
+
+% lists
+\usepackage{outlines}
+\usepackage{enumitem}
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph*.]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+% \subsubsubsection{}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\newcommand\simpleparagraph[1]{%
+  \stepcounter{paragraph}\paragraph*{\theparagraph\quad{}#1}}
+
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+% \usepackage{courier}
+\lstset{%frame=tb,
+language=C++,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+%% Used tt when referring to function
+
+\begin{document}
+
+\title{Python Imports and Functions}
+\author{Graham West}
+\date{}
+
+\maketitle
+
+\large
+
+Python Standard Library:
+\begin{enumerate}
+	\item math (numpy is better)
+	\begin{enumerate}
+		\item sin, cos, tan (asin, sinh, ...)
+		\item exp, log, erf
+		\item ceil, floor
+		\item isinf, isnan
+		\item degrees, radians
+		\item pi, e, inf, nan
+	\end{enumerate}
+	\item statistics (numpy is better)
+	\begin{enumerate}
+		\item mean, median, mode
+		\item stdev, variance, covariance, quantile
+		\item linear\_regression
+	\end{enumerate}
+	\item random (numpy is also good)
+	\begin{enumerate}
+		\item seed
+		\item randint, randrange
+		\item random, uniform
+		\item choice, sample
+		\item shuffle
+	\end{enumerate}
+	\item pickle
+	\begin{enumerate}
+		\item dump, load
+	\end{enumerate}
+	\item csv (just use numpy)
+	\item threading, multiprocessing (parallel processing)
+	\item time
+	\begin{enumerate}
+		\item sleep
+		\item time
+	\end{enumerate}
+	\item os
+	\begin{enumerate}
+		\item listdir, getcwd, mkdir
+	\end{enumerate}
+	\item sys
+	\begin{enumerate}
+		\item argc, argv
+	\end{enumerate}
+\end{enumerate}
+
+Third-party Libraries:
+\begin{enumerate}
+	\item matplotlib.pyplot
+	\begin{enumerate}
+		\item show
+		\item plot, scatter, imshow
+		\item subplots
+		\item formatting stuff
+	\end{enumerate}
+	\item numpy
+	\begin{enumerate}
+		\item everything from math, statistics, and random and more (sometimes with different names)
+	\end{enumerate}
+	\item scipy
+	\item scikit-learn
+	\item pandas
+	\item seaborn
+\end{enumerate}
+
+
+
+
+\end{document}

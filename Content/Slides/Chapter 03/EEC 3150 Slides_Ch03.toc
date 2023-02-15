@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Exhuastive Enumeration (Brute Force)}{3}{0}{1}
+\beamer@sectionintoc {2}{The Bisection Method}{10}{0}{2}
+\beamer@sectionintoc {3}{Floating-Point Arithmetic}{15}{0}{3}
+\beamer@sectionintoc {4}{The Newton-Raphson Method}{29}{0}{4}

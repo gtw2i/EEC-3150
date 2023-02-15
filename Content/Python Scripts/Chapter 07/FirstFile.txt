@@ -1,0 +1,4 @@
+Reading my first file
+This is a line
+Another line
+Last line of the file

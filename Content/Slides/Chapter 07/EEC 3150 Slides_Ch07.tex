@@ -1,0 +1,305 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+\usepackage{fancyvrb}
+
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{Chapter 7: \\ Files and Modules}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Files}
+
+\begin{frame}	
+	\center{\Huge{Files}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Files}
+	
+	\begin{block}{Intro to reading a file with Python:}
+		\minipage{0.5\textwidth}
+			\code{fname = "FirstFile.txt" \\
+					\tab \\
+					fhandle = open(fname, 'r')  \\
+					\tab \\
+					string = fhandle.read() \\
+					print(string) \\
+					\tab \\
+					fhandle.close() 
+			}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			\begin{itemize}
+				\item To read a file, use the \code{open()} function
+				\item Two string arguments: 1) the filename, 2) whether to read (`r'), write (`w'), or append (`a') to the file
+				\item Returns a \emph{file handle} (essentially a variable that points to the file)
+				\item Since file handles are objects, the have their own methods (such as \code{read()}
+				\item Close the file when finished
+				\item Trying to read after closing throws an error
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Files}
+	
+	\begin{block}{Reading files in a \code{with,as} block:}
+		\minipage{0.6\textwidth}
+			\begin{itemize}
+				\item Closing a file is annoying and you can forget to do it
+				\item For convenience, we can read files inside a \code{with,as} block
+			\end{itemize}
+			
+			\vspace{20pt}
+			\code{fname = "FirstFile.txt" \\
+					with open(fname, 'r') as fhandle:
+					\tab string = fhandle.read() \\
+					\tab print(string)
+			}
+		\endminipage\hfill
+		\minipage{0.4\textwidth}
+			\begin{itemize}
+				\item The file handle is only defined in the scope of the block
+				\item The file is closed automatically after the block is finished
+				\item Read the file in the block, save the contents to a variable, and use them later on
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Files}
+	
+	\begin{block}{Some read methods:}
+		\minipage{0.6\textwidth}
+			\vspace{10pt}
+			
+			\code{with open(fname, 'r') as fhandle:
+					\tab string = fhandle.read() \\
+			}
+			
+			\vspace{10pt}
+			\code{with open(fname, 'r') as fhandle:
+					\tab lines = fhandle.readlines() \\
+			}
+		\endminipage\hfill
+		\minipage{0.05\textwidth}
+		\endminipage\hfill
+		\minipage{0.35\textwidth}
+			\code{fhandle.read()}
+			\begin{itemize}
+				\item Returns the entire file in one string
+			\end{itemize}
+			
+			\vspace{10pt}
+			\code{fhandle.readlines()}
+			\begin{itemize}
+				\item Returns a list of strings split on newlines
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Files}
+	
+	\begin{block}{Reading a line at a time:}
+		\minipage{0.6\textwidth}
+			\vspace{30pt}
+			
+			\code{with open(fname, 'r') as fhandle:
+					\tab for line in fhandle: \\
+					\tab \tab print(line)
+			}
+			
+			\vspace{30pt}
+			\code{with open(fname, 'r') as fhandle:
+					\tab line = fhandle.readline() \\
+					\tab print(line) \\
+					\tab line = fhandle.readline() \\
+					\tab print(line)
+			}
+		\endminipage\hfill
+		\minipage{0.05\textwidth}
+		\endminipage\hfill
+		\minipage{0.35\textwidth}
+			With a for loop:
+			\begin{itemize}
+				\item We can read a line at a time with a for loop
+			\end{itemize}
+			
+			\vspace{20pt}
+			\code{fhandle.readline()}
+			\begin{itemize}
+				\item Returns the next line
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Files}
+	
+	\begin{block}{Reading a line at a time:}
+		\minipage{0.6\textwidth}
+%			\vspace{30pt}		
+			\code{with open(fname, 'r') as fhandle:
+					\tab line = fhandle.readline() \\
+					\tab while line: \\
+					\tab \tab print(line) \\
+					\tab \tab line = fhandle.readline()
+			}
+		\endminipage\hfill
+		\minipage{0.05\textwidth}
+		\endminipage\hfill
+		\minipage{0.35\textwidth}
+			With a while loop:
+			\begin{itemize}
+				\item We can read a line at a time with a while loop
+				\item Read the first line
+				\item Use the line as the loop condition
+				\item Once \code{readline()} returns an empty string, the loop exits
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Files}
+	
+	\begin{exampleblock}{Get a list of grades from a file:}
+		Read the file Grades.txt and produce a list of integer grades.
+		\begin{itemize}
+			\item This file is simple and has one number per line
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Get lists of years and temperatures from a file:}
+		Read the file YearTemp.txt and produce lists of integer years and float temperatures.
+		\begin{itemize}
+			\item This file is more complicated
+			\item It has a header that we must ignore
+			\item Year and temp values are comma-separated (one pair per line)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+
+
+\begin{comment}
+
+
+\begin{frame}%[fragile]
+	\frametitle{Mutability}
+	
+	\begin{block}{Let's compare these codes:}
+		\begin{itemize}
+			\item These codes demonstrate defining a tuple/list \code{y} in terms of another \code{x} and then changing \code{x} afterwards
+			\item In which codes does changing \code{x} change \code{y}? \\
+					(\code{id()} returns an object's location in memory)
+		\end{itemize}
+		
+		\vspace{10pt}
+		\minipage{0.5\textwidth}
+			\begin{footnotesize}
+			\code{x = (1,) \\
+			y = x \\
+			print(y, x) \\
+			print( id(y), id(x) ) \\
+			\tab \\
+			x = (1,2) \\
+			\# x += (2,) \\
+			\tab \\
+			print(y, x) \\
+			print( id(y), id(x) )
+			}
+			\end{footnotesize}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			\begin{footnotesize}
+			\code{x = [1] \\
+			y = x \\
+			print(y, x) \\
+			print( id(y), id(x) ) \\
+			\tab \\
+			x = [1,2] \\
+			\# x += [2] \\
+			\# x.append(2) \\
+			print(y, x) \\
+			print( id(y), id(x) )
+			}
+			\end{footnotesize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+
+\end{comment}
+
+
+
+
+\end{document}
+
+
+
+
