@@ -30,7 +30,7 @@
 
 \usetheme{Madrid}
 
-\title{Chapter 7: \\ Files and Modules}
+\title{Chapter 7 pt 1: \\ Reading and Writing Files}
 \author{EEC 3150}
 \date{}
 
@@ -57,14 +57,14 @@
 
 %%%%%%%%%%
 %%%%%%%%%%
-\section{Files}
+\section{Basic of Reading Files}
 
 \begin{frame}	
-	\center{\Huge{Files}}
+	\center{\Huge{Basic of Reading Files}}
 \end{frame}
 
 \begin{frame}	
-	\frametitle{Files}
+	\frametitle{Basic of Reading Files}
 	
 	\begin{block}{Intro to reading a file with Python:}
 		\minipage{0.5\textwidth}
@@ -83,7 +83,7 @@
 				\item To read a file, use the \code{open()} function
 				\item Two string arguments: 1) the filename, 2) whether to read (`r'), write (`w'), or append (`a') to the file
 				\item Returns a \emph{file handle} (essentially a variable that points to the file)
-				\item Since file handles are objects, the have their own methods (such as \code{read()}
+				\item Since file handles are objects, the have their own methods (such as \code{read()})
 				\item Close the file when finished
 				\item Trying to read after closing throws an error
 			\end{itemize}
@@ -93,7 +93,7 @@
 \end{frame}
 
 \begin{frame}	
-	\frametitle{Files}
+	\frametitle{Basic of Reading Files}
 	
 	\begin{block}{Reading files in a \code{with,as} block:}
 		\minipage{0.6\textwidth}
@@ -112,6 +112,7 @@
 		\minipage{0.4\textwidth}
 			\begin{itemize}
 				\item The file handle is only defined in the scope of the block
+				\item Variables you define inside the block will still be defined after the block
 				\item The file is closed automatically after the block is finished
 				\item Read the file in the block, save the contents to a variable, and use them later on
 			\end{itemize}
@@ -121,7 +122,7 @@
 \end{frame}
 
 \begin{frame}	
-	\frametitle{Files}
+	\frametitle{Basic of Reading Files}
 	
 	\begin{block}{Some read methods:}
 		\minipage{0.6\textwidth}
@@ -155,7 +156,7 @@
 \end{frame}
 
 \begin{frame}	
-	\frametitle{Files}
+	\frametitle{Basic of Reading Files}
 	
 	\begin{block}{Reading a line at a time:}
 		\minipage{0.6\textwidth}
@@ -193,7 +194,7 @@
 \end{frame}
 
 \begin{frame}	
-	\frametitle{Files}
+	\frametitle{Basic of Reading Files}
 	
 	\begin{block}{Reading a line at a time:}
 		\minipage{0.6\textwidth}
@@ -220,8 +221,16 @@
 	
 \end{frame}
 
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Extracting Data from Files}
+
 \begin{frame}	
-	\frametitle{Files}
+	\center{\Huge{Extracting Data from Files}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Extracting Data from Files}
 	
 	\begin{exampleblock}{Get a list of grades from a file:}
 		Read the file Grades.txt and produce a list of integer grades.
@@ -229,6 +238,20 @@
 			\item This file is simple and has one number per line
 		\end{itemize}
 	\end{exampleblock}
+	
+	\begin{exampleblock}{Get lists of years and temperatures from a file:}
+		Read the file YearTemp.txt and produce lists of integer years and float temperatures.
+		\begin{itemize}
+			\item This file is more complicated
+			\item It has a header that we must ignore
+			\item Year and temp values are comma-separated (one pair per line)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Extracting Data from Files}
 	
 	\begin{exampleblock}{Get lists of years and temperatures from a file:}
 		Read the file YearTemp.txt and produce lists of integer years and float temperatures.
