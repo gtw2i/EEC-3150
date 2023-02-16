@@ -221,6 +221,46 @@
 	
 \end{frame}
 
+\begin{frame}	
+	\frametitle{Basic of Reading Files}
+	
+	\begin{block}{Filepaths:}
+		\begin{itemize}
+			\item Unless specified, Python assumes that the file you want to read/write is in the same folder/directory as the script
+			\item If it isn't, you must provide a \emph{filepath} for the file (its location on your computer's hard drive)
+		\end{itemize}
+		Two kinds of filepaths (say our script is in the \code{Python} directory):
+		\begin{itemize}
+			\item \textbf{Absolute}: a filepath from the root directory of the drive to the file: \\
+			Ex: \code{C:/Users/Graham West/Python/Data/FirstFile.txt}
+			\item \textbf{Relative}: a filepath from the script directory to the file: \\
+			Ex: \code{Data/FirstFile.txt}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Basic of Reading Files}
+	
+	\begin{block}{Parent directory command: ..}
+		\minipage{0.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=\linewidth]{ParentDirectory}
+			\end{figure}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			\begin{itemize}
+				\item If you need to navigate to the parent directory, you can include ``..'' in your relative filepath: \\
+				Ex: \code{../Folder 2b/file.txt}
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+
 %%%%%%%%%%
 %%%%%%%%%%
 \section{Extracting Data from Files}
@@ -253,70 +293,81 @@
 \begin{frame}	
 	\frametitle{Extracting Data from Files}
 	
-	\begin{exampleblock}{Get lists of years and temperatures from a file:}
-		Read the file YearTemp.txt and produce lists of integer years and float temperatures.
+	\begin{exampleblock}{Get 2D list galaxy simulation parameters:}
+		Read the file \code{587722984435351614\_combined.txt} and produce a2D list of simulation parameters and a 1D list of simulation fitnesses.
 		\begin{itemize}
-			\item This file is more complicated
-			\item It has a header that we must ignore
-			\item Year and temp values are comma-separated (one pair per line)
+			\item File has no header
+			\item Each line has two comma-separate sections which have a tab n/t them
+			\item At a certain line number, the are no more fitness values, so stop reading here
 		\end{itemize}
 	\end{exampleblock}
 	
 \end{frame}
 
-
-
-
-\begin{comment}
-
-
-\begin{frame}%[fragile]
-	\frametitle{Mutability}
+\begin{frame}	
+	\frametitle{Extracting Data from Files}
 	
-	\begin{block}{Let's compare these codes:}
+	\begin{exampleblock}{Get electron density parameters from files:}
+		Write a program that can read any of the following files (\code{h2o.txt, nh3.txt, ch4.txt}) and create lists of the \code{CENTRE ASSIGNMENTS} (note the spelling), \code{TYPE ASSIGNMENTS}, and \code{EXPONENTS}.
 		\begin{itemize}
-			\item These codes demonstrate defining a tuple/list \code{y} in terms of another \code{x} and then changing \code{x} afterwards
-			\item In which codes does changing \code{x} change \code{y}? \\
-					(\code{id()} returns an object's location in memory)
-		\end{itemize}
-		
-		\vspace{10pt}
+			\item The values span multiple lines
+			\item Each file spans a different number of lines
+			\item The program should be able to handle all possible cases
+		\end{itemize}		
+	\end{exampleblock}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Writing to Files}
+
+\begin{frame}	
+	\center{\Huge{Writing to Files}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Writing to Files}
+	
+	\begin{block}{Writing files in a \code{with,as} block:}
 		\minipage{0.5\textwidth}
-			\begin{footnotesize}
-			\code{x = (1,) \\
-			y = x \\
-			print(y, x) \\
-			print( id(y), id(x) ) \\
-			\tab \\
-			x = (1,2) \\
-			\# x += (2,) \\
-			\tab \\
-			print(y, x) \\
-			print( id(y), id(x) )
+			\code{fname = "Write.txt" \\
+					with open(fname, 'w') as f:
+					\tab f.write(`test')
 			}
-			\end{footnotesize}
 		\endminipage\hfill
 		\minipage{0.5\textwidth}
-			\begin{footnotesize}
-			\code{x = [1] \\
-			y = x \\
-			print(y, x) \\
-			print( id(y), id(x) ) \\
-			\tab \\
-			x = [1,2] \\
-			\# x += [2] \\
-			\# x.append(2) \\
-			print(y, x) \\
-			print( id(y), id(x) )
+			\begin{itemize}
+				\item Open the file in the same as before, but now with \code{`w'}
+				\item Use the \code{write()} function
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+	\begin{block}{The \code{writelines()} function:}
+		\minipage{0.5\textwidth}
+			\code{fname = "Write.txt" \\
+					with open(fname, 'w') as f:
+					\tab x = [`1\textbackslash n', `2\textbackslash n'] \\
+					\tab f.writelines(x)
 			}
-			\end{footnotesize}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			\begin{itemize}
+				\item The \code{writelines()} function can accept a list of strings and write all of them to a file
+				\item HOWEVER, despite its name, it doesn't automatically add newlines (\textbackslash n) at the end of each string in the list; you must do it manually
+			\end{itemize}
 		\endminipage\hfill
 	\end{block}
 	
 \end{frame}
 
 
-\end{comment}
+
+
+
+
 
 
 

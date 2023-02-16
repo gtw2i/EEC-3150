@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}%
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%%%%
+% ME %
+%%%%
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%frame=tb,
+language=Matlab,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+\usepackage{outlines}
+\usepackage{enumitem}
+%\setenumerate[1]{label=\Roman*.}
+%\setenumerate[2]{label=\Alph*.}
+%\setenumerate[3]{label=\roman*.}
+%\setenumerate[4]{label=\alph*.}
+
+\usepackage{titlesec} 
+
+\titleformat{\subsection}[runin]
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% for enumerate spacing
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph*.]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+\usepackage{exercise}
+
+\setlength\parindent{0pt}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{45pt}}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0.6cm}
+
+\begin{document}
+
+\title{Homework 04: Chapter 05}
+
+\author{EEC 3150}
+\date{}
+
+\maketitle
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+For each Python exercise, write a separate Python script. Submit all scripts on Blackboard under the appropriate assignment. Name your script files with the following format: \\
+\vspace{10pt}
+HW$<$assignment number$>$\_Ex$<$exercise number$>$\_$<$FirstInitial$><$LastName$>$.py \\
+\vspace{10pt}
+Example: HW01\_Ex01\_GWest.py \\
+\vspace{10pt}
+For short answer or math exercises, either do your work on a sheet of paper and upload a picture of it to Blackboard or submit some kind of text file or Word document to Blackboard. You can place all such exercises in a single document as long as you clearly label each exercise. These files should follow a similar naming convention as the Python scripts.
+}}}
+\end{center}
+
+
+\pagebreak
+
+
+\begin{multicols*}{2}
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={10 points, Python}]
+
+\begin{enumerate}[leftmargin=*]
+\item Write a program which will read the file CSVData.csv and store its contents as a 2D list of floats. For example, if the file looked like this
+
+\code{1,2,3\\ %
+4,5,6\\ %
+7,8,9
+}
+
+then your 2D array should look like this
+
+\code{[[1,2,3],\\ \hspace{0pt}
+[4,5,6],\\ \hspace{0pt}
+[7,8,9]]
+}
+\item Print the 2D array with the following code:
+
+\code{for x in data: \\
+\tab print(x)
+}
+
+(assuming \code{data} is the name of your 2D list).
+\end{enumerate}
+
+\end{Exercise}
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={10 points, Python}]
+
+\begin{enumerate}[leftmargin=*]
+\item Write a program (not a function) that will read the files
+\begin{itemize}
+	\setlength\itemsep{0pt}
+	\item Mercury.txt
+	\item Venus.txt
+	\item Earth.txt
+	\item Mars.txt
+	\item Jupiter.txt
+\end{itemize}
+and store the radius of each planet in a float variable. NOTE: in the first four files, the radius is called \code{Mean radius (km)} while in the fifth file it is called \code{Equat. radius (1 bar)}.
+\item Print the radii of each planet and label them clearly.
+\end{enumerate}
+
+\end{Exercise}
+
+\vfill\null
+\columnbreak
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={10 points, Python}]
+
+\begin{enumerate}[leftmargin=*]
+	\item Write a program (not a function) which will  read the file ``bible-psalms.txt'' and create a nested dictionary \code{psalms}. The keys of this dictionary will be the chapter numbers and the values will be another dictionary. The keys of these inner dictionaries will be a verse number and the values will be a string that is the verse's text. NOTE: the tab (\textbackslash  t) escape character is used in each line of the file to separate the verse number and the verse text.
+	\item Give a demo of indexing a particluar verse from the dictionary. Here is an example (you may choose your preferred chapter/verse):
+	
+	\code{chapter = 1 \\
+	verse = 1 \\
+	print(psalms[chapter][verse])
+	}
+	
+	The output for the above example should look like:
+	
+	\code{Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.
+	}	
+\end{enumerate}
+
+\end{Exercise}
+
+\vfill\null
+\end{multicols*}
+
+
+
+
+\end{document}
+
+
+
+
+
+

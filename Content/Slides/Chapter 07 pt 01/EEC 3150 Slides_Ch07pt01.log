@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  15 FEB 2023 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  15 FEB 2023 18:46
 entering extended mode
 **"./EEC 3150 Slides_Ch07pt01.tex"
 ("EEC 3150 Slides_Ch07pt01.tex"
@@ -1349,9 +1349,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--222
 
 ] [9
 
-] [10
+]
+<ParentDirectory.png, id=297, 288.47775pt x 227.04825pt>
+File: ParentDirectory.png Graphic file (type png)
+<use ParentDirectory.png>
+Package pdftex.def Info: ParentDirectory.png  used on input line 261.
+(pdftex.def)             Requested size: 171.14764pt x 134.70563pt.
+ [10
 
-] [11
+ <./ParentDirectory.png>] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
+\OT1/cmtt/m/n/10.95 with open(fname, 'w') as f:
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+364.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 364.
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 364.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
+\OT1/cmtt/m/n/10.95 with open(fname, 'w') as f:
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 
+364.
+LaTeX Font Info:    No file OMScmss.fd. on input line 364.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 364.
+
+[16
 
 ]
 \tf@nav=\write8
@@ -1363,25 +1405,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--222
 \tf@snm=\write10
 \openout10 = `"EEC 3150 Slides_Ch07pt01.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
- ("EEC 3150 Slides_Ch07pt01.aux"
-
-Package pdfbase Warning: Rerun to get internal references right!
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
+ ("EEC 3150 Slides_Ch07pt01.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `"EEC 3150 Slides_Ch07pt01".out' has not chan
 ged.
-(rerunfilecheck)             Checksum: 86D3417020238FEDF3B8E8F815DC966A;118.
+(rerunfilecheck)             Checksum: 55E7F13882416ADAD77D03E63810BAD6;169.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 23036 strings out of 480790
- 448147 string characters out of 2894452
- 739488 words of memory out of 3000000
- 38435 multiletter control sequences out of 15000+200000
- 540394 words of font info for 53 fonts, out of 3000000 for 9000
+ 23097 strings out of 480790
+ 448885 string characters out of 2894452
+ 740488 words of memory out of 3000000
+ 38479 multiletter control sequences out of 15000+200000
+ 540688 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,15n,107p,795b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
@@ -1389,13 +1431,15 @@ ts/cm/cmss10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmss12.pfb><C:/Users/Graham West/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Graham West/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Graham W
-est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C
-:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on "EEC 3150 Slides_Ch07pt01.pdf" (11 pages, 153852 bytes).
+est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmssi10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Graham West/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "EEC 3150 Slides_Ch07pt01.pdf" (16 pages, 216852 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 527 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
