@@ -339,7 +339,7 @@
 		\endminipage\hfill
 		\minipage{0.5\textwidth}
 			\begin{itemize}
-				\item Open the file in the same as before, but now with \code{`w'}
+				\item Open the file like before, but now with \code{`w'}
 				\item Use the \code{write()} function
 			\end{itemize}
 		\endminipage\hfill
@@ -363,7 +363,21 @@
 	
 \end{frame}
 
-
+\begin{frame}	
+	\frametitle{Extracting Data from Files}
+	
+	\begin{exampleblock}{Write a 2D list to a file:}
+		Create a 2D list of numbers and write its contents to a CSV (comma-separated value) file.
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Write electron density parameters from all files to a single file:}
+		\begin{itemize}
+			\item Write a function will accept a filename (any of these three: \code{h2o.txt, nh3.txt, ch4.txt}) and return lists of the \code{CENTRE ASSIGNMENTS} (note the spelling), \code{TYPE ASSIGNMENTS}, and \code{EXPONENTS}
+			\item Write these all these lists to a single file
+		\end{itemize}		
+	\end{exampleblock}
+	
+\end{frame}
 
 
 

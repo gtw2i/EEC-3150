@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  15 FEB 2023 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  20 FEB 2023 12:56
 entering extended mode
 **"./EEC 3150 Slides_Ch07pt01.tex"
 ("EEC 3150 Slides_Ch07pt01.tex"
@@ -1395,6 +1395,8 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 
 [16
 
+] [17
+
 ]
 \tf@nav=\write8
 \openout8 = `"EEC 3150 Slides_Ch07pt01.nav"'.
@@ -1405,11 +1407,15 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 \tf@snm=\write10
 \openout10 = `"EEC 3150 Slides_Ch07pt01.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
- ("EEC 3150 Slides_Ch07pt01.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
+ ("EEC 3150 Slides_Ch07pt01.aux"
+
+Package pdfbase Warning: Rerun to get internal references right!
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
 Package rerunfilecheck Info: File `"EEC 3150 Slides_Ch07pt01".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 55E7F13882416ADAD77D03E63810BAD6;169.
@@ -1419,27 +1425,30 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 23097 strings out of 480790
- 448885 string characters out of 2894452
+ 23104 strings out of 480790
+ 448948 string characters out of 2894452
  740488 words of memory out of 3000000
- 38479 multiletter control sequences out of 15000+200000
+ 38483 multiletter control sequences out of 15000+200000
  540688 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,15n,107p,795b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmss10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmss12.pfb><C:/Users/Graham West/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Graham West/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Graham W
-est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmssi10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Graham West/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "EEC 3150 Slides_Ch07pt01.pdf" (16 pages, 216852 bytes).
+pdfTeX warning (dest): name{Navigation18} has been referenced but does not ex
+ist, replaced by a fixed one
+
+<C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmss10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmss12.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Graham West/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Graham Wes
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
+/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmssi10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Graham West/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "EEC 3150 Slides_Ch07pt01.pdf" (17 pages, 224018 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
  120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
