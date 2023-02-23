@@ -2,3 +2,5 @@
 \beamer@sectionintoc {1}{Basic of Reading Files}{3}{0}{1}
 \beamer@sectionintoc {2}{Extracting Data from Files}{11}{0}{2}
 \beamer@sectionintoc {3}{Writing to Files}{15}{0}{3}
+\beamer@sectionintoc {4}{Formatting Strings}{18}{0}{4}
+\beamer@sectionintoc {5}{Formatting Strings}{23}{0}{5}
