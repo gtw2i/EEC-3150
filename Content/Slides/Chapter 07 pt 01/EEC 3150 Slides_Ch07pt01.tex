@@ -379,7 +379,28 @@
 	
 \end{frame}
 
-
+\begin{frame}	
+	\frametitle{Writing to Files}
+	
+	\begin{block}{Appending to files:}
+		\minipage{0.5\textwidth}
+			\code{fname = "Write.txt" \\
+					with open(fname, 'a') as f:
+					\tab f.write(`test')
+			}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			\begin{itemize}
+				\item If you want to add more to an existing file without overwriting it, open the file in append mode (`a')
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+	\begin{exampleblock}{Append electron density parameters from all files to a single file:}
+		Modify the previous code to use append mode.
+	\end{exampleblock}
+	
+\end{frame}
 
 
 
