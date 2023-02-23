@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  20 FEB 2023 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  22 FEB 2023 20:07
 entering extended mode
-**./EEC3150_HW05_Ch07pt01.tex
-(EEC3150_HW05_Ch07pt01.tex
+**./EEC3150_HW06_Ch07pt02.tex
+(EEC3150_HW06_Ch07pt02.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -577,8 +577,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mult@nat@firstbox=\box107
 \colbreak@box=\box108
 \mc@col@check@num=\count308
-) (EEC3150_HW05_Ch07pt01.aux)
-\openout1 = `EEC3150_HW05_Ch07pt01.aux'.
+) (EEC3150_HW06_Ch07pt02.aux)
+\openout1 = `EEC3150_HW06_Ch07pt02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
 LaTeX Font Info:    ... okay on input line 104.
@@ -676,67 +676,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-40.
+35.
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 "
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-66.
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1
+74.
 
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspcr.fd
 "
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+File: omspcr.fd 
 )
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-89.
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 174.
 
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
-"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 189.
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-\OT1/pcr/m/n/12 print(psalms[chapter][verse])
+Overfull \hbox (2.05281pt too wide) in paragraph at lines 172--175
+\OT1/pcr/m/n/12 d = \OMS/cmsy/m/n/12 f \OT1/pcr/m/n/12 'txt':['a.txt','b.txt'],
+ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-
-Overfull \hbox (10.45279pt too wide) in paragraph at lines 200--201
-[]\OT1/pcr/m/n/12 Blessed is the man that walketh
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-\OT1/pcr/m/n/12 not in the counsel of the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-\OT1/pcr/m/n/12 ungodly, nor standeth in the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-\OT1/pcr/m/n/12 way of sinners, nor sitteth
- []
-
-[2] (EEC3150_HW05_Ch07pt01.aux) ) 
+[2] (EEC3150_HW06_Ch07pt02.aux) ) 
 Here is how much of TeX's memory you used:
- 8314 strings out of 480790
- 130133 string characters out of 2894452
- 569592 words of memory out of 3000000
- 24166 multiletter control sequences out of 15000+200000
- 548995 words of font info for 67 fonts, out of 3000000 for 9000
+ 8290 strings out of 480790
+ 129739 string characters out of 2894452
+ 570592 words of memory out of 3000000
+ 24146 multiletter control sequences out of 15000+200000
+ 548681 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,45p,826b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,7n,45p,826b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Graham West/AppData/Local/Programs/M
 iKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Graham West/AppData/
@@ -746,7 +715,7 @@ rs/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
 C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a
 .pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on EEC3150_HW05_Ch07pt01.pdf (2 pages, 68851 bytes).
+Output written on EEC3150_HW06_Ch07pt02.pdf (2 pages, 67905 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

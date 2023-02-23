@@ -21,7 +21,7 @@
 %\usepackage{physics}
 \usepackage{hyperref}
 \usepackage{scalerel,stackengine}
-%\usepackage{fancyvrb}
+\usepackage{fancyvrb}
 
 
 \newcommand{\code}[1]{\texttt{#1}}
@@ -339,7 +339,7 @@
 		\endminipage\hfill
 		\minipage{0.5\textwidth}
 			\begin{itemize}
-				\item Open the file in the same as before, but now with \code{`w'}
+				\item Open the file like before, but now with \code{`w'}
 				\item Use the \code{write()} function
 			\end{itemize}
 		\endminipage\hfill
@@ -364,132 +364,43 @@
 \end{frame}
 
 \begin{frame}	
-	\frametitle{Writing to Files}
+	\frametitle{Extracting Data from Files}
 	
-	\begin{exampleblock}{Write a csv file:}
-		Write a program that will write a 2D list of numbers to a file. The numbers on each line should be comma-separated.
+	\begin{exampleblock}{Write a 2D list to a file:}
+		Create a 2D list of numbers and write its contents to a CSV (comma-separated value) file.
 	\end{exampleblock}
 	
-\end{frame}
-
-
-%%%%%%%%%%
-%%%%%%%%%%
-\section{Formatting Strings}
-
-\begin{frame}	
-	\center{\Huge{Formatting Strings}}
-\end{frame}
-
-\begin{frame}	
-	\frametitle{Formatting Strings}
-	
-	\begin{block}{The \code{str.format()} method:}
-		The \code{str.format()} method lets you manually format string in various ways:
-		
-		\vspace{10pt}
-		\code{"My name is \{fname\}, I'm \{age\}".format(name="John",age=36)\\
-		"My name is \{0\}, I'm \{1\}".format("John",36)\\
-		"My name is \{\}, I'm \{\}".format("John",36) \\[10pt]
-		My name is John, I'm 36
-		}
-		
-		\vspace{10pt}
+	\begin{exampleblock}{Write electron density parameters from all files to a single file:}
 		\begin{itemize}
-			\item Call the method with the string you want to format
-			\item Insert args of function into the string with curly brackets: \{\}
-			\item The args can be inserted via keywords, numbers, or in order of appearance (by default, last example above)
-		\end{itemize}
-	\end{block}
-	
-\end{frame}
-
-\begin{frame}	
-	\frametitle{Formatting Strings}
-	
-	\begin{block}{Padding strings:}
-		The real power of \code{str.format()} lies in \emph{padding} (insertion of whitespace for readability):
-		\begin{itemize}
-			\item \code{``\{:10\}''.format(``test'')} \\
-					This will return string that is 10 characters long and starts with ``test'' (extra characters are spaces)
-			\item \code{``\{:$>$10\}''.format(``test'')} \\
-					This will return string that is 10 characters long and ends with ``test'' (extra characters are spaces)
-		\end{itemize}
-		Why do we care?
-		\begin{itemize}
-			\item If we wants to print/write multiples of different length, we can pad them so that they are aligned
-		\end{itemize}
-	\end{block}
-	
-\end{frame}
-
-\begin{frame}	
-	\frametitle{Formatting Strings}
-	
-	\begin{block}{Padding with floats:}
-		Padding is very useful when dealing with floating point numbers with different numbers of decimals:
-		\begin{itemize}
-			\item \code{``\{:$m$.$n$f\}''.format(number)} \\
-					$m$: the total number of characters (the length) \\
-					$n$: the number of decimal places (padded with zeroes)
-			\item \code{``\{:10.4f\}''.format(100.01)}
-			\item To assign these numbers from variables, simply add more curly brace pairs: \\
-					\code{``\{:\{\}.\{\}f\}''.format(100.01,10,4)}
-			\item If this is confusing, add the argument indices: \\
-					\code{``\{0:\{1\}.\{2\}f\}''.format(100.01,10,4)}
-		\end{itemize}
-	\end{block}
+			\item Write a function will accept a filename (any of these three: \code{h2o.txt, nh3.txt, ch4.txt}) and return lists of the \code{CENTRE ASSIGNMENTS} (note the spelling), \code{TYPE ASSIGNMENTS}, and \code{EXPONENTS}
+			\item Write these all these lists to a single file
+		\end{itemize}		
+	\end{exampleblock}
 	
 \end{frame}
 
 \begin{frame}	
 	\frametitle{Writing to Files}
 	
-	\begin{exampleblock}{Write formatted numbers to a file:}
-		Write a program that will
-		\begin{itemize}
-			\item write a list of floats to a file
-			\item in a right justified fashion
-			\item with all decimals aligned
-			\item with a consistent number of decimals
-			\item by passing the length and number of decimals as an argument to \code{format()}
-			\item and determine the minimum value of these numbers from the list
-		\end{itemize}
-	\end{exampleblock}
-	
-\end{frame}
-
-
-%%%%%%%%%%
-%%%%%%%%%%
-\section{Formatting Strings}
-
-\begin{frame}	
-	\center{\Huge{Appending to Files}}
-\end{frame}
-
-\begin{frame}	
-	\frametitle{Appending to Files}
-	
-	\begin{block}{Opening a file in append mode: `a'}
+	\begin{block}{Appending to files:}
 		\minipage{0.5\textwidth}
 			\code{fname = "Write.txt" \\
 					with open(fname, 'a') as f:
-					\tab x = [`1\textbackslash n', `2\textbackslash n'] \\
-					\tab f.writelines(x)
+					\tab f.write(`test')
 			}
 		\endminipage\hfill
 		\minipage{0.5\textwidth}
 			\begin{itemize}
-				\item To add lines to an existing file without overwriting it, open it in append mode using `a'
+				\item If you want to add more to an existing file without overwriting it, open the file in append mode (`a')
 			\end{itemize}
 		\endminipage\hfill
 	\end{block}
 	
+	\begin{exampleblock}{Append electron density parameters from all files to a single file:}
+		Modify the previous code to use append mode.
+	\end{exampleblock}
+	
 \end{frame}
-
-
-
 
 
 

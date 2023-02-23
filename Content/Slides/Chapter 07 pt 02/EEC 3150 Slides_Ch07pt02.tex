@@ -1,0 +1,425 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+\usepackage{fancyvrb}
+
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{Chapter 7 pt 2: \\ Importing Modules}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{User Modules}
+
+\begin{frame}	
+	\center{\Huge{User Modules}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{User Modules}
+	
+	\begin{alertblock}{Defn: module}
+		In general, a \textbf{module} is a .py file containing Python definitions and statements
+		\begin{itemize}
+			\item By this definition, every .py we've written is a module (which is true!)
+		\end{itemize}
+		Specifically, this section is concerned with importing the contents of one module into another
+		\begin{itemize}
+			\item Any functions or variables defined in the first can then be used in the second
+		\end{itemize}
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{User Modules}
+	
+	\begin{block}{Importing and dot notation:}
+		\begin{itemize}
+			\item Use the \code{import} keyword followed by the module name to import it
+			\item Make sure both .py files are in the same folder
+			\item We use dot notation to call functions or objects from the module
+			\item This disambiguates them from objects with the same name in the destination module
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Example module: \code{circle.py}}
+		\minipage{0.5\textwidth}
+			Let's say the following code is \\ saved in a module \code{circle.py}
+			
+			\vspace{10pt}
+			\code{pi = 3.14159 \\
+			\tab \\
+			def area(radius): \\
+				\tab return pi*(radius**2)
+			}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			We can import the module into another file \code{circleTest.py}:
+			
+			\vspace{10pt}
+			\code{import circle \\
+			\tab \\
+			print(circle.pi) \\
+			print(circle.area(3))
+			}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{User Modules}
+	
+	\begin{block}{Importing multiple modules (pt1):}
+		Dot notation becomes clearly necessary when dealing with multiple modules with functions by the same name:
+		
+		\vspace{10pt}
+		\minipage{0.5\textwidth}
+			Module: \code{circle.py}
+			
+			\vspace{10pt}
+			\code{pi = 3.14159 \\
+			\tab \\
+			def area(radius): \\
+				\tab return pi*radius**2
+			}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			Module: \code{sphere.py}
+			
+			\vspace{10pt}
+			\code{pi = 3.14159 \\
+			\tab \\
+			def area(radius): \\
+				\tab return 4*pi*radius**2
+			}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{User Modules}
+	
+	\begin{block}{Importing multiple modules (pt2):}
+		Let's import both of these modules into one new file:
+		
+		\vspace{10pt}
+		
+		\code{import circle \\
+				import sphere \\
+				\tab \\
+				def area(side): \\
+					\tab return side**2 \\
+				\tab \\
+				pi = 3 \\
+				print(pi, circle.pi, sphere.pi) \\
+				print(area(1), circle.area(1), sphere.area(1)) \\
+		}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{User Modules}
+	
+	\begin{block}{Different ways to import a module:}
+		\begin{itemize}
+			\item \code{import module}
+			\begin{itemize}
+				\item The basic way
+			\end{itemize}
+			\item \code{import module as md}
+			\begin{itemize}
+				\item Give the module a shorter alias
+			\end{itemize}
+			\item \code{from module import submodule}
+			\begin{itemize}
+				\item New keyword: \code{from}
+				\item Only import what you need from the module
+				\item No need for dot notation to call the submodule
+			\end{itemize}
+			\item \code{from module import *}
+			\begin{itemize}
+				\item Import all submodules without need to use dot notation
+				\item Dangerous if using multiple objects with the same name
+				\item Whatever the final version defined/imported is what will be used
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{User Modules}
+	
+	\begin{block}{Why modules:}
+		Why modules are useful:
+		\begin{itemize}
+			\item Modules become very useful when your codebase becomes very large
+			\item It lets you compartmentalize different parts of it neatly
+		\end{itemize}
+		Python Standard Library (\href{https://docs.python.org/3/library/}{https://docs.python.org/3/library/}):
+		\begin{itemize}
+			\item The majority of Python's codebase is not loaded by default
+			\item Examples: time, math, random, os, sys, string, re, threading
+		\end{itemize}
+		Third-party modules:
+		\begin{itemize}
+			\item There are also MANY third-party modules (also called libraries or packages) that can be downloaded and installed
+			\item Anaconda comes with all the ones we need
+			\item Examples: NumPy, SciPy, Sci-kit Learn, Keras, NLTK, Pandas, MatPlotLib, Seaborn
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Python Standard Library Modules}
+
+\begin{frame}	
+	\center{\Huge{Python Standard Library Modules}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Python Standard Library Modules}
+	
+	\begin{block}{\code{time}:}
+		The \code{time} module handles various aspects of getting/setting hte time of the system clock and can be used to measure the duration of events in your code
+		\begin{itemize}
+			\item \code{time.gmtime([seconds])}
+			\begin{itemize}
+				\item No argument: returns the current GMT/UTC as a \code{struct\_time} object
+				\item With argument: returns the GMT/UTC at the specified number of seconds since January 1, 1970, 00:00:00 (UTC) (called the epoch)
+				\item \code{struct\_time} objects can be indexed
+			\end{itemize}
+			\item \code{time.localtime([seconds])}
+			\begin{itemize}
+				\item Same as \code{gmtime} but in the local time zone
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Python Standard Library Modules}
+	
+	\begin{block}{\code{time}:}
+		The \code{time} module handles various aspects of getting/setting hte time of the system clock and can be used to measure the duration of events in your code
+		\begin{itemize}
+			\item \code{time.sleep(seconds)}
+			\begin{itemize}
+				\item Pauses program execution for a specified number of seconds
+			\end{itemize}
+			\item \code{time.time()}
+			\begin{itemize}
+				\item Returns a float number of seconds since the epoch
+				\item To measure the duration of a block of code, use two time functions and subtract the difference
+				\item Measure average times with loops
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Python Standard Library Modules}
+	
+	\begin{block}{\code{os}:}
+		The \code{os} module handles various operating system and file management processes
+		\begin{itemize}
+			\item \code{os.getcwd()}
+			\begin{itemize}
+				\item Returns the current working directory (unless changed mid-program, this is teh calling module's directory)
+			\end{itemize}
+			\item \code{os.listdir(path='.')}
+			\begin{itemize}
+				\item Return a list of files in the specified directory (default is the calling module's directory)
+			\end{itemize}
+			\item \code{os.mkdir(path, ...)}
+			\begin{itemize}
+				\item Creates a directory at the specified path
+				\item Has more arguments
+				\item Useful for automatically handling scripts that need to write a lot of data files 
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Python Standard Library Modules}
+	
+	\begin{block}{\code{sys} and command line arguments:}
+		The \code{sys} module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter 
+		\begin{itemize}
+			\item \code{sys.argv}
+			\begin{itemize}
+				\item Is a list of command line arguments used when running a script in the console
+			\end{itemize}
+		\end{itemize}
+		Most other languages also have an \code{argc} variable which is the length of \code{argv}, i.e., the number of command line arguments (Python 3 doesn't)
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Python Standard Library Modules}
+	
+	\begin{block}{\code{pickle}:}
+		The \code{pickle} module is useful for saving and loading arbitrary, complex data objects (usually aliased \code{pk}
+		\begin{itemize}
+			\item \code{pk.dump(data, fhandle)}
+			\begin{itemize}
+				\item Writes an object (\code{data}) to a file
+				\item \code{data} can be literally anything: a 2D list, a dictionary, even an entire deep learning model
+			\end{itemize}
+			\item \code{pk.load(fhandle)}
+			\begin{itemize}
+				\item Reads and returns an object from the specified file handle
+			\end{itemize}
+		\end{itemize}
+		NOTE: it is STRONGLY advised that files be opened in binary mode when using \code{pickle}, i.e., use \code{`wb'} and \code{`rb'} as opposed to simply \code{`w'} and \code{`r'} when creating the file handle
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Python Standard Library Modules}
+	
+	\begin{block}{\code{re} and \code{regex}:}
+		The \code{re} and \code{regex} modules provide methods for \emph{regular expressions} (or regex), i.e., tools for finding patterns in text (\code{re} is in PSL, \code{regex} is third-party, many similar function but better)
+		\begin{itemize}
+			\item Patterns:
+			\begin{itemize}
+				\item A sequence of characters describing what to search for (usually a raw string)
+				\item Raw string: put an r before the string (ex: r''tears in rain'')
+			\end{itemize}
+			\item \code{re.search(pattern,text)}
+			\begin{itemize}
+				\item Searches \code{text} for occurrences of \code{pattern}
+				\item Returns a \code{match} object
+			\end{itemize}
+			\item \code{re.findall(pattern,text)}
+			\begin{itemize}
+				\item Returns a list of all occurrences of \code{pattern} in \code{text}
+				\item \code{overlapped} boolean keyword if using \code{regex}
+			\end{itemize}
+		\end{itemize}
+		\code{re} resources: \href{https://www.w3schools.com/python/python\_regex.asp}{https://www.w3schools.com/python/python\_regex.asp}
+	\end{block}
+	
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{comment}
+
+\begin{frame}	
+	\frametitle{Basic of Reading Files}
+	
+	\begin{block}{Parent directory command: ..}
+		\minipage{0.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=\linewidth]{ParentDirectory}
+			\end{figure}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			\begin{itemize}
+				\item If you need to navigate to the parent directory, you can include ``..'' in your relative filepath: \\
+				Ex: \code{../Folder 2b/file.txt}
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Extracting Data from Files}
+	
+	\begin{exampleblock}{Get a list of grades from a file:}
+		Read the file Grades.txt and produce a list of integer grades.
+		\begin{itemize}
+			\item This file is simple and has one number per line
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Get lists of years and temperatures from a file:}
+		Read the file YearTemp.txt and produce lists of integer years and float temperatures.
+		\begin{itemize}
+			\item This file is more complicated
+			\item It has a header that we must ignore
+			\item Year and temp values are comma-separated (one pair per line)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+\end{comment}
+
+
+
+
+\end{document}
+
+
+
+
