@@ -1,0 +1,162 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+%\usepackage{fancyvrb}
+
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{Chapter 9: Exceptions}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Handling Exceptions}
+
+\begin{frame}	
+	\center{\Huge{Handling Exceptions}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{alertblock}{Defn: exception}
+		\textbf{Exceptions} are errors in a Python script detected by the interpreter
+		
+		\vspace{10pt}
+		They come in two main classes:
+		\begin{itemize}
+			\item \emph{Syntax errors} occur when you write code that violates the rules of Python's syntax; detected by the interpreter before execution
+			\begin{itemize}
+				\item Missing a parenthesis or quote
+				\item Misspelled keyword
+				\item Using a variable before it's defined
+			\end{itemize}
+			\item \emph{Runtime errors} occur during the execution of a script; cannot be detected by the interpreter before execution
+			\begin{itemize}
+				\item Dividing by zero
+				\item Out of bounds indexing of a list
+				\item Trying to read a file that doesn't exist
+			\end{itemize}
+		\end{itemize}
+		
+		\vspace{5pt}
+		Unless handled properly, exceptions always halt your program's execution. How can we avoid this?
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{alertblock}{Defn: exception handling}
+		\emph{Exception handling} (or error handling) is the process of detecting and dealing with errors in programs
+	\end{alertblock}
+	
+	\begin{alertblock}{Defn: the \code{try except} block}
+		\minipage{0.6\textwidth}
+			\begin{itemize}
+				\item We can use a \code{try except} block to perform error handling in Python
+				\item This will give us a plan B in case our code throws an error
+				\item It's similar to an \code{if else} block
+			\end{itemize}
+			
+			\vspace{6pt}
+			\code{try: \\
+					\tab \emph{code that might throw an error} \\
+					except: \\
+					\tab \emph{code to run in case of error}
+			}
+		\endminipage\hfill
+		\minipage{0.4\textwidth}
+			\begin{itemize}
+				\item The code in the \code{try} portion is run first
+				\item If no error, then the block is finished
+				\item If there is an error, then the \code{except} portion is run
+			\end{itemize}
+		\endminipage\hfill
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{block}{\code{try except} example}
+		\minipage{0.6\textwidth}
+			Handling indexing a list out of bounds
+			
+			\vspace{10pt}
+			\code{try: \\
+					\tab \emph{code that might throw an error} \\
+					except: \\
+					\tab \emph{code to run in case of error}
+			}
+		\endminipage\hfill
+		\minipage{0.4\textwidth}
+			\begin{itemize}
+				\item The code in the \code{try} portion is run first
+				\item If no error, then the block is finished
+				\item If there is an error, then the \code{except} portion is run
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+
+
+
+
+
+\end{document}
+
+
+
+
