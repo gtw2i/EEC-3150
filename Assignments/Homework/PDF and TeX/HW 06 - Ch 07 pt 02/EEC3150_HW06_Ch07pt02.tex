@@ -131,6 +131,8 @@ For short answer or math exercises, either do your work on a sheet of paper and 
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={10 points, Python}]
 
+This exercise will require you to write two \code{.py} files.
+
 \begin{enumerate}[leftmargin=*]
 	\item Write a module called \code{MyModule.py} that defines several functions and variables of your choice.
 	\item Write a program which will import and call each of these functions and variables. This file should have our standard homework naming convention.
@@ -139,14 +141,14 @@ For short answer or math exercises, either do your work on a sheet of paper and 
 \end{Exercise}
 
 %%% NEW EXERCISE %%%
-\begin{Exercise}[origin={30 points, Python}]
+\begin{Exercise}[origin={15 points, Python}]
 
-In this exercise, you will calculate the ages of several actors using the \code{re,time} modules. See the Birthdays.txt file. They are formatted like mm/dd/yyyy.
 \begin{enumerate}[leftmargin=*]
-	\item Write two functions that will each return a dictionary whose keys are the names of actors and whose values are their birthdays. The first should use regular expressions to extract the names and dates (name it \code{WithRegex(fname)}) and the other should NOT use regex (call it \code{WithoutRegex(fname)}).
-	\item Write a function \code{GetAge(today,bday)} which will take today's date (formatted in the same manner as above) and an actor's birthday and return their age as an integer number of years. NOTE: you should take into account whether or not their birthday has occurred yet as of the \code{today} date and not merely subtract the years.
-	\item Use these functions to write the ages of the actors to a file \code{Ages.txt} with the following format (try to use formatted strings):\\
-	\code{Jane Doe is 10 years old}
+	\item Write a program which will obtain a list of files in the cwd using \code{os.listdir()} and create a dictionary whose keys are filetypes and whose values are a list of files of that type (all files are taken from the list of files return by \code{os.listdir()}). For example, is the files \code{a.txt,b.txt,c.py} were the in directory, the program should create the following dictionary: \\
+	\code{d = \{ 'txt':['a.txt','b.txt'], \\
+	'py':['c.py']\}}
+	\item Print the keys and values neatly.
+	\item Write the dictionary to a file called \\ \code{FileTypes.pk} using \code{pickle}.
 \end{enumerate}
 
 \end{Exercise}
@@ -166,17 +168,19 @@ In this exercise, you will calculate the ages of several actors using the \code{
 \end{Exercise}
 
 %%% NEW EXERCISE %%%
-\begin{Exercise}[origin={15 points, Python}]
+\begin{Exercise}[origin={30 points, Python}]
 
+In this exercise, you will calculate the ages of several actors using the \code{re,time} modules. See the Birthdays.txt file. The dates are are formatted like mm/dd/yyyy.
 \begin{enumerate}[leftmargin=*]
-	\item Write a program which will obtain a list of files in the cwd using \code{os.listdir()} and create a dictionary whose keys are filetypes and whose values are a list of files of that type (all files are taken from the list of files return by \code{os.listdir()}). For example, is the files \code{a.txt,b.txt,c.py} were the directory, the program should create the following dictionary: \\
-	\code{d = \{ 'txt':['a.txt','b.txt'], \\
-	'py':['c.py']\}}
-	\item Print the keys and values neatly.
-	\item Write the dictionary to a file called \\ \code{FileTypes.pk} using \code{pickle}.
+	\item Write two functions that will each return a dictionary whose keys are the names of actors and whose values are their birthdays. The first should use regular expressions to extract the names and dates (name it \code{WithRegex(fname)}) and the other should NOT use regex (call it \code{WithoutRegex(fname)}).
+	\item Write a function \code{GetAge(today,bday)} which will take today's date (formatted in the same manner as above) and an actor's birthday and return their age as an integer number of years. NOTE: you should take into account whether or not their birthday has occurred yet as of the \code{today} date and not merely subtract the years.
+	\item Use these functions to write the ages of the actors to a file \code{Ages.txt} with the following format (try to use formatted strings):\\
+	\code{Jane Doe is 10 years old}
 \end{enumerate}
 
 \end{Exercise}
+
+
 
 \vfill\null
 \end{multicols*}
