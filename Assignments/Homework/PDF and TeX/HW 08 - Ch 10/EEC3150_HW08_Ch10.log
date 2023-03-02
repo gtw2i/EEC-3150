@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  28 FEB 2023 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  26 FEB 2023 17:51
 entering extended mode
-**./EEC3150_HW06_Ch07pt02.tex
-(EEC3150_HW06_Ch07pt02.tex
+**./EEC3150_HW08_Ch10.tex
+(EEC3150_HW08_Ch10.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -577,8 +577,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mult@nat@firstbox=\box107
 \colbreak@box=\box108
 \mc@col@check@num=\count308
-) (EEC3150_HW06_Ch07pt02.aux)
-\openout1 = `EEC3150_HW06_Ch07pt02.aux'.
+) (EEC3150_HW08_Ch10.aux)
+\openout1 = `EEC3150_HW08_Ch10.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
 LaTeX Font Info:    ... okay on input line 104.
@@ -676,48 +676,51 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-34.
+43.
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 "
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1
-49.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+43.
 
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspcr.fd
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 "
-File: omspcr.fd 
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
-
-Overfull \hbox (2.05281pt too wide) in paragraph at lines 147--150
-\OT1/pcr/m/n/12 d = \OMS/cmsy/m/n/12 f \OT1/pcr/m/n/12 'txt':['a.txt','b.txt'],
- 
+Underfull \hbox (badness 6493) in paragraph at lines 152--154
+[]\OT1/ptm/m/n/12 The class should have one ad-di-tional
  []
 
-[2] (EEC3150_HW06_Ch07pt02.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[2] (EEC3150_HW08_Ch10.aux) ) 
 Here is how much of TeX's memory you used:
- 8290 strings out of 480790
- 129739 string characters out of 2894452
- 570592 words of memory out of 3000000
- 24146 multiletter control sequences out of 15000+200000
- 548681 words of font info for 66 fonts, out of 3000000 for 9000
+ 8296 strings out of 480790
+ 129719 string characters out of 2894452
+ 572584 words of memory out of 3000000
+ 24151 multiletter control sequences out of 15000+200000
+ 548995 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,45p,826b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Graham West/AppData/Local/Programs/M
-iKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Graham West/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Graha
-m West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Use
-rs/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
-C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a
-.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on EEC3150_HW06_Ch07pt02.pdf (2 pages, 68138 bytes).
+ 44i,9n,45p,822b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Graham West/AppData/Local/Programs/MiKTe
+X/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Graham West/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Graham Wes
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
+rs/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/cou
+rier/ucrr8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1
+/urw/times/utmb8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/times/utmr8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on EEC3150_HW08_Ch10.pdf (2 pages, 81361 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

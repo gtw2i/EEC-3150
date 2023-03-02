@@ -1,0 +1,297 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+%\usepackage{fancyvrb}
+%\usepackage{enumitem}
+
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{Chapter 10: \\ Classes, Objects, and Methods: \\ Object-Oriented Programming w/ Python}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Classes, Objects, and Methods}
+
+\begin{frame}	
+	\center{\Huge{Classes, Objects, and Methods}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Classes, Objects, and Methods}
+	
+	\begin{block}{Data types vs. objects:}
+		\minipage{0.35\textwidth}
+			Definitions:
+			\begin{itemize}
+				\item A \textbf{data type} is a particular format for representing data of a certain kind
+				\item An \textbf{object} is an particular instance of a data type
+			\end{itemize}
+		\endminipage\hfill
+		\minipage{0.65\textwidth}
+			Examples:
+			\begin{itemize}
+				\item data type: \code{int} \\
+						object: \code{1}
+				\item data type: \code{str} \\
+						object: \code{``hello''}
+				\item data type: \code{builtin\_function\_or\_method} \\
+						object: \code{print()}
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Classes, Objects, and Methods}
+	
+	\begin{alertblock}{Defn: classes and objects}
+		A \textbf{class} is (a template for creating) an abstract data type
+		\begin{itemize}
+			\item We can create our own custom data types
+			\item All Python data types are actually classes
+		\end{itemize}
+		An \textbf{object} is an particular instance of a class
+		
+		\vspace{10pt}
+		Analogy:
+		\begin{itemize}
+			\item class: car \\
+					object: Honda Civic
+		\end{itemize}
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Classes, Objects, and Methods}
+	
+	\begin{block}{First class: \code{Person}}
+		\begin{scriptsize}
+		Define a \code{Person} class with a \code{name} attribute:
+		
+		\vspace{15pt}
+		\minipage{0.38\textwidth}
+			Defining the \code{Person} class:
+		
+			\vspace{10pt}
+			\code{class Person: \\
+					\tab def \_\_init\_\_(self, name):
+					\tab \tab self.\_name = name
+			}
+			
+			\rule[0pt]{\linewidth}{1pt}
+		
+			\vspace{10pt}
+			Creating a \code{Person} object:
+			
+			\vspace{10pt}
+			\code{p = Person(``Graham'')
+			}
+			
+			\rule[0pt]{\linewidth}{1pt}
+		
+			\vspace{10pt}
+			Getting \code{p}'s name:
+			
+			\vspace{10pt}
+			\code{p.\_name
+			}
+		\endminipage\hfill
+		\minipage{0.62\textwidth}
+			\begin{itemize}
+%				\setlength\itemsep{-2pt}
+				\item Create a class by using the \code{class} keyword, the name of the class, and a colon
+				\item \emph{method}: any function defined in the scope of a class
+				\begin{itemize}
+					\begin{scriptsize}
+%					\setlength\itemsep{0pt}
+					\item Every class should have a \emph{constructor} method called \code{\_\_init\_\_} which takes \code{self} and any attributes as arguments
+					\item It is automatically called whenever a new class is created
+					\item The \code{self} variable is a reference to whatever particular object is calling a method; all methods definitions must have it, but nothing is ever passed to it when called
+					\end{scriptsize}
+				\end{itemize}
+				\item \emph{attribute}: any variable associated with a class
+				\begin{itemize}
+					\begin{scriptsize}
+%					\setlength\itemsep{0pt}
+					\item Set any attributes passed to the constructor
+					\item It is convention for all attributes to start with underscores
+					\end{scriptsize}
+				\end{itemize}
+			\end{itemize}
+		\endminipage\hfill
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Classes, Objects, and Methods}
+	
+	\begin{block}{First class: \code{Person}}
+		\begin{scriptsize}
+		Define a \code{Person} class with a \code{name} attribute:
+		
+		\vspace{15pt}
+		\minipage{0.38\textwidth}
+			Defining the \code{Person} class:
+		
+			\vspace{10pt}
+			\code{class Person: \\
+					\tab def \_\_init\_\_(self, name):
+					\tab \tab self.\_name = name
+			}
+			
+			\rule[0pt]{\linewidth}{1pt}
+		
+			\vspace{10pt}
+			Creating a \code{Person} object:
+			
+			\vspace{10pt}
+			\code{p = Person(``Graham'')
+			}
+			
+			\rule[0pt]{\linewidth}{1pt}
+		
+			\vspace{10pt}
+			Getting \code{p}'s name:
+			
+			\vspace{10pt}
+			\code{p.\_name
+			}
+		\endminipage\hfill
+		\minipage{0.62\textwidth}
+			\begin{itemize}
+%				\setlength\itemsep{-2pt}
+				\item To create a \code{Person} object, simply pass all necessary attributes to the \code{Person} function
+				\begin{itemize}
+					\begin{scriptsize}
+%					\setlength\itemsep{0pt}
+					\item \code{Person} is the class, \code{p} is the object
+					\item Again, nothing is passed for the \code{self} argument
+					\end{scriptsize}
+				\end{itemize}
+				\item To access or change an object's attributea or call a method on it, use dot notation
+			\end{itemize}
+		\endminipage\hfill
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Classes, Objects, and Methods}
+	
+	\begin{block}{\code{Person} with multiple attributes and methods:}
+		\begin{scriptsize}
+		\minipage{0.45\textwidth}
+			\code{class Person: \\
+					\tab def \_\_init\_\_(self, name, age): \\
+					\tab \tab self.\_name = name \\
+					\tab \tab self.\_age = age \\
+					\tab def HaveBirthday(self): \\
+					\tab \tab self.\_age += 1 \\
+					\tab \\
+					p = Person(``Bill'', 50) \\
+					p.HaveBirthday()
+			}
+		\endminipage\hfill
+		\minipage{0.55\textwidth}
+			\begin{itemize}
+%				\setlength\itemsep{-2pt}
+				\item \code{Person} class has two attributes (\code{\_name,\_age}) and two methods (\code{\_\_init\_\_,HaveBirthday})
+				\item \code{HaveBirthday} will increment \code{\_age} by 1
+			\end{itemize}
+		\endminipage\hfill
+		\end{scriptsize}
+	\end{block}
+	
+	\begin{block}{The \code{vars()} and \code{isinstance()} functions:}
+		\begin{itemize}
+			\item \code{vars(x)} returns a dictionary of all attributes of the object \code{x}
+			\item \code{isinstance(x,Class)} check whether the object \code{x} is an instance of the \code{Class} class
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Classes, Objects, and Methods}
+	
+	\begin{exampleblock}{\code{Rectangle} class:}
+		Create a \code{Rectangle} class with the following attributes
+		\code{
+		\begin{itemize}
+			\item length
+			\item width
+		\end{itemize}
+		}
+		and the following methods
+		\code{
+		\begin{itemize}
+			\item get\_area()
+			\item get\_perimeter()
+		\end{itemize}
+		}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+
+
+
+\end{document}
+
+
+
+

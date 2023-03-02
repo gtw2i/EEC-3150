@@ -128,29 +128,192 @@
 \begin{frame}	
 	\frametitle{Handling Exceptions}
 	
-	\begin{block}{\code{try except} example}
+	\begin{block}{First \code{try except} example:}
 		\minipage{0.6\textwidth}
 			Handling indexing a list out of bounds
 			
 			\vspace{10pt}
 			\code{try: \\
-					\tab \emph{code that might throw an error} \\
+					\tab y = x[10] \\
 					except: \\
-					\tab \emph{code to run in case of error}
+					\tab y = x[-1]
 			}
 		\endminipage\hfill
 		\minipage{0.4\textwidth}
 			\begin{itemize}
-				\item The code in the \code{try} portion is run first
-				\item If no error, then the block is finished
-				\item If there is an error, then the \code{except} portion is run
+				\item Try to store the 10th element of \code{x} in \code{y}
+				\item If it doesn't exist, use the last element instead
+				\item Either way, \code{y} gets defined
 			\end{itemize}
 		\endminipage\hfill
 	\end{block}
 	
 \end{frame}
 
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{exampleblock}{Reading floats from \code{input()}:}
+		\begin{itemize}
+			\item Read a float using \code{input()} and store it in a variable
+			\item If the input can't be cast, print a message and set the variable to nan
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Reading files that don't exist:}
+		\begin{itemize}
+			\item Read some files and put their contents in a list
+			\item If the files don't exist, append an empty string to the list
+			\item Print out a message saying whether each file was successfully read or not
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
 
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{block}{Handling multiple kinds of errors:}
+		\begin{itemize}
+			\item There are many types of exceptions (\href{https://docs.python.org/3/library/exceptions.html}{https://docs.python.org/3/library/exceptions.html}
+			\item We can multiple types of exceptions by having multiple \code{except} blocks
+			\item NOTE: all of the below error types aren't real, they're just for illustrative purposes
+		\end{itemize}
+		
+		\vspace{10pt}
+
+		\minipage{0.55\textwidth}
+			\code{try: \\
+					\tab \emph{code A} \\
+					except \emph{ErrorType1}: \\
+					\tab \emph{code B} \\
+					except \emph{ErrorType2}, \emph{ErrorType3}: \\
+					\tab \emph{code C} \\
+					except: \\
+					\tab \emph{code D} \\
+			}
+		\endminipage\hfill
+		\minipage{0.45\textwidth}
+			\begin{itemize}
+				\item If \code{code A} raises a type 1 error, run \code{code B}
+				\item If \code{code A} raises either type 2 or 3 error, run \code{code C}
+				\item If \code{code A} raises any other type of error, run \code{code D}
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{block}{Handling multiple kinds of errors:}
+		\code{def get\_ratios(x, y): \\
+				\tab \\
+				\tab ratios = [] \\
+				\tab \\
+				\tab for i in range(len(x)): \\
+				\tab \tab try: \\
+				\tab \tab \tab ratios.append(x[i]/y[i]) \\
+				\tab \tab except ZeroDivisionError: \\
+				\tab \tab \tab ratios.append(float('nan')) \\
+				\tab \tab except TypeError: \\
+				\tab \tab \tab ratios.append(float('nan')) \\
+				\tab \\
+			    \tab return ratios
+		}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Handling Exceptions}
+	
+	\begin{block}{The entire block: \code{try except else finally}}
+		There is an expanded \code{try except} block that has even more blocks which run under different conditions
+		
+		\vspace{15pt}
+		\code{try: \\
+				\tab \emph{try to run this code} \\
+				except: \\
+				\tab \emph{run this if there were errors} \\
+				else: \\
+				\tab \emph{run this if there weren't errors} \\
+				finally: \\
+				\tab \emph{run this in either case} \\
+		}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Raising Exceptions}
+
+\begin{frame}	
+	\center{\Huge{Raising Exceptions}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Raising Exceptions}
+	
+	\begin{block}{Manually raising an exception with \code{raise}:}
+		\begin{itemize}
+			\item It is possible to manually raise an exception with the \code{raise} keyword:
+			\item Syntax: \code{raise \emph{ErrorType(}\emph{message})}
+			\item Ex: add to lists, raise exception if they aren't the same length
+		\end{itemize}
+		
+		\vspace{10pt}
+		
+		\begin{footnotesize}
+		\code{def add(x, y): \\[-2pt]
+				\tab \\[-2pt]
+				\tab if len(x) != len(y): \\[-2pt]
+					\tab \tab raise ValueError('arguments of add() must be same length') \\[-2pt]
+				\tab \\[-2pt]
+				\tab sums = [] \\[-2pt]
+				\tab \\[-2pt]
+				\tab for i,j in zip(x,y): \\[-2pt]
+				\tab \tab sums.append(i+j) \\[-2pt]
+				\tab \\[-2pt]
+			    \tab return sums
+		}
+		\end{footnotesize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Raising Exceptions}
+	
+	\begin{block}{Checking conditions with \code{assert}:}
+		\begin{itemize}
+			\item The \code{assert} keyword will raise an exception if a specified condition isn't met (useful for debugging)
+			\item Syntax: \code{assert \emph{condition}, \emph{message}}
+			\item Ex: checking list were copied properly
+		\end{itemize}
+		
+		\vspace{10pt}
+		\minipage{0.4\textwidth}
+			\code{x = [1,2,3] \\
+					y = x \\
+					\# y = x.copy() \\
+					\tab \\
+					assert id(x) != id(y)
+			}
+		\endminipage\hfill
+		\minipage{0.6\textwidth}
+			\begin{itemize}
+				\item The first way of copying will assign \code{x,y} to the same location in memory (equal ids)
+				\item Therefore, \code{assert} will raise an \code{AssertionError} to let you know that the condition IS NOT met
+				\item The second way (with \code{x.copy()}) will not raise the exception
+			\end{itemize}
+		\endminipage\hfill
+	\end{block}
+	
+\end{frame}
 
 
 

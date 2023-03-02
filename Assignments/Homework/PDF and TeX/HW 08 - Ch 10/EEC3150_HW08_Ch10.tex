@@ -103,7 +103,7 @@ tabsize=3
 
 \begin{document}
 
-\title{Homework 05: Chapter 07 pt 01}
+\title{Homework 08: Chapter 10}
 
 \author{EEC 3150}
 \date{}
@@ -131,76 +131,84 @@ For short answer or math exercises, either do your work on a sheet of paper and 
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={10 points, Python}]
 
-\begin{enumerate}[leftmargin=*]
-\item Write a program which will read the file CSVData.csv and store its contents as a 2D list of floats. Each line should be a list in the larger 2D list. For example, if the file looked like this
-
-\code{1,2,3\\ %
-4,5,6\\ %
-7,8,9
-}
-
-then your 2D list should look like this
-
-\code{[[1,2,3],\\ \hspace{0pt}
-[4,5,6],\\ \hspace{0pt}
-[7,8,9]]
-}
-\item Print the 2D list with the following code:
-
-\code{for x in data: \\
-\tab print(x)
-}
-
-(assuming \code{data} is the name of your 2D list).
-\end{enumerate}
-
-\end{Exercise}
-
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={20 points, Python}]
+Create a class Complex which implements complex number arithmetic:
 
 \begin{enumerate}[leftmargin=*]
-\item Write a program (not a function) that will read the files
-\begin{itemize}
-	\setlength\itemsep{0pt}
-	\item Mercury.txt
-	\item Venus.txt
-	\item Earth.txt
-	\item Mars.txt
-	\item Jupiter.txt
-\end{itemize}
-and store the radius of each planet in a float variable. NOTE: in the first four files, the radius is called \code{Mean radius (km)} while in the fifth file it is called \code{Equat. radius (1 bar)}.
-\item Write the radii to the file ``PlanetRadii.txt'' in the following format:
-
-\code{Mercury radius: 2440km}
-
-and so on with each planet having its own line.
-\end{enumerate}
-
-\end{Exercise}
-
-\vfill\null
-\columnbreak
-
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={20 points, Python}]
-
-\begin{enumerate}[leftmargin=*]
-	\item Write a program (not a function) which will  read the file ``bible-psalms.txt'' and create a nested dictionary \code{psalms}. The keys of this dictionary will be the chapter numbers and the values will be another dictionary. The keys of these inner dictionaries will be a verse number and the values will be a string that is the verse's text. NOTE: the tab (\textbackslash  t) escape character is used in each line of the file to separate the verse number and the verse text.
-	\item Give a demo of indexing a particluar verse from the dictionary. Here is an example (you may choose your preferred chapter/verse):
-	
-	\code{chapter = 1 \\
-	verse = 1 \\
-	print(psalms[chapter][verse])
+	\item The class should have two attributes:
+	\code{
+	\begin{itemize}[leftmargin=*]
+		\item \_real
+		\item \_imag
+	\end{itemize}
 	}
-	
-	The output for the above example is:
-	
-	\code{Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.
-	}	
+	\item The class should have these magic methods:
+	\begin{itemize}[leftmargin=*]
+		\item \code{\_\_str\_\_} should return a string in the following format: \code{a+bi}
+		\item \code{\_\_add\_\_} should return a new Complex object that is the sum of the two operands
+		\item \code{\_\_sub\_\_} should return a new Complex object that is the difference of the two operands
+		\item \code{\_\_mul\_\_} should return a new Complex object that is the product of the two operands
+		\item \code{\_\_truediv\_\_} should return a new Complex object that is the quotient of the two operands
+	\end{itemize}
+	\item The class should have one additional method:
+	\begin{itemize}
+		\item \code{conj} (complex conjugate)
+	\end{itemize}
+\end{enumerate}
+
+\rule[0pt]{\linewidth}{1pt}
+
+\vspace{4pt}
+
+Here's some examples the class and methods:
+
+\rule[0pt]{\linewidth}{1pt}
+
+\vspace{10pt}
+
+For reference, here are some definitions for copmlex arithmetic. Let $x = a + bi$ and $y = c + di$ be two complex numbers. \\
+
+The sum of $x$ and $y$ is:
+\begin{align*}
+x + y &= (a + bi) + (c + di) \\
+      &= (a + c) + (b + d)i
+\end{align*}
+
+The difference of $x$ and $y$ is:
+\begin{align*}
+x - y &= (a + bi) - (c + di) \\
+      &= (a - c) + (b - d)i
+\end{align*}
+
+The product of $x$ and $y$ is:
+\begin{align*}
+xy &= (a + bi) (c + di) \\
+   &= (ac - bd) + (ad + bc)i
+\end{align*}
+
+The quotient of $x$ and $y$ is:
+\begin{align*}
+\frac{x}{y} &= \frac{a + bi}{c + di} \\
+            &= \frac{(ac + bd)}{c^2 + d^2} + \frac{(bc - ad)}{c^2 + d^2}i
+\end{align*}
+
+\end{Exercise}
+
+
+
+%\vfill\null
+%\columnbreak
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={20 points, Python}]
+
+\begin{enumerate}[leftmargin=*]
+	\item Write two functions that perform the same task in different ways. The task should take anywhere between (roughly) 0.1 and 1 seconds to complete (basically it needs to take a while).
+	\item Use the \code{time} module to find the average time it takes to perform each function. Clearly print average times, clearly label each version.
 \end{enumerate}
 
 \end{Exercise}
+
+
 
 \vfill\null
 \end{multicols*}

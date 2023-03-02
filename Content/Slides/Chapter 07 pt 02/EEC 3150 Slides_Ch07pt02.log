@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  22 FEB 2023 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  28 FEB 2023 12:52
 entering extended mode
 **"./EEC 3150 Slides_Ch07pt02.tex"
 ("EEC 3150 Slides_Ch07pt02.tex"
@@ -1320,6 +1320,9 @@ thkerncmss.
 ] [16
 
 ]
+[17
+
+]
 \tf@nav=\write8
 \openout8 = `"EEC 3150 Slides_Ch07pt02.nav"'.
 
@@ -1329,21 +1332,20 @@ thkerncmss.
 \tf@snm=\write10
 \openout10 = `"EEC 3150 Slides_Ch07pt02.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
-
-("EEC 3150 Slides_Ch07pt02.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+ ("EEC 3150 Slides_Ch07pt02.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
 Package rerunfilecheck Info: File `"EEC 3150 Slides_Ch07pt02".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 03111B8746BFD7DF7781A5141386BEED;113.
  ) 
 Here is how much of TeX's memory you used:
- 23096 strings out of 480790
- 449451 string characters out of 2894452
- 740456 words of memory out of 3000000
- 38484 multiletter control sequences out of 15000+200000
+ 23120 strings out of 480790
+ 450158 string characters out of 2894452
+ 741456 words of memory out of 3000000
+ 38506 multiletter control sequences out of 15000+200000
  541161 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,15n,107p,795b,870s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1357,9 +1359,9 @@ C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmssi10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "EEC 3150 Slides_Ch07pt02.pdf" (16 pages, 203907 bytes).
+Output written on "EEC 3150 Slides_Ch07pt02.pdf" (17 pages, 211768 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

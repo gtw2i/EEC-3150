@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  25 FEB 2023 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  28 FEB 2023 17:15
 entering extended mode
-**"./EEC 3150 Slides_Ch09.tex"
-("EEC 3150 Slides_Ch09.tex"
+**"./EEC 3150 Slides_PythonInOneLine.tex"
+("EEC 3150 Slides_PythonInOneLine.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cl
@@ -1072,8 +1072,8 @@ orthemeorchid.sty")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinn
 erthemerounded.sty")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerout
-erthemeinfolines.sty")) ("EEC 3150 Slides_Ch09.aux")
-\openout1 = `"EEC 3150 Slides_Ch09.aux"'.
+erthemeinfolines.sty")) ("EEC 3150 Slides_PythonInOneLine.aux")
+\openout1 = `"EEC 3150 Slides_PythonInOneLine.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
@@ -1168,9 +1168,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 45.
 LaTeX Info: Redefining \pageref on input line 45.
 LaTeX Info: Redefining \nameref on input line 45.
- ("EEC 3150 Slides_Ch09.out") ("EEC 3150 Slides_Ch09.out")
+ ("EEC 3150 Slides_PythonInOneLine.out")
+("EEC 3150 Slides_PythonInOneLine.out")
 \@outlinefile=\write6
-\openout6 = `"EEC 3150 Slides_Ch09.out"'.
+\openout6 = `"EEC 3150 Slides_PythonInOneLine.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
@@ -1252,91 +1253,47 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
- ("EEC 3150 Slides_Ch09.nav") [1
+ ("EEC 3150 Slides_PythonInOneLine.nav") [1
 
 {C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-("EEC 3150 Slides_Ch09.toc") [2
+("EEC 3150 Slides_PythonInOneLine.toc") [2
 
 ] [3
 
 ] [4
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 126
-.
-
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 126
-.
-
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 126.
-
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\o
-t1mathkerncmss.fd"
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-) [5
+] [5
 
 ] [6
 
-] [7
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-
- []
-
-
-Overfull \vbox (1.62108pt too high) detected at line 205
- []
-
-[8
-
-] [9
-
-] [10
-
-] [11
-
-] [12
-
-] [13
-
 ]
 \tf@nav=\write7
-\openout7 = `"EEC 3150 Slides_Ch09.nav"'.
+\openout7 = `"EEC 3150 Slides_PythonInOneLine.nav"'.
 
 \tf@toc=\write8
-\openout8 = `"EEC 3150 Slides_Ch09.toc"'.
+\openout8 = `"EEC 3150 Slides_PythonInOneLine.toc"'.
 
 \tf@snm=\write9
-\openout9 = `"EEC 3150 Slides_Ch09.snm"'.
+\openout9 = `"EEC 3150 Slides_PythonInOneLine.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
- ("EEC 3150 Slides_Ch09.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
-Package rerunfilecheck Info: File `"EEC 3150 Slides_Ch09".out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
 
-(rerunfilecheck)             Checksum: AECA6DD300464BA17DD41871C24D390E;107.
+("EEC 3150 Slides_PythonInOneLine.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
+Package rerunfilecheck Info: File `"EEC 3150 Slides_PythonInOneLine".out' has n
+ot changed.
+(rerunfilecheck)             Checksum: 18A12032F1920FC9BE1B593A6A01B0E5;108.
  ) 
 Here is how much of TeX's memory you used:
- 22727 strings out of 480790
- 443903 string characters out of 2894452
- 733757 words of memory out of 3000000
- 38122 multiletter control sequences out of 15000+200000
- 541634 words of font info for 58 fonts, out of 3000000 for 9000
+ 22549 strings out of 480790
+ 439876 string characters out of 2894452
+ 728920 words of memory out of 3000000
+ 37982 multiletter control sequences out of 15000+200000
+ 535572 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,15n,107p,791b,924s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 81i,15n,107p,802b,739s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmitt10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmss10.pfb><C:/Users/Graham West/AppData/Local/Programs/M
@@ -1344,14 +1301,13 @@ iKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Graham West/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Graham
  West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C
 :/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmssbx10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmssi10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Graham West/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Graham W
-est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "EEC 3150 Slides_Ch09.pdf" (13 pages, 205388 bytes).
+m/cmss9.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on "EEC 3150 Slides_PythonInOneLine.pdf" (6 pages, 127981 bytes)
+.
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

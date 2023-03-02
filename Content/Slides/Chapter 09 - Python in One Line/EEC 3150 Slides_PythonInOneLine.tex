@@ -1,0 +1,127 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+%\usepackage{fancyvrb}
+
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{Python in One Line}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Inline If Statements}
+
+\begin{frame}	
+	\center{\Huge{Inline If Statements}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Inline If Statements}
+	
+	\begin{block}{Inline if statements:}	
+		You can write simple if statements in one line in the following way: \\[2pt]
+		\code{ans = x if \emph{condition} else y}
+		
+		\vspace{10pt}
+		Examples:
+		\begin{itemize}
+			\item \code{x = 10\\
+				y = 0 if x\%2==0 else 1
+		}
+			\item \code{n = 3 \\
+				x = 'a' if n==0 else 'b' if n==1 else 'c'
+		}
+		\end{itemize}
+		\vspace{10pt}
+		You can't do inline \code{elif} but you can achieve the same result by nesting inline ifs
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{List Comprehension}
+
+\begin{frame}	
+	\center{\Huge{List Comprehension}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{List Comprehension}
+	
+	\begin{block}{List Comprehension:}	
+		You can create lists and dictionaries in one line using comprehension: \\[2pt]
+		\code{myList = [ \emph{expr} for i in \emph{iterable} ]} \\[2pt]
+		\code{myDict = [ \emph{key}:\emph{value} for i in \emph{iterable} ]} \\[2pt]
+		
+		\vspace{10pt}
+		Examples:
+		\begin{footnotesize}
+		\begin{itemize}
+			\item \code{x = [ i for i in range(10) ]} (integers 0-9)
+			\item \code{x = [ i for i in range(10) if i\%2==0 ]} (even integers 0-9)
+			\item \code{x = [ y[i] for i in range(len(y)) if y[i]>thresh ]} (filter another list)
+			\item \code{x = [ [0 for j in range(5)] for i in range(5) ]} (5x5 of 0's)
+		\end{itemize}
+		\end{footnotesize}
+	\end{block}
+	
+\end{frame}
+
+
+
+
+\end{document}
+
+
+
+
