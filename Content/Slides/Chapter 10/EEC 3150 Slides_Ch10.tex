@@ -258,7 +258,7 @@
 	\begin{block}{The \code{vars()} and \code{isinstance()} functions:}
 		\begin{itemize}
 			\item \code{vars(x)} returns a dictionary of all attributes of the object \code{x}
-			\item \code{isinstance(x,Class)} check whether the object \code{x} is an instance of the \code{Class} class
+			\item \code{isinstance(x,Class)} check whether the object \code{x} is an instance of the \code{Class} class (ex: \code{int, float, list, Person})
 		\end{itemize}
 	\end{block}
 	
@@ -287,7 +287,61 @@
 \end{frame}
 
 
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Magic Methods}
 
+\begin{frame}	
+	\center{\Huge{Magic Methods}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Magic Methods}
+	
+	\begin{alertblock}{Defn: magic methods}
+		\textbf{Magic methods} are a set of reserved methods which start and end with double underscores and are used to define certain core operations and functionality for your class
+		
+		\vspace{10pt}
+		There are magic methods for:
+		\begin{itemize}
+			\item Object construction and deletion
+			\item Mathematical/Boolean operations ($+,-,\times,\div,$and,or,...)
+			\item Comparison ($=,\ne,\le,\ge,<,>$)
+			\item Indexing (like with lists)
+			\item Getting/setting attribute values
+		\end{itemize}
+		
+		\vspace{10pt}
+		Here is a list and description of all magic methods in Python: \\
+		\href{https://rszalski.github.io/magicmethods/\#comparisons}{https://rszalski.github.io/magicmethods/\#comparisons}
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Magic Methods}
+	
+	\begin{exampleblock}{\code{Vector} class:}
+		Create a \code{Vector} class to allow for performing vector arithmetic with lists of numbers.
+		
+		\vspace{10pt}
+		Attributes:
+		\begin{itemize}
+			\item \code{comp} (the components of the vector)
+			\item \code{dim} (the dimensionality of the vector)
+		\end{itemize}
+		Functionality:
+		\begin{itemize}
+			\item Constructor
+			\item To string
+			\item Addition
+			\item Subtraction
+			\item Scalar multiplication (on the left and right)
+			\item Scalar division (left only)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
 
 
 \end{document}

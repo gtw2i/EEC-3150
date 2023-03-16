@@ -103,7 +103,7 @@ tabsize=3
 
 \begin{document}
 
-\title{Homework 06: Chapter 07 part 2}
+\title{Homework 07: Chapter 10}
 
 \author{EEC 3150}
 \date{}
@@ -129,57 +129,86 @@ For short answer or math exercises, either do your work on a sheet of paper and 
 \begin{multicols*}{2}
 
 %%% NEW EXERCISE %%%
-\begin{Exercise}[origin={10 points, Python}]
+\begin{Exercise}[origin={40 points, Python}]
 
-This exercise will require you to write two \code{.py} files.
-
-\begin{enumerate}[leftmargin=*]
-	\item Write a module called \code{MyModule.py} that defines several functions and variables of your choice.
-	\item Write a program which will import and call each of these functions and variables. This file should have our standard homework naming convention.
-\end{enumerate}
-
-\end{Exercise}
-
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={15 points, Python}]
+Create a class Complex which implements complex number arithmetic:
 
 \begin{enumerate}[leftmargin=*]
-	\item Write a program which will obtain a list of files in the cwd using \code{os.listdir()} and create a dictionary whose keys are filetypes and whose values are a list of files of that type (all files are taken from the list of files return by \code{os.listdir()}). For example, if the files \code{a.txt,b.txt,c.py} were the in directory, the program should create the following dictionary: \\
-	\code{\{ 'txt':['a.txt','b.txt'], \\
-	'py':['c.py']\}}
-	\item Print the keys and values neatly.
-	\item Write the dictionary to a file called \\ \code{FileTypes.pk} using \code{pickle}.
+	\item The class should have two attributes:
+	\begin{itemize}[leftmargin=*]
+		\item \code{r} (real part)
+		\item \code{i} (imaginary part)
+	\end{itemize}
+	\item The class should have these magic methods:
+	\begin{itemize}[leftmargin=*]
+		\item \code{\_\_str\_\_} should return a string in the following format \code{a+bi} \\
+		1) make sure that if \code{b} is negative, it doesn't print \code{a+-bi} \\
+		2) if either \code{a,b} are 0, don't print \code{0+bi} or \code{a+0i}, only print \code{0} if both \code{a,b} are 0 (you'll need some nested \code{if}'s in your method
+		\item \code{\_\_add\_\_} should return a new Complex object that is the sum of the two operands
+		\item \code{\_\_sub\_\_} should return a new Complex object that is the difference of the two operands
+		\item \code{\_\_mul\_\_} should return a new Complex object that is the product of the two operands
+		\item \code{\_\_truediv\_\_} should return a new Complex object that is the quotient of the two operands
+		\item \code{\_\_neg\_\_} should return the negative of the complex number
+		\item \code{\_\_eq\_\_} should return whether two complex numbers are equal
+		\item \code{\_\_ne\_\_} should return whether two complex numbers are not equal
+	\end{itemize}
+	\item The class should have two additional methods:
+	\begin{itemize}
+		\item \code{conj} (complex conjugate)
+		\item \code{mag} (the megnitude of the complex number via the Pythagorean Theorem)
+	\end{itemize}
 \end{enumerate}
 
-\end{Exercise}
+%\rule[0pt]{\linewidth}{1pt}
 
+%\vspace{10pt}
 
 \vfill\null
 \columnbreak
 
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={20 points, Python}]
+For reference, here are some definitions for copmlex arithmetic. Let $x = a + bi$ and $y = c + di$ be two complex numbers. \\
 
-\begin{enumerate}[leftmargin=*]
-	\item Write two functions that perform the same task in different ways. The task should take anywhere between (roughly) 0.1 and 1 seconds to complete (basically it needs to take a while).
-	\item Use the \code{time} module to find the average time it takes to perform each function. Clearly print average times, clearly label each version.
-\end{enumerate}
+The sum of $x$ and $y$ is:
+\begin{align*}
+x + y &= (a + bi) + (c + di) \\
+      &= (a + c) + (b + d)i
+\end{align*}
+
+The difference of $x$ and $y$ is:
+\begin{align*}
+x - y &= (a + bi) - (c + di) \\
+      &= (a - c) + (b - d)i
+\end{align*}
+
+The product of $x$ and $y$ is:
+\begin{align*}
+xy &= (a + bi) (c + di) \\
+   &= (ac - bd) + (ad + bc)i
+\end{align*}
+
+The quotient of $x$ and $y$ is:
+\begin{align*}
+\frac{x}{y} &= \frac{a + bi}{c + di} \\
+            &= \frac{(ac + bd)}{c^2 + d^2} + \frac{(bc - ad)}{c^2 + d^2}i
+\end{align*}
+
+%\rule[0pt]{\linewidth}{1pt}
+
+\vspace{8pt}
+
+Here's some examples of the class and methods: \\
+
+\begin{minipage}{0.7\columnwidth}
+\includegraphics[width=\linewidth]{ComplexTest}
+\end{minipage}
+\begin{minipage}{0.3\columnwidth}
+\includegraphics[width=0.6\linewidth]{ComplexResults}
+\end{minipage}
+
+
+
 
 \end{Exercise}
-
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={30 points, Python}]
-
-In this exercise, you will calculate the ages of several actors using the \code{re,time} modules. See the Birthdays.txt file. The dates are are formatted like mm/dd/yyyy.
-\begin{enumerate}[leftmargin=*]
-	\item Write two functions that will each return a dictionary whose keys are the names of actors and whose values are their birthdays. The first should use regular expressions to extract the names and dates (name it \code{WithRegex(fname)}) and the other should NOT use regex (call it \code{WithoutRegex(fname)}).
-	\item Write a function \code{GetAge(today,bday)} which will take today's date (formatted in the same manner as above) and an actor's birthday and return their age as an integer number of years. NOTE: you should take into account whether or not their birthday has occurred yet as of the \code{today} date and not merely subtract the years.
-	\item Use these functions to write the ages of the actors to a file \code{Ages.txt} with the following format (try to use formatted strings):\\
-	\code{Jane Doe is 10 years old}
-\end{enumerate}
-
-\end{Exercise}
-
 
 
 \vfill\null

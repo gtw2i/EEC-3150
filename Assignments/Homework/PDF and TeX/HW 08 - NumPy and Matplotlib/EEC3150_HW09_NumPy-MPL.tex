@@ -103,7 +103,7 @@ tabsize=3
 
 \begin{document}
 
-\title{Homework 08: Chapter 10}
+\title{Homework 09: \\ NumPY and Matplotlib}
 
 \author{EEC 3150}
 \date{}
@@ -128,85 +128,72 @@ For short answer or math exercises, either do your work on a sheet of paper and 
 
 \begin{multicols*}{2}
 
+
+
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={10 points, Python}]
 
-Create a class Complex which implements complex number arithmetic:
-
 \begin{enumerate}[leftmargin=*]
-	\item The class should have two attributes:
-	\code{
-	\begin{itemize}[leftmargin=*]
-		\item \_real
-		\item \_imag
-	\end{itemize}
-	}
-	\item The class should have these magic methods:
-	\begin{itemize}[leftmargin=*]
-		\item \code{\_\_str\_\_} should return a string in the following format: \code{a+bi}
-		\item \code{\_\_add\_\_} should return a new Complex object that is the sum of the two operands
-		\item \code{\_\_sub\_\_} should return a new Complex object that is the difference of the two operands
-		\item \code{\_\_mul\_\_} should return a new Complex object that is the product of the two operands
-		\item \code{\_\_truediv\_\_} should return a new Complex object that is the quotient of the two operands
-	\end{itemize}
-	\item The class should have one additional method:
-	\begin{itemize}
-		\item \code{conj} (complex conjugate)
-	\end{itemize}
+	\item Write a function \code{Boundary(n,value)} which will create an $n\times n$ matrix in which the elements on the top, bottom, left, and right boundaries \code{value} while the inside values are equal to 0.
+	\item Demonstrate your function by calling it and printing the output
 \end{enumerate}
 
-\rule[0pt]{\linewidth}{1pt}
+Here is an example: \code{Boundary(4,1)} should produce: \\
 
-\vspace{4pt}
-
-Here's some examples the class and methods:
-
-\rule[0pt]{\linewidth}{1pt}
-
-\vspace{10pt}
-
-For reference, here are some definitions for copmlex arithmetic. Let $x = a + bi$ and $y = c + di$ be two complex numbers. \\
-
-The sum of $x$ and $y$ is:
-\begin{align*}
-x + y &= (a + bi) + (c + di) \\
-      &= (a + c) + (b + d)i
-\end{align*}
-
-The difference of $x$ and $y$ is:
-\begin{align*}
-x - y &= (a + bi) - (c + di) \\
-      &= (a - c) + (b - d)i
-\end{align*}
-
-The product of $x$ and $y$ is:
-\begin{align*}
-xy &= (a + bi) (c + di) \\
-   &= (ac - bd) + (ad + bc)i
-\end{align*}
-
-The quotient of $x$ and $y$ is:
-\begin{align*}
-\frac{x}{y} &= \frac{a + bi}{c + di} \\
-            &= \frac{(ac + bd)}{c^2 + d^2} + \frac{(bc - ad)}{c^2 + d^2}i
-\end{align*}
+\code{[[1 1 1 1] \\[0pt]
+[1 0 0 1] \\[0pt]
+[1 0 0 1] \\[0pt]
+[1 1 1 1]]
+}
 
 \end{Exercise}
 
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={10 points, Python}]
 
+\begin{enumerate}[leftmargin=*]
+	\item Write a function \code{Truncate(arr)} which an array of any shape and return a new array which is a copy of the old array with the following modifications:
+	\begin{itemize}
+		\item Set all values $<0$ to be $=0$
+		\item Set all values $>0$ to be $=1$
+	\end{itemize}
+	\item Demonstrate your function by calling it and printing the output
+\end{enumerate}
 
-%\vfill\null
-%\columnbreak
+Here is an example: \\ \code{Truncate(np.array([-1,2,10,-4]))} should produce: \\
+
+\code{[0 1 1 0]}
+
+\end{Exercise}
 
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={20 points, Python}]
 
+The exercise will have you generate random data, plot it, and index it.
+
 \begin{enumerate}[leftmargin=*]
-	\item Write two functions that perform the same task in different ways. The task should take anywhere between (roughly) 0.1 and 1 seconds to complete (basically it needs to take a while).
-	\item Use the \code{time} module to find the average time it takes to perform each function. Clearly print average times, clearly label each version.
+	\item Generate random data
+	\begin{itemize}[leftmargin=*]
+		\item Create 1D \code{x,y} arrays of 1000 random numbers between -2 and 2
+	\end{itemize}
+	\item Plot the data
+	\begin{itemize}[leftmargin=*]
+		\item Plot the \code{x,y} arrays as blue dots
+	\end{itemize}
+	\item Index the data
+	\begin{itemize}[leftmargin=*]
+		\item Through whatever means you choose, create \code{x2,y2} arrays which only havve the points where $-1.5<x<1$ and $-1<y<0.9$
+	\end{itemize}
+	\item Plot the new data
+	\begin{itemize}[leftmargin=*]
+		\item Plot the \code{x2,y2} arrays on the same plot as red x's with an increased \code{markersize} for readability
+	\end{itemize}
 \end{enumerate}
 
 \end{Exercise}
+
+\vfill\null
+\columnbreak
 
 
 

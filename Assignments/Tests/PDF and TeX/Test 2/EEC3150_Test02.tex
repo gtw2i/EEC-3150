@@ -1,0 +1,203 @@
+\documentclass[12pt]{article}%
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%%%%
+% ME %
+%%%%
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%frame=tb,
+language=Matlab,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+\usepackage{outlines}
+\usepackage{enumitem}
+%\setenumerate[1]{label=\Roman*.}
+%\setenumerate[2]{label=\Alph*.}
+%\setenumerate[3]{label=\roman*.}
+%\setenumerate[4]{label=\alph*.}
+
+\usepackage{titlesec} 
+
+\titleformat{\subsection}[runin]
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% for enumerate spacing
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+\usepackage{exercise}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\setlength\parindent{0pt}
+\renewcommand{\theenumi}{\alph{enumi}}
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\begin{document}
+
+\title{Test 2}
+
+\author{EEC 3150}
+\date{}
+
+\maketitle
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+For each exercise, write a separate Python script. Submit all scripts on Blackboard under the appropriate assignment. Name your script files with the following format: \\
+\vspace{10pt}
+Test$<$test number$>$\_Ex$<$exercise number$>$\_$<$FirstInitial$><$LastName$>$.py \\
+\vspace{10pt}
+Example: Test01\_Ex01\_GWest.py
+}}}
+\end{center}
+
+\pagebreak
+
+\begin{multicols*}{2}
+
+
+
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={30 points}]
+
+For this exercise you will need to import \code{getcwd()} and \code{listdir()} from the \code{os} module.
+\begin{enumerate}
+\item Write a function \code{DirLineCount(path)} which will return a dictionary whose keys are the filenames of all files in the \code{path} directory and whose values are the number of lines in each respective file.
+\item Demonstrate your function by calling it on the current working directory.
+\end{enumerate}
+
+\end{Exercise}
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={30 points}]
+
+In this exercise, you will read and extract content from an HTML file. Please view the file before attempting to code the problem. To view an HTML, you must open it with a text editor (opening it normally will default to the browser).
+
+\begin{enumerate}
+\item Write a function \code{GetImages(fname)} which will read the HTML file \code{fname} and return a list of image filenames that the HTML page displays.
+\item Test your function on the \code{image.html} file. Print the list of image filenames.
+\end{enumerate}
+
+TIP: In HTML, images are placed onto the page using \code{$<$img$>$} tags. The file that they display are given by the \code{src} attribute (short for ``source''). For example, in the tag \\
+
+\code{$<$img id='img1' src='image1.jpg'$>$} \\
+
+the file \code{image1.jpg} is what will be display on the screen.
+
+\end{Exercise}
+
+\vfill\null
+\columnbreak
+
+%%% NEW EXERCISE %%%
+\begin{Exercise}[origin={40 points}]
+
+In thie exercise, you will create a module in which you define a class \code{Data} and then import it into another module where you will use it.
+
+\begin{enumerate}
+\item Create a Python module named code{data.py}. In this module, define the class \code{Data} (notice the difference in capitalization b/t the two). This class should...
+\begin{itemize}
+	\item have a constructor which accepts a list of numeric data (\code{int,float}) and stores it as an attribute
+	\item have methods which compute the mean and standard deviation
+\end{itemize}
+\item Import the \code{data.py} module into another module (named according to our standard format for HW/test exercises) and demonstrate it by creating a \code{Data} object and print its mean and standard deviation.
+\end{enumerate}
+
+For reference, the equation for standard deviation is given by
+\begin{equation*}
+\sigma = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(x_i - \bar x)^2}
+\end{equation*}
+where $N$ is the number of data points and $\bar x$ is the mean. \\
+
+Using your class should look something like this:
+
+\code{myData = Data( [1,6,53,4,7,82,3]) \\
+mean = myData.mean() \\
+std = myData.std()
+}
+
+\end{Exercise}
+
+
+
+
+
+\end{multicols*}
+
+\end{document}
+
+
+
+
+
+
