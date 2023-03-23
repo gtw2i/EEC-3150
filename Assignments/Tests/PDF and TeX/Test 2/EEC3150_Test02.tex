@@ -130,10 +130,10 @@ Example: Test01\_Ex01\_GWest.py
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={30 points}]
 
-For this exercise you will need to import \code{getcwd()} and \code{listdir()} from the \code{os} module.
+For this exercise you will need to use \code{getcwd()} and \code{listdir()} from the \code{os} module.
 \begin{enumerate}
 \item Write a function \code{DirLineCount(path)} which will return a dictionary whose keys are the filenames of all files in the \code{path} directory and whose values are the number of lines in each respective file.
-\item Demonstrate your function by calling it on the current working directory.
+\item Demonstrate your function by calling it on the current working directory. Print the results.
 \end{enumerate}
 
 \end{Exercise}
@@ -141,7 +141,7 @@ For this exercise you will need to import \code{getcwd()} and \code{listdir()} f
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={30 points}]
 
-In this exercise, you will read and extract content from an HTML file. Please view the file before attempting to code the problem. To view an HTML, you must open it with a text editor (opening it normally will default to the browser).
+In this exercise, you will read and extract content from an HTML file. Please view the file before attempting to code the problem. To view an HTML file, you must open it with a text editor (opening it by simply double-clicking will default to using the browser).
 
 \begin{enumerate}
 \item Write a function \code{GetImages(fname)} which will read the HTML file \code{fname} and return a list of image filenames that the HTML page displays.
@@ -152,7 +152,7 @@ TIP: In HTML, images are placed onto the page using \code{$<$img$>$} tags. The f
 
 \code{$<$img id='img1' src='image1.jpg'$>$} \\
 
-the file \code{image1.jpg} is what will be display on the screen.
+the file \code{image1.jpg} is what will be displayed on the screen.
 
 \end{Exercise}
 
@@ -162,15 +162,16 @@ the file \code{image1.jpg} is what will be display on the screen.
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={40 points}]
 
-In thie exercise, you will create a module in which you define a class \code{Data} and then import it into another module where you will use it.
+In this exercise, you will create a module \code{data.py} in which you define a class \code{Data} and then import it into another module where you will use it.
 
 \begin{enumerate}
-\item Create a Python module named code{data.py}. In this module, define the class \code{Data} (notice the difference in capitalization b/t the two). This class should...
+\item Create a Python module named \code{data.py}. In this module, define the class \code{Data} (notice the difference in capitalization b/t the two). This class should...
 \begin{itemize}
-	\item have a constructor which accepts a list of numeric data (\code{int,float}) and stores it as an attribute
+	\item have a constructor which accepts a list of numeric data (\code{int,float}) and stores it as an attribute called \code{data}
+	\item have a \code{\_\_str\_\_} magic method which will simply return the \code{data} attribute, but cast to a \code{str}
 	\item have methods which compute the mean and standard deviation
 \end{itemize}
-\item Import the \code{data.py} module into another module (named according to our standard format for HW/test exercises) and demonstrate it by creating a \code{Data} object and print its mean and standard deviation.
+\item Import the \code{data.py} module into another module (named according to our standard format for HW/test exercises). Demonstrate it by creating a \code{Data} object and printing its \code{data} attribute, mean, and standard deviation.
 \end{enumerate}
 
 For reference, the equation for standard deviation is given by
@@ -178,13 +179,6 @@ For reference, the equation for standard deviation is given by
 \sigma = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(x_i - \bar x)^2}
 \end{equation*}
 where $N$ is the number of data points and $\bar x$ is the mean. \\
-
-Using your class should look something like this:
-
-\code{myData = Data( [1,6,53,4,7,82,3]) \\
-mean = myData.mean() \\
-std = myData.std()
-}
 
 \end{Exercise}
 

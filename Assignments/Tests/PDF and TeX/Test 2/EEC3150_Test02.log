@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  11 MAR 2023 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  22 MAR 2023 19:50
 entering extended mode
 **./EEC3150_Test02.tex
 (EEC3150_Test02.tex
@@ -707,19 +707,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+[]\OT1/ptm/m/n/12 Create a Python mod-ule named
+ []
+
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 70.
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 "
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
- []
-
-
-Overfull \hbox (15.6683pt too wide) in paragraph at lines 187--188
-[]\OT1/pcr/m/n/12 myData = Data( [1,6,53,4,7,82,3]) 
  []
 
 [2] (EEC3150_Test02.aux) ) 
@@ -730,7 +730,7 @@ Here is how much of TeX's memory you used:
  24149 multiletter control sequences out of 15000+200000
  548995 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,45p,819b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,7n,45p,819b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Graham West/AppData/Local/Programs/MiKTeX/f
 onts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Graham West/AppData/Local/P
@@ -744,7 +744,7 @@ MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Graham West/AppData/Local/P
 rograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Graham West/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Graham West/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on EEC3150_Test02.pdf (2 pages, 100864 bytes).
+Output written on EEC3150_Test02.pdf (2 pages, 98992 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

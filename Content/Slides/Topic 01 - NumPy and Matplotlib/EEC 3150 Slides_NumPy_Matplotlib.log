@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  15 MAR 2023 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  22 MAR 2023 18:59
 entering extended mode
 **"./EEC 3150 Slides_NumPy_Matplotlib.tex"
 ("EEC 3150 Slides_NumPy_Matplotlib.tex"
@@ -1288,7 +1288,11 @@ thkerncmss.
 
 ] [6
 
-] [7
+]
+Overfull \vbox (8.27051pt too high) detected at line 196
+ []
+
+[7
 
 ] [8
 
@@ -1297,6 +1301,26 @@ thkerncmss.
 ] [10
 
 ] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
 
 ]
 \tf@nav=\write7
@@ -1308,25 +1332,21 @@ thkerncmss.
 \tf@snm=\write9
 \openout9 = `"EEC 3150 Slides_NumPy_Matplotlib.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 582.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 582.
 
-("EEC 3150 Slides_NumPy_Matplotlib.aux"
-
-Package pdfbase Warning: Rerun to get internal references right!
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+("EEC 3150 Slides_NumPy_Matplotlib.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 582.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 582.
 Package rerunfilecheck Info: File `"EEC 3150 Slides_NumPy_Matplotlib".out' has 
 not changed.
-(rerunfilecheck)             Checksum: 14D7A31851F98FA123E2E3F91E2F36D1;314.
+(rerunfilecheck)             Checksum: C0FB44B2B91FAFF2286852ADD51D22F8;657.
  ) 
 Here is how much of TeX's memory you used:
- 22766 strings out of 480790
- 444999 string characters out of 2894452
- 736948 words of memory out of 3000000
- 38155 multiletter control sequences out of 15000+200000
+ 22828 strings out of 480790
+ 445607 string characters out of 2894452
+ 735948 words of memory out of 3000000
+ 38192 multiletter control sequences out of 15000+200000
  548290 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,15n,107p,803b,949s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1345,17 +1365,18 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Use
 rs/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 si9.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Graham West/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Graham West/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Gra
-ham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pf
-b><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmtt8.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmtt9.pfb>
-Output written on "EEC 3150 Slides_NumPy_Matplotlib.pdf" (11 pages, 256851 byte
+s/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Graham West/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Graham West/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Grah
+am West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on "EEC 3150 Slides_NumPy_Matplotlib.pdf" (21 pages, 346987 byte
 s).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

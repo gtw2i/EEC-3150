@@ -1,0 +1,586 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+%\usepackage{fancyvrb}
+
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{NumPy and Matplotlib}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{NumPy}
+
+\begin{frame}	
+	\center{\Huge{NumPy: \\ Numerical Python}}
+\end{frame}
+
+\subsection{Intro to NumPy}
+
+\begin{frame}	
+	\frametitle{Intro to NumPy}
+	
+	\begin{block}{NumPy:}
+		NumPy is one of the most commonly used third-party libraries in Python \\
+		\href{https://numpy.org/doc/stable/}{https://numpy.org/doc/stable/}
+		
+		\vspace{10pt}
+		Key features:
+		\begin{itemize}
+			\item Extensive library of tools for mathematical computations
+			\begin{itemize}
+				\item Trigonometric, exponential, and special functions
+				\item Statistics and random number generation
+				\item Linear algebra and Fourier analysis (and more)
+			\end{itemize}
+			\item Bread and butter: \code{ndarray} objects
+			\begin{itemize}
+				\item $n$-dimensional arrays
+				\item Lists but infinitely better (how you wish lists worked)
+			\end{itemize}
+		\end{itemize}
+		
+		\vspace{10pt}
+		Importing numpy: \\
+		\code{import numpy as np}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Creating \code{ndarray}'s}
+
+\begin{frame}	
+	\frametitle{Creating \code{ndarray}'s}
+	
+	\begin{block}{Functions for creating arrays:}
+		\begin{scriptsize}
+		
+%		NumPy provides many functions for creating arrays of different kinds
+		\begin{itemize}
+			\item \code{np.array(x)} will convert the list \code{x} into an array \\
+					The function accepts an additional keyword argument \code{dtype} that allows for the specification of data type the array should have (ex: np.int32, np.float64)
+			\item \code{np.zeros(n)} will create an array of length $n$ (int) of all zeros \\
+					You can also pass a tuple instead of an integer to create a multi-dimensional array (ex: \code{np.zeros((m,n))} creates and $m\times n$ array)
+			\item \code{np.ones(n)} (like above, but all ones)
+			\item \code{np.full(n,value)} (like above, but fills array with \code{value})
+%			\item \code{np.eye(n)} creates an $n\times n$ identity matrix
+			\item \code{np.arange(a,b,step)} same as Python \code{range} but allows floats
+			\item \code{np.linspace(a,b,n)} creates an array of \code{n} evenly-spaced points from \code{a} to \code{b}
+			\item \code{np.random.rand(n)} creates a length \code{n} array of random numbers b/t 0 and 1 \\
+					This uses the \code{np.random} library (more on that later)
+		\end{itemize}
+		Some additional points:
+		\begin{itemize}
+			\item The different dimensions of a numpy array are called \emph{axes} (\code{axis} is often a keyword argument to many functions)
+			\item Use the \code{shape} attribute to get the length of an array along each axis (ex: \code{x.shape})
+		\end{itemize}
+		
+%		Equivalent: \code{2*np.ones((3,3))} and \code{np.full((3,3),2)}
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Creating \code{ndarray}'s}
+	
+	\begin{exampleblock}{2 ways of creating a $3\times3$ array of all 5's:}
+		\begin{itemize}
+			\item np.full((3,3),5)
+			\item 5*np.ones((3,3))
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Row vs. column vs. 1-D:}
+		These are all different objects:
+		\begin{itemize}
+			\item np.ones(5) \\
+					This is a 1-D array
+			\item np.ones((5,1)) \\
+					This is a 2-D array (column)
+			\item np.ones((1,5)) \\
+					This is a 2-D array (row)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Indexing \code{ndarray}'s}
+
+\begin{frame}	
+	\frametitle{Indexing \code{ndarray}'s}
+	
+	\begin{block}{Indexing \code{ndarray}'s}
+		\begin{scriptsize}
+		Standard list indexing:
+		\begin{itemize}
+			\item Index an element: \code{x[1]}
+			\item Get a slice: \code{x[4:12]}
+			\item Index from the end: \code{x[-3]}
+		\end{itemize}
+		
+		Numpy also supports \emph{fancy indexing}:
+		\begin{itemize}
+			\item Index a 2-D array: \code{x[2,5]}
+			\item Index an entire row, column respectively: \code{x[2,:]}, \code{x[:,5]}
+			\item Index a list of specific elements: \code{x[[1,4,8]]}
+			\item Index with a boolean mask: \code{x[[True,False,False,True]]}
+			\item Index all elements with values greater than 0: \code{x[x>0]} \\
+			\begin{itemize}
+				\scriptsize
+				\item How it works: \code{x>0} creates a boolean mask used to index the \code{x} array
+				\item This works for multi-dimensional arrays too
+				\item Limitation: you can't do multiple conditionals in the same fancy index
+				% (but you can still accomplish the same functionality using Numpy's functions for logical operations)
+			\end{itemize}
+			\item Get the indices (not values) where an array is greater than 0: \code{np.where(x>0)}
+			\item Indexing with \code{np.newaxis} will add another axis to the array
+		\end{itemize}
+		In addition to accessing array elements with the above techniques, you can also SET elements with the above techniques
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Indexing \code{ndarray}'s}
+	
+	\begin{block}{Conditional masking vs. np.where()}
+%		Let \code{x} be a numpy array:
+		\begin{itemize}
+			\item \code{x[x>0]} returns the VALUES where \code{x} is greater than 0
+			\item \code{np.where(x>0)} returns the INDICES where \code{x} is greater than 0
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{np.where() on multi-dimensional arrays}
+		\begin{itemize}
+			\item Running a \code{np.where()} on a 2D (or higher) array will produce a tuple of index arrays
+			\item Each tuple corresponds to the indices of the respective axis
+			\item Indexing the original array with this tuple of index arrays will produce a 1D array
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Indexing \code{ndarray}'s}
+	
+	\begin{exampleblock}{Set negative elements to 0:}
+		\begin{itemize}
+			\footnotesize
+			\item Generate some random data
+			\item Set all negative values to 0
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Index with multiple conditions:}
+		\begin{itemize}
+			\footnotesize
+			\item Generate some random data
+			\item Using several boolean masks, index the values such that $a<x<b$
+			\item There are several ways to do this
+			\begin{itemize}
+				\footnotesize
+				\item Use numpy's \code{np.logical\_and(x,y)} function
+				\item Repeatedly index and overwrite the same array with different boolean masks
+			\end{itemize}
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Math operations on \code{ndarray}'s}
+
+\begin{frame}	
+	\frametitle{Math operations \code{ndarray}'s}
+	
+	\begin{block}{Math operations \code{ndarray}'s:}
+%		\begin{footnotesize}
+		
+		Numpy arrays can handle mathematical operations in an intuitive, element-wise way:
+		\begin{itemize}
+			\item We can perform virtually any mathematical operation on any combination of arrays and scalars (as long as their lengths in each dimension match)
+			\item The exception to this is Boolean operations, but Numpy has functions for these anyway
+			\item We can also apply virtually any of Numpy's mathematical functions on arrays in an element-wise fashion
+			\item Numpy can even add arrays of different sizes in certain contexts
+		\end{itemize}
+%		\end{footnotesize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Math operations \code{ndarray}'s}
+	
+	\begin{exampleblock}{Plot some random numbers:}
+		\begin{itemize}
+			\item Create an array of random numbers b/t $-a$ and $a$
+			\item Create and plot a linearly-spaced array of numbers with the above random numbers added as noise
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Plot sin and cos:}
+		Plot sin$(x)$ and cos$(x)$ from 0 to $2\pi$
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Plot positive sin$(x)$:}
+		\begin{itemize}
+			\footnotesize
+			\item Create \code{x,y} arrays for plotting sin$(x)$ from 0,$4\pi$
+			\item Only plot values where sin$(x)\ge0$
+			\item Plot with dots
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Misc. Array Tools}
+
+\begin{frame}	
+	\frametitle{Misc. Array Tools}
+	
+	\begin{block}{Misc. Array Tools}
+		\begin{scriptsize}
+		\begin{itemize}
+			\item \code{np.reshape(x,(m,n))} reshapes \code{x} into a new shape; also, x.reshape((m,n))
+			\item \code{x.flatten()} returns a 1-D reshaping of \code{x} (doesn't overwrite \code{x})
+			\item \code{np.flipud(x)} (ud: up-down) flips a multi-dim array vertically
+			\item \code{np.fliplr(x)} (lr: left-right) flips a multi-dim array horizontally
+			\item \code{np.rot90(x,n)} applies an $n*90$ degree rotation to the array
+			\item \code{np.roll(x,n)} applies a cyclic shift by $n$ to the right
+			\item \code{np.sort(x,axis=-1)} returns a sorted version of \code{x} (doesn't overwrite \code{x})
+			\item \code{np.argsort(x,axis=-1)} returns the indices of \code{x} which sort it
+			\item \code{x.T} transposes a 2D array
+			\item \code{np.unique(x)} returns a sorted array of all the unique elements of \code{x}
+			\item \code{np.append(x,value)} returns an array with \code{value} appended to \code{x} (doesn't overwrite \code{x})
+			\item \code{np.insert(x,idx,value)} returns an array with \code{value} inserted to \code{x} at index \code{idx} (doesn't overwrite \code{x})
+			\item \code{np.delete(x,idx)} returns an array with \code{value} deleted from \code{x} (doesn't overwrite \code{x})
+%			\begin{itemize}
+%				\scriptsize
+%				\item 
+%			\end{itemize}
+		\end{itemize}
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Misc. Array Tools}
+	
+	\begin{exampleblock}{Indices of all unique values:}
+		\footnotesize
+		\begin{itemize}
+			\footnotesize
+			\item Create a list of random integers
+			\item Get unique values
+			\item For each unique value, create of list of indices where the array has that value
+			\item Remove all zeros from the array
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Sort data before plot:}
+		\footnotesize
+		\begin{itemize}
+			\footnotesize
+			\item Create random $x$ data from 0 to $2\pi$
+			\item $y = sin(x)$
+			\item Plot and see that the data is out of order
+			\item Sort the data so that the plot looks correct (argsort on $x$ and apply to $x$ and $y$)
+			\item Plot again (comment out old plot)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Math Functions}
+
+\begin{frame}	
+	\frametitle{Math Functions}
+	
+	\begin{block}{Math Functions}
+		\begin{scriptsize}
+		\begin{itemize}
+			\item sum, prod, cumsum, cumprod
+			\item \code{np.amin(x,axis=None)} return the minimum of an array or minimum along an axis \\
+					Also: amax, argmin, and argmax
+			\item degrees, radians (conversion)
+			\item Trig: sin, ... , arcsin... , sinh, ... , arcsinh, ...
+			\item Exp: exp, log, log2, log10
+			\item floor, ceil, lcm, gcd
+			\item Complex numbers: \code{x = 1+1j}
+			\begin{itemize}
+				\scriptsize
+				\item \code{x.real}, \code{x.imag}, \code{np.conj(x)}, \code{np.angle(x)}
+			\end{itemize}
+		\end{itemize}
+		
+		There are also:
+		\begin{itemize}
+			\item Set functions: union, intersection, ...
+			\item Boolean functions: logical\_and, ... , all, isinf
+		\end{itemize}
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Random Functions}
+
+\begin{frame}	
+	\frametitle{Random Functions}
+	
+	\begin{block}{Random Functions (\code{np.random}):}
+		\begin{scriptsize}
+		\href{https://numpy.org/doc/stable/reference/random/legacy.html}{https://numpy.org/doc/stable/reference/random/legacy.html}
+		
+		\vspace{10PT}
+		All functions begin with \code{np.random.}
+		\begin{itemize}
+			\item \code{seed(n)} set the seed for RNG (useful for reproducible random sequences)
+			\item \code{rand(n)} create an array of uniform random numbers b/t 0 and 1 (pass multiple args for multi-dim)
+			\item \code{randn(n)} create an array of normally-distributed random numbers (pass multiple args for multi-dim)
+			\item \code{randint(low,high,size)} create an array of uniform random integers numbers b/t low (inc) and high (excl)
+			\item \code{uniform(low,high,size)} create an array of uniform random numbers b/t low and high
+			\item \code{normal(loc,scale,size)} create an array of normally-distributed random numbers with mean \code{loc} and std \code{scale}
+			\item \code{multivariate\_normal(mean,cov,size)} create an array of normally-distributed random numbers with mean and cov
+			\item Many more distributions...
+		\end{itemize}
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Random Functions}
+	
+	\begin{block}{Random Functions (\code{np.random}):}
+		\begin{scriptsize}
+		\href{https://numpy.org/doc/stable/reference/random/legacy.html}{https://numpy.org/doc/stable/reference/random/legacy.html}
+		
+		\vspace{10pt}
+		All functions begin with \code{np.random.}
+		\begin{itemize}
+			\item \code{shuffle(x)} randomly shuffle \code{x} in-place (DOES CHANGE \code{x}!!!)
+			\item \code{permutation(x)} randomly shuffle \code{x} (doesn't change \code{x})
+			\item \code{choice(arr,size,replace=True,p=None)} return a random sample (w/ or w/out replacement) or \code{arr} of \code{size} with optional weights \code{p}
+		\end{itemize}
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Math Functions}
+	
+	\begin{exampleblock}{Plot a multi-normal distribution:}
+		\footnotesize
+		\begin{itemize}
+			\footnotesize
+			\item Generate (n,2) array of multi-normal data with some mean and covariance
+			\item Plot the data
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Sample from a probability distribution:}
+		\footnotesize
+		Use np.cumsum and np.random.rand to sample from a PDF of your choice (the np.random library has a function for this, but doing it manually is a good exercise)
+		\begin{itemize}
+			\footnotesize
+			\item Create function $f$ for probabilities
+			\item Create grid of $x$ values (limits and number of points)
+			\item Sample $f$ on grid (array of $f$ values)
+			\item Normalize and cumsum the array
+			\item Generate random numbers and determine which sample they fall into
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Sample from a probability distribution:}
+		\footnotesize
+		\begin{itemize}
+			\footnotesize
+			\item Redo previous exercise with \code{np.random.choice}
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Statistics Functions}
+
+\begin{frame}	
+	\frametitle{Statistics Functions}
+	
+	\begin{block}{Statistics Functions:}
+		\begin{scriptsize}
+		\href{https://numpy.org/doc/stable/reference/routines.statistics.html}{https://numpy.org/doc/stable/reference/routines.statistics.html}
+		\begin{itemize}
+			\item average, mean, median, std, var
+			\item cov, corrcoef
+			\item quantile, percentile (functionally equivalent, different inputs)
+			\item histogram, histogram2d, histogramdd
+			\item bincount (count the number of occurences of unique integers)
+		\end{itemize}
+		\end{scriptsize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Statistics Functions}
+	
+	\begin{exampleblock}{Correlate some variables:}
+		\footnotesize
+		\begin{itemize}
+			\footnotesize
+			\item Create some linspace-d x data
+			\item Create $y = mx+b$ plus normal noise
+			\item Plot x, y
+			\item Get corrcoef
+			\item Vary strength of noise
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{Linear Algebra Functions}
+
+\begin{frame}	
+	\frametitle{Linear Algebra Functions}
+	
+	\begin{block}{Linear Algebra Functions (\code{np.linalg}):}
+		\scriptsize
+		
+		\href{https://numpy.org/doc/stable/reference/routines.linalg.html}{https://numpy.org/doc/stable/reference/routines.linalg.html}
+		
+		\vspace{10pt}
+		NOTE: some of these use \code{np} and some use \code{np.linalg}
+		\begin{itemize}
+			\item \code{np.eye(n)} creates and $n\times n$ identity matrix
+			\item \code{A.T} trasponses the matrix \code{A}
+			\item \code{np.linalg.norm(x,ord)} returns the norm (magnitude) of a vector \code{x} (optional argument \code{ord} for specifying the order of the norm)
+			\item \code{np.matmul(A,B)} performs the matrix product of two vectors/matrices \\
+					(there's also dot, inner, outer)
+			\item \code{np.linalg.det(A)} returns the determinant of a matrix
+			\item \code{np.linalg.inv(A)} returns the inverse of \code{A}
+			\item \code{np.linalg.eig(A)} returns the eigenvalues and eigenvectors of a square matrix \\
+					(can return complex numbers for non-symmetric matrices)
+			\item \code{np.linalg.solve(A,b)} returns the solution of the system of linear equations $Ax=b$
+		\end{itemize}
+		
+		A possible import alias: \\
+		\code{from numpy import linalg as LA}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Linear Algebra Functions}
+	
+	\begin{exampleblock}{Solve a system of linear equations:}
+		\footnotesize
+		Do this WITHOUT and WITH \code{np.linalg.solve}
+		\begin{itemize}
+			\footnotesize
+			\item Create a system of equations $Ax = b$ where $A$ is some matrix and $x,b$ are some vectors
+			\item Solve the system by finding $x = A^{-1}b$
+		\end{itemize}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Find the principal components of some data:}
+		\footnotesize
+		\begin{itemize}
+			\footnotesize
+			\item Generate some random normal x data
+			\item Generate y data that is linear w.r.t. x plus normal noise
+			\item Evaluate correlation matrix (corrcoef)
+			\item Evaluate eigenvectors and values of corrcoef
+			\item Plot the vectors and the data
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+
+% linear algebra, np.linalg
+% eye, dot, det, inv
+
+
+
+
+
+\end{document}
+
+
+
+
