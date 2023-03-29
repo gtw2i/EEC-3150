@@ -1,0 +1,221 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textpos}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{comment}
+%\usepackage{multicol}
+%\setlength{\columnsep}{5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{scalerel,stackengine}
+%\usepackage{fancyvrb}
+\usepackage{enumitem}
+
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\shp}{$>>>$ }
+\newcommand{\tab}{\hspace*{22pt}}
+
+\usetheme{Madrid}
+
+\title{NumPy and Matplotlib}
+\author{EEC 3150}
+\date{}
+
+\institute{Trevecca Nazarene University}
+ 
+
+
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%
+
+\begin{document}
+
+% get title page 
+\frame{\titlepage}
+ 
+%%%%%%%%%%
+%%%%%%%%%%
+\begin{frame}	
+	\frametitle{Outline}
+	\tableofcontents	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{RNG}
+
+\begin{frame}	
+	\center{\Huge{RNG}}
+\end{frame}
+
+\subsection{Random Walks}
+
+\begin{frame}	
+	\frametitle{Random Walks}
+	
+	\begin{block}{Random Walks:}
+		A random walk is a sequence $x_0,x_1,x_2, \cdots, x_{N-1}$ of randomly generated steps through some space:
+		\begin{itemize}
+			\item It is usually formulated
+			\begin{equation}
+				x_{i+i} = x_i + r_i
+			\end{equation}
+			where $i=0, \cdots, N-1$, $x_0$ is a given initial state, and the $r_i$'s are randomly generated from some distribution
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Random Walks}
+	
+	\begin{exampleblock}{Create some random walks:}
+		\begin{itemize}
+			\item 1D +1 or -1
+			\item 1D uniform(0,1)
+			\item 1D uniform(-1,1)
+			\item 1D normal distribution
+			\item 2D normal
+			\item 2D up-down/left-right (with bias)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+\subsection{RNG on Different Domains}
+
+\begin{frame}	
+	\frametitle{RNG on Different Domains}
+	
+	\begin{block}{RNG on Different Domains:}
+		We can use NumPy's RNG tools to randomly generate points inside an arbitrary domain:
+		\begin{itemize}
+			\item We can uniformly sample different domains by sampling along the ``dimensions'' of the domain
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{RNG on Different Domains}
+	
+	\begin{exampleblock}{Uniformly sample some domains:}
+		\begin{itemize}
+			\item Circle perimeter
+			\item Rectangle
+			\item Disk area
+			\item Sphere
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Monte Carlo Simulation}
+
+\begin{frame}	
+	\center{\Huge{Monte Carlo Simulation}}
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Monte Carlo Simulation}
+	
+	\begin{block}{Monte Carlo Simulation:}
+		\textbf{Monte Carlo simulation} is a computational technique used to model and simulate complex systems or processes using random sampling and statistical methods
+		
+		\vspace{10pt}
+		You can use it to:
+		\begin{itemize}
+			\item Evaluate complex integrals over complex domains
+			\item Evaluate statistical measures on complex distributions
+			\item Generate complex distributions
+		\end{itemize}
+		
+		\vspace{10pt}
+		Technique:
+		\begin{itemize}
+			\item Generate LARGE volume of random samples on some distribution
+			\item Perform various stiatistical analyses of the result
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Monte Carlo Simulation}
+	
+	\begin{exampleblock}{Estimate $\pi$:}
+		\small
+		Steps:
+		\begin{enumerate}[label={\arabic*.}]
+			\small
+			\item Uniformly sample $N_{sq}$ points in the unit square
+			\item Inscribe the unit circle in the unit square
+			\item Count the number $N_{c\ell}$ points in the unit circle
+			\item For large $N_{sq}$, \quad $\frac{N_{c\ell}}{N_{sq}}\approx\frac{A_{c\ell}}{A_{sq}}$
+			\item $\frac{A_{c\ell}}{A_{sq}}=\frac{\pi r^2}{(2r)^2}=\frac{\pi}{4} \approx \frac{N_{c\ell}}{N_{sq}}$
+			\item $ \pi \approx 4\frac{N_{c\ell}}{N_{sq}}$
+		\end{enumerate}
+		
+		Some notes:
+		\begin{itemize}
+			\small
+			\item More accurate approximations for large $N_{sq}$
+			\item MC has a slow rate of convergence, i.e., it takes MANY samples to get accurate results (there are more efficient means of estimating $\pi$)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Monte Carlo Simulation}
+	
+	\begin{exampleblock}{Estimate $\pi$:}
+		\small
+		Steps:
+		\begin{enumerate}[label={\arabic*.}]
+			\small
+			\item Uniformly sample $N_{sq}$ points in the unit square
+			\item Inscribe the unit circle in the unit square
+			\item Count the number $N_{c\ell}$ points in the unit circle
+			\item For large $N_{sq}$, \quad $\frac{N_{c\ell}}{N_{sq}}\approx\frac{A_{c\ell}}{A_{sq}}$
+			\item $\frac{A_{c\ell}}{A_{sq}}=\frac{\pi r^2}{(2r)^2}=\frac{\pi}{4} \approx \frac{N_{c\ell}}{N_{sq}}$
+			\item $ \pi \approx 4\frac{N_{c\ell}}{N_{sq}}$
+		\end{enumerate}
+		
+		Some notes:
+		\begin{itemize}
+			\small
+			\item More accurate approximations for large $N_{sq}$
+			\item MC has a slow rate of convergence, i.e., it takes MANY samples to get accurate results (there are more efficient means of estimating $\pi$)
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+
+\end{document}
+
+
+
+

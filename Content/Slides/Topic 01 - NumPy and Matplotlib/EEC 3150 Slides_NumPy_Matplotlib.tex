@@ -571,9 +571,154 @@
 \end{frame}
 
 
+%%%%%%%%%%
+%%%%%%%%%%
+\subsection{File I/O}
 
-% linear algebra, np.linalg
-% eye, dot, det, inv
+\begin{frame}	
+	\frametitle{File I/O}
+	
+	\begin{block}{File I/O:}
+		\begin{itemize}
+			\item \code{np.savetxt(fname, X, delimiter=None)}
+			\item \code{X = np.loadtxt(fname, delimiter=None)}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%
+%%%%%%%%%%
+\section{Matplotlib and Pyplot}
+
+\begin{frame}	
+	\center{\Huge{Matplotlib and Pyplot}}
+\end{frame}
+
+\subsection{Matplotlib and Pyplot}
+
+\begin{frame}	
+	\frametitle{Matplotlib and Pyplot}
+	
+	\begin{block}{Matplotlib and Pyplot:}
+		\scriptsize
+		\code{from matplotlib import pyplot as plt}
+		
+		\vspace{10pt}
+		Different plot types (\url{https://matplotlib.org/stable/plot_types/index.html}):
+		\begin{itemize}
+			\scriptsize
+			\setlength{\itemsep}{-2pt}
+			\item Line plotting
+				\begin{itemize}
+					\scriptsize
+					\item \texttt{plt.plot(x, y, fmt, markersize, linewidth} \\
+				\end{itemize}
+			\item Scatter plotting
+				\begin{itemize}
+					\scriptsize
+					\item \texttt{plt.scatter(x, y, c, s, marker, cmap)} \\
+				\end{itemize}
+			\item Bar plotting
+				\begin{itemize}
+					\scriptsize
+					\item \texttt{plt.bar(x, y, width)} \\
+					\item \texttt{plt.barh(x, y, width)} \\
+				\end{itemize}
+			\item Histogram plotting
+				\begin{itemize}
+					\scriptsize
+					\item \texttt{plt.hist(x, bins, range, density=False)}
+					\item \texttt{plt.hist2d(x, y, bins, range, density)}
+				\end{itemize}
+			\item Image/2D array plotting
+				\begin{itemize}
+					\scriptsize
+					\item \texttt{plt.imshow(X, cmap, interpolation, aspect)}
+				\end{itemize}
+		\end{itemize}
+		
+		\vspace{10pt}
+		\code{plt.show()}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Matplotlib and Pyplot}
+
+	\minipage{0.4\textwidth}
+		\begin{block}{Plot attributes:}
+			\begin{itemize}
+				\footnotesize
+				\item \texttt{plt.xlim(left, right)}
+				\item \texttt{plt.ylim(bottom, top)}
+				\item \texttt{plt.xlabel(xlabel)}
+				\item \texttt{plt.ylabel(ylabel)}
+				\item \texttt{plt.title(title)}
+			\end{itemize}
+		\end{block}
+	\endminipage\hfill
+	\minipage{0.05\textwidth}
+		% blank
+	\endminipage\hfill	
+	\minipage{0.55\textwidth}
+		\begin{block}{plt vs. fig vs ax:}
+			\begin{itemize}
+				\footnotesize
+				\item plt: alias to pyplot module
+				\item fig: a handle to the entire graphic
+				\item ax: a handle to the particular plot in the fig (there can be multiple)
+			\end{itemize}
+		\end{block}
+	\endminipage\hfill
+	
+	\begin{block}{Fancier plotting:}
+		\begin{itemize}
+	         \footnotesize
+			\item \code{fig, ax = plt.figure()}
+			\begin{itemize}
+		         \footnotesize
+				\item This gives you easier access to certain options (and is also necessary for multiple plots)
+				\item Plot attributes are called with \code{ax} instead of \code{plt} and have \code{set\_} appended to the beginning
+				\item \code{ax.legend()}
+				\item \code{fig.set\_size\_inches(width, height)} (can also pass kwarg tuple, \code{figsize})
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Linear Algebra Functions}
+	
+	\begin{exampleblock}{3D plot:}
+		\begin{itemize}
+			\item Create a 3D plot of some mathematical function
+		\end{itemize}
+	\end{exampleblock}
+	
+\end{frame}
+
+\begin{frame}	
+	\frametitle{Matplotlib and Pyplot}
+	
+	\begin{block}{Subplots:}
+		This is just one way to create subplots:
+		\begin{itemize}
+		    
+		    \item \code{fig, axes = plt.subplots(nrows=nrows, ncols=ncols)}
+		        \begin{itemize}
+		            
+		            \item Creates a nrow by ncol grid of plots
+		            \item Returns a 1D or 2D array of axes (depending on the values of nrow and ncol)
+		            \item Useful trick: if you need a lot of subplots that don't naturally fall into a grid structure but would be too long to have in a single row of column, you can flatten \code{axes}
+		        \end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
 
 
 

@@ -9,3 +9,6 @@
 \beamer@subsectionintoc {1}{7}{Random Functions}{15}{0}{1}
 \beamer@subsectionintoc {1}{8}{Statistics Functions}{18}{0}{1}
 \beamer@subsectionintoc {1}{9}{Linear Algebra Functions}{20}{0}{1}
+\beamer@subsectionintoc {1}{10}{File I/O}{22}{0}{1}
+\beamer@sectionintoc {2}{Matplotlib and Pyplot}{23}{0}{2}
+\beamer@subsectionintoc {2}{1}{Matplotlib and Pyplot}{24}{0}{2}

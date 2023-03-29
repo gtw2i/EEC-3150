@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  25 MAR 2023 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  25 MAR 2023 12:41
 entering extended mode
-**./EEC3150_HW08_NumPy-MPL.tex
-(EEC3150_HW08_NumPy-MPL.tex
+**./EEC3150_HW09_RNG-MC.tex
+(EEC3150_HW09_RNG-MC.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -577,8 +577,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mult@nat@firstbox=\box107
 \colbreak@box=\box108
 \mc@col@check@num=\count308
-) (EEC3150_HW08_NumPy-MPL.aux)
-\openout1 = `EEC3150_HW08_NumPy-MPL.aux'.
+) (EEC3150_HW09_RNG-MC.aux)
+\openout1 = `EEC3150_HW09_RNG-MC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
 LaTeX Font Info:    ... okay on input line 104.
@@ -675,58 +675,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-45.
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-94.
-("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-"
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (2.77785pt too wide) in paragraph at lines 200--201
-\OT1/pcr/m/n/12 Truncate(np.array([-1,2,11,-4]))
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-[2] [3] (EEC3150_HW08_NumPy-MPL.aux) ) 
+[2] (EEC3150_HW09_RNG-MC.aux) ) 
 Here is how much of TeX's memory you used:
- 8297 strings out of 480790
- 129840 string characters out of 2894452
- 573594 words of memory out of 3000000
- 24151 multiletter control sequences out of 15000+200000
- 550102 words of font info for 68 fonts, out of 3000000 for 9000
+ 8231 strings out of 480790
+ 128703 string characters out of 2894452
+ 566588 words of memory out of 3000000
+ 24095 multiletter control sequences out of 15000+200000
+ 548166 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,8n,45p,827b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Graham West/AppData/Local/Progr
-ams/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Graham West/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/
-Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/urw/courier/ucrr8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/times/utmb8a.pfb><C:/Users/Graham West/AppData/Local/Programs/M
-iKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Graham West/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on EEC3150_HW08_NumPy-MPL.pdf (3 pages, 91581 bytes).
+ 44i,7n,45p,824b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Graham West/AppData/Local/Programs/MiK
+TeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Graham West/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Graham West/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Graham Wes
+t/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on EEC3150_HW09_RNG-MC.pdf (2 pages, 44271 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

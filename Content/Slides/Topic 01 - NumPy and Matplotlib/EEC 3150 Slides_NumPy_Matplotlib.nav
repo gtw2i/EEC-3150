@@ -61,8 +61,27 @@
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {1}{9}{2}{21/21}{Linear Algebra Functions}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@partpages {1}{21}}
 \headcommand {\beamer@subsectionpages {20}{21}}
-\headcommand {\beamer@sectionpages {3}{21}}
-\headcommand {\beamer@documentpages {21}}
-\headcommand {\gdef \inserttotalframenumber {21}}
+\headcommand {\beamer@subsectionentry {0}{1}{10}{22}{File I/O}}
+\headcommand {\slideentry {1}{10}{1}{22/22}{File I/O}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@sectionpages {3}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\sectionentry {2}{Matplotlib and Pyplot}{23}{Matplotlib and Pyplot}{0}}
+\headcommand {\slideentry {2}{0}{1}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{24}{Matplotlib and Pyplot}}
+\headcommand {\slideentry {2}{1}{1}{24/24}{Matplotlib and Pyplot}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {2}{1}{2}{25/25}{Matplotlib and Pyplot}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {2}{1}{3}{26/26}{Matplotlib and Pyplot}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {2}{1}{4}{27/27}{Matplotlib and Pyplot}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@partpages {1}{27}}
+\headcommand {\beamer@subsectionpages {24}{27}}
+\headcommand {\beamer@sectionpages {23}{27}}
+\headcommand {\beamer@documentpages {27}}
+\headcommand {\gdef \inserttotalframenumber {27}}

@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{RNG}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Random Walks}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{RNG on Different Domains}{6}{0}{1}
+\beamer@sectionintoc {2}{Monte Carlo Simulation}{8}{0}{2}
