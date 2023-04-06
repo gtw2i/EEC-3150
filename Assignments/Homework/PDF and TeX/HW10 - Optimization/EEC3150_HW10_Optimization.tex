@@ -103,7 +103,7 @@ tabsize=3
 
 \begin{document}
 
-\title{Homework 09: \\ RNG and MC}
+\title{Homework 10: \\ Optimization}
 
 \author{EEC 3150}
 \date{}
@@ -131,73 +131,76 @@ For short answer or math exercises, either do your work on a sheet of paper and 
 
 
 %%% NEW EXERCISE %%%
-\begin{Exercise}[origin={15 points, Python}]
+\begin{Exercise}[origin={25 points, Python}]
+
+Consider the function
+\begin{equation*}
+	f(x,y) = (x^2+y^2)^{0.5} - 0.6(\cos(x)+\cos(y))
+\end{equation*}
 
 \begin{enumerate}
-	\item Create a 2D random walk where the random perturbation is a vector which is uniformly sampled from the unit circle (i.e., any 2D unit vector).
-	\item Plot the random walk for some number of points
+	\item Implement and run a 2D gradient descent method to find the minimum of the function
+	\item On a single 3D plot...
+	\begin{enumerate}
+		\item Plot the function in 3D over the domain $[-15,15] \times [-15,15]$ using plot\_surface
+		\item Plot the path of the GD method on the $xy$ plane beneath the surface
+	\end{enumerate}
 \end{enumerate}
 
 \end{Exercise}
-
 
 %%% NEW EXERCISE %%%
-\begin{Exercise}[origin={20 points, Python}]
+\begin{Exercise}[origin={25 points, Python}]
 
-\begin{enumerate}
-	\item Create a 1D random walk (with your choice of distribution) which will ALWAYS stay within some bounded domain of values (say, b/t -1 and 1). You may choose any method you want for this.
-	\item Plot the walk as a blue line
-	\item Plot the upped and lower bounds as dotted red lines
-\end{enumerate}
+Redo the previous exercise with 2D simulated annealing. You will need to specify the covariance matrix of the multivariate normal distribution. Use something like \\
 
-% dynamic uniform
-% if point is beyond, snap to the edge or some other point in the domain
+\code{width**2*np.eye((2,2))} \\
+
+where \code{width} is the proposal width used in the same sense as 1D simulated annealing.
 
 \end{Exercise}
 
 
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={20 points, Python}]
-
-\begin{enumerate}
-	\item Randomly generate points on the surface of a cylinder
-	\item Create a 3D plot of these points
-\end{enumerate}
-
-\end{Exercise}
+\vfill\null
+\columnbreak
 
 
 %%% NEW EXERCISE %%%
 \begin{Exercise}[origin={25 points, Python}]
 
-\begin{enumerate}
-	\item Use MC sampling to integrate $\sin(x)$ over $[0,2\pi]$ (figure out how to handle negative values so that you get an approximate answer of 0)
-	\item Print your result
-\end{enumerate}
-
-\end{Exercise}
-
-\vfill\null
-\columnbreak
-
-%%% NEW EXERCISE %%%
-\begin{Exercise}[origin={30 points, Python}]
-
-The exponential growth equation
+We can represent the wavefunction of the electron in a hydrogen atom as
 \begin{equation*}
-	N(t) = N_0 \exp(rt)
+	\psi(r) = \dfrac{2}{R^{3/2}} \exp(-r/R)
 \end{equation*}
-can be used to describe the growth of a population, where $N_0$ is the initial population and $r$ is the growth rate. \\
-
-A biologist measured that a certain culture had approximately $N_0=1000$ cells, but since this measurement isn't perfect, there is a standard deviation of 10. After watching the culture grow for some time, the growth rate was estimated to be $r=0.1 d^{-1}$ (per day) with a standard deviation of 0.01.
+The energy of this wavefunction is a function of the $R$ parameter
+\begin{equation*}
+	E(R) = 2B\bigg(\dfrac{A^2}{2R^2} - \dfrac{A}{R}\bigg)
+\end{equation*}
+where
+\begin{align*}
+	A & = \hbar^2/(k m e^2) \\
+	B & = m k^2 e^3/(2\hbar^2)
+\end{align*}
+and
+\begin{itemize}
+	\item $\hbar$ (reduced Planck constant) = \\ $1.05\times10^{-34}$ J s
+	\item $k_e$ (Coulomb constant) = \\ $8.98\times10^9$ N m$^2$/C$^2$
+	\item $e$ (electron charge) = \\ $1.60\times10^{-19}$ C
+	\item $m$ (electron mass) = \\ $9.10 \times 10^{-31}$ kg
+\end{itemize}
+The value of $R$ which minimizes this energy is the Bohr radius and the minimum value of $E$ is the ground state energy of the hydrogen atom.
 
 \begin{enumerate}
-	\item Using MC sampling, obtain a distribution for the population size after 10 days, i.e. $N(10)$
-	\item Plot a histogram of $N(10)$
-	\item Print the mean and standard deviation of $N(10)$
+	\item Implement and run simulated annealing to determine the value of the Bohr radius and the ground state energy
+	\item Print the values
+	\item TIP: the Bohr radius is approximately $10^{-10}$ m so be aware of this when setting the value of your proposal width
 \end{enumerate}
 
 \end{Exercise}
+
+
+
+
 
 
 %\pagebreak

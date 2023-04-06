@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  30 MAR 2023 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  5 APR 2023 22:38
 entering extended mode
-**./EEC3150_HW09_RNG-MC.tex
-(EEC3150_HW09_RNG-MC.tex
+**./EEC3150_HW10_Optimization.tex
+(EEC3150_HW10_Optimization.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -577,8 +577,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mult@nat@firstbox=\box107
 \colbreak@box=\box108
 \mc@col@check@num=\count308
-) (EEC3150_HW09_RNG-MC.aux)
-\openout1 = `EEC3150_HW09_RNG-MC.aux'.
+) (EEC3150_HW10_Optimization.aux)
+\openout1 = `EEC3150_HW10_Optimization.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
 LaTeX Font Info:    ... okay on input line 104.
@@ -675,32 +675,53 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-[2] (EEC3150_HW09_RNG-MC.aux) ) 
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+57.
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+86.
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [2] (EEC3150_HW10_Optimization.aux) ) 
 Here is how much of TeX's memory you used:
- 8233 strings out of 480790
- 128749 string characters out of 2894452
- 569588 words of memory out of 3000000
- 24097 multiletter control sequences out of 15000+200000
- 548166 words of font info for 64 fonts, out of 3000000 for 9000
+ 8294 strings out of 480790
+ 129785 string characters out of 2894452
+ 571600 words of memory out of 3000000
+ 24149 multiletter control sequences out of 15000+200000
+ 548995 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,45p,824b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Graham West/AppData/Local/Programs/MiK
-TeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Graham West/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Graham W
-est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
-sers/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy8.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
-mes/utmb8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/
-urw/times/utmr8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on EEC3150_HW09_RNG-MC.pdf (2 pages, 75866 bytes).
+ 44i,9n,45p,830b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Graham West/AppData/Local/Prog
+rams/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Graham West/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Graham West/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users
+/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><C:/Users/Graham West/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Graham West/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Graham W
+est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/u
+crr8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmb8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1
+/urw/times/utmr8a.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on EEC3150_HW10_Optimization.pdf (2 pages, 113840 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

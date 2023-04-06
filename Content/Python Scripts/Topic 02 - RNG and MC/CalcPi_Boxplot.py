@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
 
 def CalcPi(n):
     x = np.random.uniform(-1,1,n)
@@ -40,5 +38,10 @@ df = pd.DataFrame(pis, columns=arr)
 
 print(df)
 
-
+fig = plt.figure(figsize=(4,4))
 df.boxplot()
+
+m = len(arr)
+plt.plot( range(1,m+1), np.ones(m)*np.pi, 'r' )
+
+

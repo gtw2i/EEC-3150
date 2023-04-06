@@ -28,5 +28,12 @@ plotX = np.linspace(xmin,xmax,100)
 plotY = f(plotX)
 
 fig = plt.figure(figsize=(10,10))
-plt.plot(x,y,'b.',markersize=5)
-plt.plot(plotX,plotY,'r',linewidth=5)
+
+ind1 = f(x) >  y
+ind2 = f(x) <= y
+
+plt.plot(x[ind1],y[ind1],'r.',markersize=5)
+plt.plot(x[ind2],y[ind2],'b.',markersize=5)
+
+plt.plot(plotX,plotY,'k',linewidth=5)
+

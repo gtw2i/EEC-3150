@@ -1,29 +1,29 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-def solve(y0, v0, theta):
+def solve(yi, vi, theta):
     
     g = 9.8
-    vy0 = v0*np.sin(theta)
+    vyi = vi*np.sin(theta)
     
-    t1 = (-vy0 + (vy0**2 - 4*(-0.5*g)*y0)**0.5)/(-0.5*g)
-    t2 = (-vy0 - (vy0**2 - 4*(-0.5*g)*y0)**0.5)/(-0.5*g)
+    t1 = (-vyi + (vyi**2 - 4*(-0.5*g)*yi)**0.5)/(-0.5*g)
+    t2 = (-vyi - (vyi**2 - 4*(-0.5*g)*yi)**0.5)/(-0.5*g)
     
     tf = max(t1,t2)
     
-    xf = v0*np.cos(theta)*tf
+    xf = vi*np.cos(theta)*tf
     
     return xf, tf
 # end
 
 
-y0 = 1
+yi = 1
 
-v0 = 3
-v0_err = 0.1
+vi = 3
+vi_err = 0.1
 
-theta0 = np.radians(45)
-theta0_err = np.radians(4)
+theta = np.radians(45)
+theta_err = np.radians(4)
 
 nSamp = 10000
 
@@ -31,10 +31,10 @@ xs = np.zeros(nSamp)
 ts = np.zeros(nSamp)
 
 for i in range(nSamp):
-    v = v0 + np.random.uniform(-v0_err,v0_err,1)[0]
-    theta = theta0 + np.random.uniform(-theta0_err,theta0_err,1)[0]
+    v = vi + np.random.uniform(-vi_err,vi_err,1)[0]
+    theta2 = theta + np.random.uniform(-theta_err,theta_err,1)[0]
     
-    xf, tf = solve(y0,v,theta)
+    xf, tf = solve(yi,v,theta2)
     xs[i] = xf
     ts[i] = tf
 # end
