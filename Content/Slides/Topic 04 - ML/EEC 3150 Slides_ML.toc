@@ -1,0 +1,4 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Intro to ML}{3}{0}{1}
+\beamer@sectionintoc {2}{Supervised Learning}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Regression}{8}{0}{2}

@@ -1,0 +1,42 @@
+import numpy as np
+from bokeh.plotting import figure, show, output_file
+from bokeh.tile_providers import get_provider, Vendors
+
+# Define function to convert latitudes and longitudes to Mercator x and y coordinates
+def merc_from_arrays(lats, lons):
+    r_major = 6378137.000
+    x = r_major * np.radians(lons)
+    scale = x/lons
+    y = 180.0/np.pi * np.log(np.tan(np.pi/4.0 + lats * (np.pi/180.0)/2.0)) * scale
+    return x, y
+
+### Data
+
+# Some example data for cities in Tennessee
+lat = [35.1495, 36.1627, 35.9606, 35.0456, 36.5298, 35.8456, 35.9251, 35.6145, 36.3134, 35.2045]
+lon = [-90.0490, -86.7816, -83.9207, -85.3097, -87.3595, -86.3903, -86.8689, -88.8139, -82.3535, -89.8739]
+lat = np.array(lat)
+lon = np.array(lon)
+
+# Convert latitudes and longitudes to Mercator coordinates
+x, y = merc_from_arrays(lat, lon)
+
+### Plotting
+
+# HTML for plot
+output_file("tile.html")
+
+# Used to create map on plot
+tile_provider = get_provider(Vendors.CARTODBPOSITRON) # Get tile provider for background map
+
+# Create a Bokeh figure
+p = figure(x_axis_type="mercator", y_axis_type="mercator")
+
+# Add the map to the figure
+p.add_tile(tile_provider) # Add tile provider as background map to the figure
+
+# Plot the points on the figure
+p.circle(x=x, y=y, size=15)
+
+# Load the interactive HTML page with the plot
+show(p)

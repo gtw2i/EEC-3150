@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}%
+
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+
+%%%%
+% ME %
+%%%%
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{braket}
+\usepackage{hyperref}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\lstset{%frame=tb,
+language=Matlab,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+\usepackage{outlines}
+\usepackage{enumitem}
+%\setenumerate[1]{label=\Roman*.}
+%\setenumerate[2]{label=\Alph*.}
+%\setenumerate[3]{label=\roman*.}
+%\setenumerate[4]{label=\alph*.}
+
+\usepackage{titlesec} 
+
+%\titleformat{\subsection}[runin]
+%  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+%\titleformat{\subsubsection}[runin]
+%  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% for enumerate spacing
+\newenvironment{tight_enum}{
+\begin{enumerate}[label=\alph*.]
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}{\end{enumerate}}
+
+\begin{document}
+
+\title{Final Project Guidelines}
+
+\author{EEC 3150}
+\date{}
+\maketitle
+
+\tableofcontents
+
+\section{The Basics}
+
+The final project will give you a chance to flex your new Python skills in a manner of your choosing. You should try to utilize many of the tools we've learned throughout the course (don't just try to use as many as possible just for the sake of it though.
+
+There are two parts to the final project:
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Code: you should have one or more .py files containing the code for your project
+	\item Presentation: You will give a 10-15min presentation (w/ slides) about your project on Tuesday, May 2, 2:00pm-3:50pm (final exam time)
+\end{itemize}
+
+\section{Expectations}
+
+\subsection{Code}
+Your code should meet several expecations:
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Your code should be clearly readable (include some comments describing the different sections)
+	\item Your code \textbf{SHOULD NOT HAVE ANY} bugs (at least for the intended use cases)
+	\item You \textbf{MUST} use Matplotlib to visualize/plot some aspect of your project.
+\end{itemize}
+
+\subsection{Presentation}
+Your presentation should have the following parts:
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Introduction: provide background material on the problem you're trying to solve with your project
+	\item Methods: discuss the methods used to solve the problem
+	\item Results: show your findings or give a demo of your project
+	\item Conclusions: summarize your work and your key findings
+\end{itemize}
+
+Feel free to refer to your code throughough the presentation, especially for the results section.
+
+\section{Grading}
+
+Grading will be based on the following rubric:
+
+\begin{center}
+	\begin{tabular}{ |l|c| } 
+		\hline
+		Category & Max points \\
+		\hline
+		\hline
+		\textbf{Code} & \textbf{100} \\
+		\hspace{10pt} - Neat and readable & (20) \\
+		\hspace{10pt} - Matplotlib visualizations & (20) \\
+		\hspace{10pt} - Effective solution, no bugs & (60) \\
+		\hline
+		\textbf{Presentation}	& \textbf{50} \\
+		\hspace{10pt} - All sections included & (20) \\
+		\hspace{10pt} - Clear explanation of the project & (30) \\
+		\hline
+		\textbf{Total} & \textbf{150} \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Example Project Ideas}
+
+Simple (relatively):
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Implement a game 
+	\begin{itemize}
+		\setlength\itemsep{-2pt}
+		\item Tic-tac-toe
+		\item Connect 4
+		\item Hangman
+	\end{itemize}
+	\item Use an optimization method to solve an applied problem
+	\item Data visualization and simple statistical analysis
+\end{itemize}
+
+\vspace{10pt}
+
+\noindent Advanced:
+\begin{itemize}
+	\setlength\itemsep{-2pt}
+	\item Simulate a simple differential equation with Euler's method
+	\begin{itemize}
+		\setlength\itemsep{-2pt}
+		\item Exponential growth of a population
+		\item A planet orbiting a star
+		\item A pendulum
+		\item A particle in a box (w/ collisions)
+	\end{itemize}
+	\item Regression, classification, or clustering on a dataset
+\end{itemize}
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+

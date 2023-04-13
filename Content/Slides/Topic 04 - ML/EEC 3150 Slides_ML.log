@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  11 APR 2023 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.11)  13 APR 2023 12:09
 entering extended mode
-**"./EEC 3150 Slides_Optimization.tex"
-("EEC 3150 Slides_Optimization.tex"
+**"./EEC 3150 Slides_ML.tex"
+("EEC 3150 Slides_ML.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cl
@@ -1063,6 +1063,16 @@ sep char (CT)
 \@centerbox=\box85
 \c@ROWcellindex@=\count349
 )
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumite
+m.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip81
+\enit@outerparindent=\dimen298
+\enit@toks=\toks55
+\enit@inbox=\box86
+\enit@count@id=\count350
+\enitdp@description=\count351
+)
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlaye
 r\tikz.sty"
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\p
@@ -1072,7 +1082,7 @@ Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
 fmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box86
+\pgfnodeparttextbox=\box87
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
 fmoduleplot.code.tex"
@@ -1081,8 +1091,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibilit
 y\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen298
-\pgf@nodesepend=\dimen299
+\pgf@nodesepstart=\dimen299
+\pgf@nodesepend=\dimen300
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibilit
 y\pgfcomp-version-1-18.sty"
@@ -1104,10 +1114,10 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
 th.code.tex")
-\pgffor@iter=\dimen300
-\pgffor@skip=\dimen301
-\pgffor@stack=\toks55
-\pgffor@toks=\toks56
+\pgffor@iter=\dimen301
+\pgffor@skip=\dimen302
+\pgffor@stack=\toks56
+\pgffor@toks=\toks57
 ))
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
 yer/tikz\tikz.code.tex"
@@ -1116,34 +1126,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\
 pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count350
-\pgfplotmarksize=\dimen302
+\pgf@plot@mark@count=\count352
+\pgfplotmarksize=\dimen303
 )
-\tikz@lastx=\dimen303
-\tikz@lasty=\dimen304
-\tikz@lastxsaved=\dimen305
-\tikz@lastysaved=\dimen306
-\tikz@lastmovetox=\dimen307
-\tikz@lastmovetoy=\dimen308
-\tikzleveldistance=\dimen309
-\tikzsiblingdistance=\dimen310
-\tikz@figbox=\box87
-\tikz@figbox@bg=\box88
-\tikz@tempbox=\box89
-\tikz@tempbox@bg=\box90
-\tikztreelevel=\count351
-\tikznumberofchildren=\count352
-\tikznumberofcurrentchild=\count353
-\tikz@fig@count=\count354
+\tikz@lastx=\dimen304
+\tikz@lasty=\dimen305
+\tikz@lastxsaved=\dimen306
+\tikz@lastysaved=\dimen307
+\tikz@lastmovetox=\dimen308
+\tikz@lastmovetoy=\dimen309
+\tikzleveldistance=\dimen310
+\tikzsiblingdistance=\dimen311
+\tikz@figbox=\box88
+\tikz@figbox@bg=\box89
+\tikz@tempbox=\box90
+\tikz@tempbox@bg=\box91
+\tikztreelevel=\count353
+\tikznumberofchildren=\count354
+\tikznumberofcurrentchild=\count355
+\tikz@fig@count=\count356
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
 fmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count355
-\pgfmatrixcurrentcolumn=\count356
-\pgf@matrix@numberofcolumns=\count357
+\pgfmatrixcurrentrow=\count357
+\pgfmatrixcurrentcolumn=\count358
+\pgf@matrix@numberofcolumns=\count359
 )
-\tikz@expandcount=\count358
+\tikz@expandcount=\count360
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
 yer/tikz/libraries\tikzlibrarytopaths.code.tex"
@@ -1159,12 +1169,12 @@ Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
 ots.code.tex"
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfpl
 otscore.code.tex"
-\t@pgfplots@toka=\toks57
-\t@pgfplots@tokb=\toks58
-\t@pgfplots@tokc=\toks59
-\pgfplots@tmpa=\dimen311
-\c@pgfplots@coordindex=\count359
-\c@pgfplots@scanlineindex=\count360
+\t@pgfplots@toka=\toks58
+\t@pgfplots@tokb=\toks59
+\t@pgfplots@tokc=\toks60
+\pgfplots@tmpa=\dimen312
+\c@pgfplots@coordindex=\count361
+\c@pgfplots@scanlineindex=\count362
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\p
 gfplotssysgeneric.code.tex"))
@@ -1182,14 +1192,14 @@ tructure\pgfplotsliststructure.code.tex")
 tructure\pgfplotsliststructureext.code.tex")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/lists
 tructure\pgfplotsarray.code.tex"
-\c@pgfplotsarray@tmp=\count361
+\c@pgfplotsarray@tmp=\count363
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/lists
 tructure\pgfplotsmatrix.code.tex")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numta
 ble\pgfplotstableshared.code.tex"
-\c@pgfplotstable@counta=\count362
-\t@pgfplotstable@a=\toks60
+\c@pgfplotstable@counta=\count364
+\t@pgfplotstable@a=\toks61
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/lists
 tructure\pgfplotsdeque.code.tex")
@@ -1201,7 +1211,7 @@ pgfplotsbinary.data.code.tex"))
 pgfplotsutil.verb.code.tex")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\
 pgflibrarypgfplots.surfshading.code.tex"
-\c@pgfplotslibrarysurf@no=\count363
+\c@pgfplotslibrarysurf@no=\count365
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\p
 gflibrarypgfplots.surfshading.pgfsys-pdftex.def")))
@@ -1233,16 +1243,16 @@ ots.paths.code.tex")
 yer/tikz/libraries\tikzlibrarydecorations.code.tex"
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
 fmoduledecorations.code.tex"
-\pgfdecoratedcompleteddistance=\dimen312
-\pgfdecoratedremainingdistance=\dimen313
-\pgfdecoratedinputsegmentcompleteddistance=\dimen314
-\pgfdecoratedinputsegmentremainingdistance=\dimen315
-\pgf@decorate@distancetomove=\dimen316
-\pgf@decorate@repeatstate=\count364
-\pgfdecorationsegmentamplitude=\dimen317
-\pgfdecorationsegmentlength=\dimen318
+\pgfdecoratedcompleteddistance=\dimen313
+\pgfdecoratedremainingdistance=\dimen314
+\pgfdecoratedinputsegmentcompleteddistance=\dimen315
+\pgfdecoratedinputsegmentremainingdistance=\dimen316
+\pgf@decorate@distancetomove=\dimen317
+\pgf@decorate@repeatstate=\count366
+\pgfdecorationsegmentamplitude=\dimen318
+\pgfdecorationsegmentlength=\dimen319
 )
-\tikz@lib@dec@box=\box91
+\tikz@lib@dec@box=\box92
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
 yer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex"
@@ -1252,13 +1262,13 @@ decorations\pgflibrarydecorations.pathmorphing.code.tex"))
 yer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex"
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/
 decorations\pgflibrarydecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count365
-\pgfplots@xmin@reg=\dimen319
-\pgfplots@xmax@reg=\dimen320
-\pgfplots@ymin@reg=\dimen321
-\pgfplots@ymax@reg=\dimen322
-\pgfplots@zmin@reg=\dimen323
-\pgfplots@zmax@reg=\dimen324
+\pgfplots@numplots=\count367
+\pgfplots@xmin@reg=\dimen320
+\pgfplots@xmax@reg=\dimen321
+\pgfplots@ymin@reg=\dimen322
+\pgfplots@ymax@reg=\dimen323
+\pgfplots@zmin@reg=\dimen324
+\pgfplots@zmax@reg=\dimen325
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
 yer/tikz/libraries\tikzlibraryplotmarks.code.tex"
@@ -1279,25 +1289,25 @@ orthemeorchid.sty")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinn
 erthemerounded.sty")
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerout
-erthemeinfolines.sty")) ("EEC 3150 Slides_Optimization.aux")
-\openout1 = `"EEC 3150 Slides_Optimization.aux"'.
+erthemeinfolines.sty")) ("EEC 3150 Slides_ML.aux")
+\openout1 = `"EEC 3150 Slides_ML.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1337,17 +1347,17 @@ LaTeX Font Info:    ... okay on input line 52.
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
 -pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count366
-\scratchdimen=\dimen325
-\scratchbox=\box92
-\nofMPsegments=\count367
-\nofMParguments=\count368
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count369
-\MPscratchDim=\dimen326
-\MPnumerator=\count370
-\makeMPintoPDFobject=\count371
-\everyMPtoPDFconversion=\toks62
+\scratchcounter=\count368
+\scratchdimen=\dimen326
+\scratchbox=\box93
+\nofMPsegments=\count369
+\nofMParguments=\count370
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen327
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
+\everyMPtoPDFconversion=\toks63
 )
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
 topdf-base.sty"
@@ -1355,8 +1365,8 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box93
-Package hyperref Info: Link coloring OFF on input line 52.
+\AtBeginShipoutBox=\box94
+Package hyperref Info: Link coloring OFF on input line 53.
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref
 .sty"
@@ -1370,15 +1380,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 \gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count372
+\c@section@level=\count374
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
- ("EEC 3150 Slides_Optimization.out")
-("EEC 3150 Slides_Optimization.out")
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
+ ("EEC 3150 Slides_ML.out") ("EEC 3150 Slides_ML.out")
 \@outlinefile=\write6
-\openout6 = `"EEC 3150 Slides_Optimization.out"'.
+\openout6 = `"EEC 3150 Slides_ML.out"'.
 
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/translator\trans
@@ -1413,25 +1422,31 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 52.
+ on input line 53.
 
-("EEC 3150 Slides_Optimization.nav") [1
+("EEC 3150 Slides_ML.nav") [1
 
 {C:/Users/Graham West/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ("EEC 315
-0 Slides_Optimization.toc") [2
+0 Slides_ML.toc") [2
 
 ] [3
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+100.
 
+("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd"
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+.
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 "
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+.
 
 ("C:\Users\Graham West\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 "
@@ -1453,71 +1468,82 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [11
 
 ]
-Overfull \vbox (12.64691pt too high) detected at line 264
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+
  []
 
 [12
 
-] [13
+]
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
 
-] [14
+ []
 
-] [15
+[13
 
 ]
 \tf@nav=\write7
-\openout7 = `"EEC 3150 Slides_Optimization.nav"'.
+\openout7 = `"EEC 3150 Slides_ML.nav"'.
 
 \tf@toc=\write8
-\openout8 = `"EEC 3150 Slides_Optimization.toc"'.
+\openout8 = `"EEC 3150 Slides_ML.toc"'.
 
 \tf@snm=\write9
-\openout9 = `"EEC 3150 Slides_Optimization.snm"'.
+\openout9 = `"EEC 3150 Slides_ML.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
- ("EEC 3150 Slides_Optimization.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
-Package rerunfilecheck Info: File `"EEC 3150 Slides_Optimization".out' has not 
-changed.
-(rerunfilecheck)             Checksum: A9110018781AF18EF3DEBD9B9EB0FADC;105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
+ ("EEC 3150 Slides_ML.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
+Package rerunfilecheck Info: File `"EEC 3150 Slides_ML".out' has not changed.
+(rerunfilecheck)             Checksum: EC933FFD45125D7093BFDB1F510759C9;159.
  ) 
 Here is how much of TeX's memory you used:
- 36071 strings out of 480790
- 864104 string characters out of 2894452
- 1283614 words of memory out of 3000000
- 51277 multiletter control sequences out of 15000+200000
- 543554 words of font info for 67 fonts, out of 3000000 for 9000
+ 35879 strings out of 480790
+ 855597 string characters out of 2894452
+ 1287925 words of memory out of 3000000
+ 51077 multiletter control sequences out of 15000+200000
+ 545350 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,16n,107p,799b,2144s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Graham West/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Graham West/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Graham We
-st/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/U
-sers/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr6.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Graham West/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Graham West/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Graham W
-est/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:
+ 81i,16n,107p,789b,731s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Graham West\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcss1000.pk> <C:\Users\Graham West\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcss1095.pk> <C:\Users\Graham West\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\tcss0900.pk><C:/Users/Graham West/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Graham West/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Use
+rs/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi5.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Graham West/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Graham West/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Graha
+m West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Graham West/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Graham West/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Grah
+am West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb
+><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmss12.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmss17.pfb><C:/Users/Graham West/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Graham West/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Graham Wes
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
 /Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmss12.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmss17.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Graham West/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Graham West/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Use
-rs/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy6.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Graham West/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on "EEC 3150 Slides_Optimization.pdf" (15 pages, 303246 bytes).
+/cmsy10.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb><C:/Users/Graham West/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Graham West/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Graham West/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/G
+raham West/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.
+pfb>
+Output written on "EEC 3150 Slides_ML.pdf" (13 pages, 340847 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
