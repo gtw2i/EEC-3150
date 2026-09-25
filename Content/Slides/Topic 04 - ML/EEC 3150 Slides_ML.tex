@@ -345,8 +345,109 @@
 \end{frame}
 
 
+\subsection{Classification}
 
+\begin{frame}	
+	\center{\Huge{Supervised Learning: \\ Classification}}
+\end{frame}
 
+\begin{frame}
+	\frametitle{Supervised Learning: Classification}
+	
+	\begin{alertblock}{Classification:}
+		\footnotesize
+		
+		\minipage{0.45\textwidth}
+			Classification is the process of creating a model which uses features to predict discrete labels
+			
+			\vspace{5pt}
+			Some example data: \\[-15pt]
+			
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=\linewidth]{Classification_01}
+			\end{figure}
+		\endminipage\hfill
+		\minipage{0.05\textwidth}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+			What we're given:
+			\begin{itemize}
+				\item 2 features (on the x,y axes)
+				\item A discrete label, 2 classes: red and blue
+			\end{itemize}
+			The goal:
+			\begin{itemize}
+				\item Create a model which can predict the class for new data
+			\end{itemize}
+			Some thoughts:
+			\begin{itemize}
+				\item The reds and blues each tend to cluster together
+				\item New data that is firmly within the red cluster can be confidently classified as red (same for blue)
+				\item New data which appears somewhere in b/t the two clusters in less clear how to classify
+			\end{itemize}
+		\endminipage\hfill
+	\end{alertblock}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Supervised Learning: Classification}
+	
+	\begin{block}{$k$ Nearest Neighbors Classification (KNN):}
+		\footnotesize
+		Method:
+		\begin{itemize}
+			\item When given a new data point, find its $k$ (an integer) nearest neighbors (the points closest to it)
+			\item Assign the new point the label which is most frequent among its neighbors
+			\item Choose the value of $k$ which gives the lowest loss/highest accuracy 
+		\end{itemize}
+		Loss function:
+		\begin{itemize}
+			\item There are many good loss functions for classification (cross entropy...)
+			\item We will instead just maximize the accuracy (instead of minimizing loss)
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Supervised Learning: Classification}
+	
+	\begin{block}{Train/test splitting:}
+		\footnotesize
+		Motivation:
+		\begin{itemize}
+			\item We train our model using only the data we have at our disposal, but when your model actually gets used by someone, it will see NEW data
+			\item We want our model to generalize to new data (it needs to do more than just predict the data it was trained on)
+			\item To solve this, we split our data into two parts:
+			\begin{itemize}
+				\item Training data: the data we use to create the model
+				\item Testing data: the data was use to evaluate the model's performance
+			\end{itemize}
+			\item Once we find out what model parameters give the highest accuracy, we can then train on the whole dataset and let that be our final model
+		\end{itemize}
+		Some notes:
+		\begin{itemize}
+			\item Generally, we use an 80/20 split between training/test, respectively
+			\item Generally, the training accuracy will be higher than the testing accuracy (makes sense since the model was designed with that data)
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Supervised Learning: Classification}
+	
+	\begin{block}{Accuracy vs. precision/recall:}
+		\begin{itemize}
+			\item Sometimes accuracy is too simple of an evaluation metric
+			\item We can also use precision and recall
+			\item \url{https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
 
 
 \end{document}
